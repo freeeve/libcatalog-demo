@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Eve's Library">
+  <rect width="64" height="64" rx="13" fill="#115c52"/>
+  <g fill="none" stroke="#fbf9f4" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 18.5C28 15.6 22.5 14.8 16 15.2v30.2c6.5-.4 12 .4 16 3.3"/>
+    <path d="M32 18.5c4-2.9 9.5-3.7 16-3.3v30.2c-6.5-.4-12 .4-16 3.3z"/>
+    <path d="M32 18.5v30.5"/>
+  </g>
+</svg>

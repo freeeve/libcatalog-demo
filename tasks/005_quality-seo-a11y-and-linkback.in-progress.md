@@ -1,5 +1,31 @@
 # 005 -- Quality pass: SEO, a11y, and link-back
 
+## Status
+
+Done (verified in this repo):
+
+- **a11y** -- module axe audit (WCAG 2.1 A/AA) clean across 67 pages after the branding
+  overrides; the one regression (orphaned demo banner) was fixed to a labeled landmark.
+  Contrast verified by computing WCAG ratios for all 11 theme color pairs -- all pass AA
+  (lowest 5.62:1).
+- **SEO/social** -- per-page title/description/canonical, Open Graph + Twitter cards
+  (summary_large_image with a generated `og-default.png` fallback), Hugo `sitemap.xml`,
+  `robots.txt`, favicon (SVG + ICO), apple-touch icon, and a web manifest
+  (`head/seo.html`, `static/`).
+- **Structured data** -- schema.org JSON-LD: `WebSite` (+ SearchAction) on the homepage,
+  `Book` (author/isbn/format/genre/language) on Work pages; validated as parseable.
+- **Performance** -- covers lazy-load (`loading="lazy"`); compression/cache headers land
+  with the deploy (`tasks/003`).
+
+Remaining (inherently post-deploy / real browser):
+
+- Lighthouse pass (perf/a11y/SEO) against the live CloudFront site -- no headless browser
+  here, and localhost perf wouldn't reflect the CDN.
+- Real-browser contrast + Pagefind widget AT spot-check (jsdom can't; the static markup
+  and computed contrast pass).
+- **Link-back** -- must land in the libcatalog repo, not here; task left there
+  (`../libcatalog/tasks/021`).
+
 ## Context
 
 Final polish so the demo is a credible showcase and discoverable, and so the libcatalog
