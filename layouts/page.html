@@ -1,0 +1,81 @@
+{{- /*
+  Eve's Library Work-detail override (tasks/002 §5) -- a superset of the libcatalog
+  module's layouts/page.html. The ONLY addition is the floated cover (marked EVL+);
+  every other line is the module's verbatim, so faceting, subjects, editions, and the
+  client-side availability hook keep working. Reconcile after a module bump by diffing
+  against the module page.html and re-applying the EVL+ line.
+
+  data-pagefind-body scopes the optional Pagefind index (tasks/017) to Work detail
+  pages only; data-pagefind-meta/-filter feed result cards and reuse the facet dims.
+*/ -}}
+{{ define "main" }}
+<article class="lcat-work" data-pagefind-body>
+  {{ partial "cover.html" (dict "page" . "class" "evl-cover evl-cover--detail") }}{{/* EVL+ */}}
+  <h1 data-pagefind-meta="title">{{ .Title }}{{ with .Params.subtitle }} <span class="lcat-subtitle">{{ . }}</span>{{ end }}</h1>
+
+  {{ with .Params.contributorList }}
+  <p class="lcat-contribs" data-pagefind-meta="author">
+    {{ range $i, $c := . }}{{ if $i }}; {{ end }}<span data-pagefind-filter="contributor">{{ $c.name }}</span>{{ with $c.role }} <span class="lcat-role">({{ . }})</span>{{ end }}{{ end }}
+  </p>
+  {{ end }}
+
+  {{ with .Params.rating }}
+  <p class="evl-rating" aria-label="{{ printf "Rated %v out of 5" . }}">{{/* EVL+ rating from tasks/001 */}}
+    {{- $full := int . -}}{{- range seq 5 }}{{ if le . $full }}★{{ else }}☆{{ end }}{{ end }}
+    <span>{{ . }}/5</span>
+  </p>
+  {{ end }}
+
+  {{ with .Params.subjectList }}
+  <section aria-labelledby="lcat-subj"><h2 id="lcat-subj">{{ i18n "subjects" }}</h2>
+    <ul class="lcat-tags">
+      {{ $lang := site.Language.Lang }}
+      {{ range . }}
+        {{ $label := .id }}{{ with .labels }}{{ $label = or (index . $lang) (index . "en") $label }}{{ end }}
+        {{/* Facet by label; the subject's canonical link is its authority URI. */}}
+        <li><a href="{{ printf "/subjects/%s/" (urlize $label) | relURL }}" data-pagefind-filter="subject">{{ $label }}</a>
+          {{ if ne $label .id }}<a class="lcat-authority" href="{{ .id }}" rel="external" aria-label="{{ i18n "authorityRecordFor" (dict "Label" $label) }}" data-pagefind-ignore>↗</a>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{ with .Params.tags }}
+  <section aria-labelledby="lcat-tags"><h2 id="lcat-tags">{{ i18n "genresAndTags" }}</h2>
+    <ul class="lcat-tags">
+      {{ range . }}<li><a href="{{ printf "/tags/%s/" (urlize .) | relURL }}" data-pagefind-filter="tag">{{ . }}</a></li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <dl class="lcat-meta">
+    {{ with .Params.formats }}<dt>{{ i18n "formats" }}</dt><dd>
+      {{ range $i, $f := . }}{{ if $i }}, {{ end }}<a href="{{ printf "/formats/%s/" (urlize $f) | relURL }}" data-pagefind-filter="format">{{ $f }}</a>{{ end }}
+    </dd>{{ end }}
+    {{ with .Params.languages }}<dt>{{ i18n "language" }}</dt><dd>{{ range $i, $l := . }}{{ if $i }}, {{ end }}<span data-pagefind-filter="language">{{ $l }}</span>{{ end }}</dd>{{ end }}
+    {{ with .Params.classifications }}<dt>{{ i18n "classification" }}</dt><dd>{{ range $i, $c := . }}{{ if $i }}, {{ end }}<span data-pagefind-filter="classification">{{ $c }}</span>{{ end }}</dd>{{ end }}
+  </dl>
+
+  {{ with .Params.instances }}
+  <section aria-labelledby="lcat-ed"><h2 id="lcat-ed">{{ i18n "editionsAndFormats" }}</h2>
+    <ul class="lcat-editions">
+      {{ range . }}
+      <li class="lcat-edition" data-instance="{{ .id }}"{{ with .format }} data-format="{{ . }}"{{ end }}{{ range .providerIds }}{{ if eq .source "overdrive-reserve" }} data-overdrive-reserve="{{ .value }}"{{ end }}{{ end }}>
+        {{ with .format }}<span class="lcat-format">{{ . }}</span>{{ end }}
+        {{ with .isbns }}<span class="lcat-isbn">{{ i18n "isbn" }} {{ index . 0 }}</span>{{ end }}
+        {{/* Availability is fetched client-side at view time by lcat-availability.js
+             (libcatalog tasks/004), keyed on data-overdrive-reserve above; it fills
+             this placeholder in when the site enables [params.availability]. Without
+             that config (or JS) the placeholder stays inert -- the static page never
+             depends on it. */}}
+        <span class="lcat-availability" data-availability role="status" aria-live="polite"></span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <p data-pagefind-ignore><a href="{{ "/works/" | relURL }}">&larr; {{ i18n "backToAllWorks" }}</a></p>
+</article>
+{{ end }}

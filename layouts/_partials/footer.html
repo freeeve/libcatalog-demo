@@ -1,0 +1,16 @@
+{{- /* Persistent demo-disclosure footer (tasks/002 §4), on every page via baseof.
+       Strings come from i18n so the footer localizes with the rest of the chrome
+       (module i18n convention); links point at both project repos for transparency. */ -}}
+<footer class="evl-footer" data-pagefind-ignore>
+  <div class="evl-footer-inner">
+    <p class="evl-footer-note">
+      {{ i18n "footerBuiltWith" | safeHTML }}
+      <strong>{{ i18n "footerDemoNote" }}</strong>
+    </p>
+    <nav aria-label="{{ i18n "footerNavLabel" }}">
+      <a href="{{ "/about/" | relURL }}">{{ i18n "footerAbout" }}</a>
+      <a href="https://github.com/freeeve/libcatalog" rel="external">libcatalog</a>
+      <a href="https://github.com/freeeve/libcatalog/tree/main/hugo" rel="external">{{ i18n "footerHugoModule" }}</a>
+    </nav>
+  </div>
+</footer>

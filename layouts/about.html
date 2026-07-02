@@ -1,0 +1,13 @@
+{{- /*
+  Layout for plain content pages like /about/ (tasks/002 §3). Selected via
+  `layout: about` front matter, so it does NOT collide with the module's page.html
+  (which expects Work params from the content adapter). Renders inside baseof with an
+  empty sidebar so the facet grid collapses to a single readable column.
+*/ -}}
+{{ define "sidebar" }}{{ end }}
+{{ define "main" }}
+<article class="evl-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+{{ end }}

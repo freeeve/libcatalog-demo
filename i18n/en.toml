@@ -1,0 +1,41 @@
+# Eve's Library site chrome strings (tasks/002). These extend the module's
+# i18n/en.toml (Hugo merges the site bundle over the module's), keeping the branding
+# copy translation-ready: add i18n/<lang>.toml with the same keys to localize.
+
+[demoBanner]
+other = "Demo site — a showcase of the libcatalog framework, not a real library collection."
+
+[demoBannerLink]
+other = "What is this?"
+
+[demoBannerLabel]
+other = "Demo notice"
+
+# Footer. footerBuiltWith is safeHTML so the repo link renders inline.
+[footerBuiltWith]
+other = "Built with <a href=\"https://github.com/freeeve/libcatalog\" rel=\"external\">libcatalog</a> + Hugo."
+
+[footerDemoNote]
+other = "A demo, not a real collection."
+
+[footerNavLabel]
+other = "About this demo"
+
+[footerAbout]
+other = "About"
+
+[footerHugoModule]
+other = "Hugo module"
+
+# Homepage hero (tasks/002 §2).
+[heroTitle]
+other = "Welcome to Eve's Library"
+
+[heroLede]
+other = "A public reading catalog built with the libcatalog Hugo module: one page per work, faceted browsing, controlled subjects with authority links, and static full-text search — no backend."
+
+[heroCta]
+other = "Read how it's built →"
+
+[shelfFeatured]
+other = "From the shelves"

@@ -30,3 +30,6 @@ defaultContentLanguage = "en"
 [params]
   # This is a public demo of the libcatalog framework + Hugo, not a real collection.
   demo = true
+  tagline = "a libcatalog + Hugo demo"
+  description = "Eve's Library is a public demo of the libcatalog framework and its Hugo module: a faceted, accessible, statically searchable catalog with no backend."
+  # ogImage = "/og-default.png"  # set once a social share image exists (tasks/005)

@@ -1,0 +1,31 @@
+{{- /*
+  Eve's Library work-card override (tasks/002 §5). Superset of the module's
+  _partials/work-card.html: same heading level (h2 under the page h1), contributors,
+  and subject chips -- wrapped in a flex row with a cover thumbnail on the left and an
+  optional star rating (both from the Hardcover pipeline, tasks/001; absent on the
+  placeholder data, in which case the cover falls back to a lettered tile).
+*/ -}}
+<article class="lcat-card evl-card">
+  {{ partial "cover.html" (dict "page" . "class" "evl-cover") }}
+  <div class="evl-card-body">
+    {{- /* h2: a result card sits directly under the page h1, so this is the next
+           heading level -- jumping to h3 breaks heading order (WCAG 1.3.1 / 2.4.6). */ -}}
+    <h2 class="lcat-card-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.subtitle }}<span class="lcat-subtitle">: {{ . }}</span>{{ end }}
+    </h2>
+    {{- with .Params.contributorList }}
+    <p class="lcat-contribs">
+      {{ range $i, $c := first 4 . }}{{ if $i }}; {{ end }}{{ $c.name }}{{ with $c.role }} <span class="lcat-role">({{ . }})</span>{{ end }}{{ end }}
+    </p>
+    {{- end }}
+    {{- with .Params.rating }}
+    <p class="evl-rating" aria-label="{{ printf "Rated %v out of 5" . }}">
+      {{- $full := int . -}}{{- range seq 5 }}{{ if le . $full }}★{{ else }}☆{{ end }}{{ end }}
+      <span>{{ . }}/5</span>
+    </p>
+    {{- end }}
+    {{- with .Params.subjects }}
+    <ul class="lcat-tags">{{ range first 5 . }}<li>{{ . }}</li>{{ end }}</ul>
+    {{- end }}
+  </div>
+</article>

@@ -1,0 +1,51 @@
+---
+title: "About this demo"
+layout: about
+description: "Eve's Library is a public demo of the libcatalog framework and its Hugo module — BIBFRAME to projector to a faceted, accessible, statically searchable catalog."
+---
+
+**Eve's Library is a demo, not a real library collection.** It exists to show what an
+adopter gets from the [libcatalog](https://github.com/freeeve/libcatalog) framework and
+its [Hugo module](https://github.com/freeeve/libcatalog/tree/main/hugo): a faceted,
+accessible, multilingual-capable discovery site with static full-text search — and no
+backend to run.
+
+## How it's built
+
+The pipeline is deliberately boring, which is the point — every stage is a plain build
+artifact you can inspect:
+
+1. **BIBFRAME / bibliographic records** are the source of truth (the framework models
+   Works, Instances, contributors, controlled subjects, and identifiers as a graph).
+2. **The projector** (`lcat project`) flattens that graph into two static JSON files —
+   `catalog.json` (one entry per Work) and `facets.json` (precomputed facet counts).
+3. **The Hugo module** mints one page per Work from `catalog.json` via a content
+   adapter — no per-record markdown — plus the facet navigation, Work detail pages, and
+   accessible chrome. This site imports the module the way any adopter would and only
+   supplies config, data, and light branding on top.
+4. **Pagefind** indexes the built HTML after Hugo runs, giving real ranked, per-language,
+   CJK-capable full-text search that ships as static files.
+
+## What's on display
+
+- **Works and Instances.** Each Work clusters its editions (ebook / audiobook /
+  physical); a Work with multiple formats appears under each.
+- **Controlled subjects vs. tags.** Subjects are authority-controlled (LCSH, Homosaurus)
+  with resolving `↗` links and localizable labels; genre tags are free strings. Both
+  dimensions are faceted, side by side.
+- **Faceted browsing** by subject, contributor, format, language, and classification,
+  with counts straight from `facets.json`.
+- **Accessibility.** The module targets WCAG 2.1 AA — skip link, focus styles, heading
+  order, and keyboard-navigable search.
+
+## The data
+
+The catalog is currently seeded with public-domain classics as placeholder data. The
+real content will be sourced from [Hardcover](https://hardcover.app) — the books Eve has
+actually read — through a reproducible fetch-and-project pipeline. Until then, treat the
+titles here as scaffolding for the framework, not a reading list.
+
+## Source
+
+- Framework + Hugo module: <https://github.com/freeeve/libcatalog>
+- This adopter site: a plain Hugo site that imports the module.

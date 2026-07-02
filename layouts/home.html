@@ -1,0 +1,55 @@
+{{- /*
+  Homepage for Eve's Library (tasks/002 §2). Adds a full-width hero + a "featured"
+  cover shelf ABOVE the module's Work list, without forking the module: the sidebar
+  and main blocks below reproduce the module's list.html so faceted browsing and
+  pagination still render exactly as the module intends. home.html wins over the
+  module's list.html for the home page only; /works/ keeps the module list.
+*/ -}}
+
+{{ define "hero" }}
+<section class="evl-hero" aria-labelledby="evl-hero-h">
+  <div class="evl-hero-inner">
+    <h1 id="evl-hero-h">{{ i18n "heroTitle" }}</h1>
+    <p>{{ i18n "heroLede" }}</p>
+    <p><a href="{{ "/about/" | relURL }}">{{ i18n "heroCta" }}</a></p>
+  </div>
+</section>
+{{- $works := where .RegularPagesRecursive "Section" "works" -}}
+{{- /* Prefer a "highly rated" shelf when the pipeline has ratings; else first N. */ -}}
+{{- $rated := where $works "Params.rating" "!=" nil -}}
+{{- $featured := cond (gt (len $rated) 0) (first 6 (sort $rated "Params.rating" "desc")) (first 6 $works) -}}
+{{- with $featured }}
+<section class="evl-shelf" aria-labelledby="evl-shelf-h">
+  <h2 id="evl-shelf-h">{{ i18n "shelfFeatured" }}</h2>
+  <ul class="evl-shelf-row">
+    {{- range . }}
+    <li class="evl-shelf-item">
+      <a href="{{ .RelPermalink }}">
+        {{ partial "cover.html" (dict "page" . "class" "evl-cover") }}
+        <span class="evl-shelf-title">{{ .Title }}</span>
+        {{- with .Params.contributorList }}<span class="evl-shelf-author">{{ (index . 0).name }}</span>{{ end }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{ end }}
+
+{{ define "sidebar" }}
+<aside class="lcat-sidebar" aria-label="{{ i18n "facets" }}">{{ partial "facets.html" . }}</aside>
+{{ end }}
+
+{{ define "main" }}
+{{- /* No h1 here: the hero block supplies the page's single h1. Cards stay at h2,
+       matching the module's heading order (page h1 -> card h2). */ -}}
+{{ $pages := .RegularPagesRecursive }}
+{{ $paginator := .Paginate $pages }}
+<p class="lcat-resultcount" role="status">{{ i18n "workCount" (len $pages) }}</p>
+<ol class="lcat-results" id="lcat-results">
+  {{ range $paginator.Pages }}
+  <li>{{ partial "work-card.html" . }}</li>
+  {{ end }}
+</ol>
+{{ template "_internal/pagination.html" . }}
+{{ end }}

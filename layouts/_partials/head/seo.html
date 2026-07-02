@@ -1,0 +1,101 @@
+{{- /*
+  Head metadata for Eve's Library (tasks/002 head, tasks/005 SEO/social/JSON-LD).
+  Rendered once per page from the site's baseof.html override. Everything degrades
+  gracefully on the current placeholder catalog and lights up further when the
+  Hardcover pipeline (tasks/001) adds description/cover params.
+
+  Emits: <title>, description, canonical, hreflang, Open Graph, Twitter Card, icons,
+  and schema.org JSON-LD (WebSite on the homepage, Book on Work detail pages).
+*/ -}}
+{{- $isWork := and (eq .Kind "page") (eq .Section "works") -}}
+{{- $siteDesc := site.Params.description | default "A public demo catalog built with the libcatalog Hugo module: faceted, accessible, statically searchable." -}}
+
+{{- /* Title. */ -}}
+{{- if .IsHome -}}
+<title>{{ site.Title }}{{ with site.Params.tagline }} — {{ . }}{{ end }}</title>
+{{- else -}}
+<title>{{ .Title }} · {{ site.Title }}</title>
+{{- end }}
+
+{{- /* Description: page > work-synthesized > site default. */ -}}
+{{- $desc := "" -}}
+{{- with .Description }}{{ $desc = . }}{{ end -}}
+{{- if and (not $desc) .Params.description }}{{ $desc = .Params.description }}{{ end -}}
+{{- if and (not $desc) $isWork .Params.contributorList -}}
+  {{- $by := slice -}}{{- range first 3 .Params.contributorList }}{{ $by = $by | append .name }}{{ end -}}
+  {{- $desc = printf "%s by %s — in Eve's Library." .Title (delimit $by ", ") -}}
+{{- end -}}
+{{- if not $desc }}{{ $desc = $siteDesc }}{{ end }}
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+
+{{- /* Open Graph + Twitter. Prefer a work cover; else the optional site default. */ -}}
+{{- $image := "" -}}
+{{- with .Params.cover }}{{ $image = . }}{{ end -}}
+{{- if and (not $image) site.Params.ogImage }}{{ $image = (site.Params.ogImage | absURL) }}{{ end -}}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if $isWork }}book{{ else }}website{{ end }}">
+{{- with $image }}
+<meta property="og:image" content="{{ . }}">
+{{- end }}
+<meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{- with $image }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}
+
+{{- /* Icons + manifest (tasks/005). The SVG favicon is inline-friendly and scalable;
+       the manifest and theme color make it installable. */ -}}
+<link rel="icon" href="{{ "/favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "/favicon.ico" | relURL }}" sizes="any">
+<link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
+<meta name="theme-color" content="#115c52">
+
+{{- /* JSON-LD structured data (tasks/005 §3). Built as a dict and jsonify'd so
+       escaping is always valid. */ -}}
+{{- if .IsHome -}}
+{{- $ld := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" site.Title
+  "url" site.BaseURL
+  "description" $siteDesc
+  "potentialAction" (dict
+    "@type" "SearchAction"
+    "target" (dict "@type" "EntryPoint" "urlTemplate" (printf "%sworks/?q={query}" site.BaseURL))
+    "query-input" "required name=query") -}}
+{{- /* safeJS: <script type="application/ld+json"> is a JS context to html/template,
+       which would otherwise re-encode the jsonify output as a JS string literal. */ -}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- else if $isWork -}}
+{{- $langMap := dict "eng" "en" "spa" "es" "fre" "fr" "ger" "de" "und" "" -}}
+{{- $authors := slice -}}
+{{- range .Params.contributorList -}}
+  {{- if or (not .role) (eq .role "author") }}{{ $authors = $authors | append (dict "@type" "Person" "name" .name) }}{{ end -}}
+{{- end -}}
+{{- $editions := slice -}}
+{{- $fmtMap := dict "ebook" "https://schema.org/EBook" "audiobook" "https://schema.org/AudiobookFormat" "physical" "https://schema.org/Hardcover" -}}
+{{- range .Params.instances -}}
+  {{- $ed := dict "@type" "Book" -}}
+  {{- with .format }}{{ $ed = merge $ed (dict "bookFormat" (index $fmtMap . | default "https://schema.org/Book")) }}{{ end -}}
+  {{- with .isbns }}{{ $ed = merge $ed (dict "isbn" (index . 0)) }}{{ end -}}
+  {{- $editions = $editions | append $ed -}}
+{{- end -}}
+{{- $ld := dict "@context" "https://schema.org" "@type" "Book" "name" .Title "url" .Permalink -}}
+{{- with .Params.subtitle }}{{ $ld = merge $ld (dict "alternativeHeadline" .) }}{{ end -}}
+{{- with $authors }}{{ $ld = merge $ld (dict "author" .) }}{{ end -}}
+{{- with .Params.languages }}{{ $ld = merge $ld (dict "inLanguage" (index $langMap (index . 0) | default (index . 0))) }}{{ end -}}
+{{- with .Params.tags }}{{ $ld = merge $ld (dict "genre" .) }}{{ end -}}
+{{- with $desc }}{{ $ld = merge $ld (dict "description" .) }}{{ end -}}
+{{- with .Params.cover }}{{ $ld = merge $ld (dict "image" .) }}{{ end -}}
+{{- with $editions }}{{ $ld = merge $ld (dict "workExample" .) }}{{ end -}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- end -}}

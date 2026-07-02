@@ -1,0 +1,15 @@
+{{- /* Cover image with graceful fallback (tasks/002 §5). Renders an <img> when the
+       Work carries a cover URL (added by the Hardcover pipeline, tasks/001); other-
+       wise a lettered placeholder tile so layout never collapses. Call with:
+         {{ partial "cover.html" (dict "page" . "class" "evl-cover") }}
+       Cover host terms: lazy-loaded, referrerpolicy set; falls back on load error. */ -}}
+{{- $p := .page -}}
+{{- $class := .class | default "evl-cover" -}}
+{{- $cover := $p.Params.cover -}}
+{{- $alt := printf "Cover of %s" $p.Title -}}
+{{- if $cover -}}
+<img class="{{ $class }}" src="{{ $cover }}" alt="{{ $alt }}" loading="lazy" decoding="async"
+     referrerpolicy="no-referrer" width="132" height="198">
+{{- else -}}
+<span class="{{ $class }} evl-cover--placeholder" role="img" aria-label="{{ $alt }}">{{ substr $p.Title 0 1 }}</span>
+{{- end -}}

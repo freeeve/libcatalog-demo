@@ -1,0 +1,53 @@
+{{- /*
+  Eve's Library baseof -- a deliberate superset of the libcatalog module's
+  layouts/baseof.html (tasks/002). Hugo has no footer/head hook in the module base,
+  so an adopter that wants a persistent footer + site-wide <head> metadata must
+  shadow this one file. Everything from the module base is preserved verbatim; the
+  ONLY additions are marked "EVL+" below:
+    EVL+ theme stylesheet (loaded after lcat.css so it wins on cascade)
+    EVL+ head/seo.html partial (title, description, OG/Twitter, icons, JSON-LD)
+    EVL+ demo banner, brand colophon, and site footer partial
+  Reconciling after a module bump = diff this file against the module's baseof and
+  re-apply the EVL+ lines. (Upstream ask to add footer/head blocks: see the task left
+  in ../libcatalog/tasks so adopters can stop shadowing this file.)
+*/ -}}
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ partial "head/seo.html" . }}{{/* EVL+ replaces the module's bare <title> */}}
+  {{ with resources.Get "lcat.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ with resources.Get "lcat-theme.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}{{/* EVL+ */}}
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  <a class="lcat-skip" href="#lcat-main">Skip to main content</a>
+  {{ partial "demo-banner.html" . }}{{/* EVL+ honest "this is a demo" ribbon */}}
+  <header class="lcat-header" data-pagefind-ignore>
+    <a class="lcat-brand" href="{{ "/" | relURL }}">
+      {{ partial "brand-mark.html" . }}{{/* EVL+ book colophon */}}
+      <span class="evl-brand-name">{{ site.Title }}</span>
+    </a>
+    {{ partial "search.html" . }}
+  </header>
+  {{ block "hero" . }}{{ end }}{{/* EVL+ full-width hero slot, filled by home.html */}}
+  <div class="lcat-layout">
+    {{ block "sidebar" . }}{{ end }}
+    <main id="lcat-main" class="lcat-main" tabindex="-1">
+      {{ block "main" . }}{{ .Content }}{{ end }}
+    </main>
+  </div>
+  {{ partial "footer.html" . }}{{/* EVL+ persistent demo-disclosure footer */}}
+  {{- /* The interim substring filter loads only for the default search path; the
+         Pagefind path (tasks/017) ships its own UI from the search partial. */ -}}
+  {{ if ne (site.Params.search.engine | default "") "pagefind" }}{{ with resources.Get "lcat-search.js" }}<script src="{{ .RelPermalink }}" defer></script>{{ end }}{{ end }}
+  {{- /* Client-side live availability (tasks/004), enabled only when the site
+         configures [params.availability]. The config (library slug etc.) is emitted
+         as JSON for the adapter; no availability data is in the static build. */ -}}
+  {{ with site.Params.availability }}{{ if .enabled }}
+  <script id="lcat-availability-config" type="application/json">{{ . | jsonify }}</script>
+  {{ with resources.Get "lcat-availability.js" }}<script src="{{ .RelPermalink }}" defer></script>{{ end }}
+  {{ end }}{{ end }}
+</body>
+</html>

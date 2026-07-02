@@ -1,0 +1,191 @@
+/*
+  Eve's Library -- adopter theme layered on top of the libcatalog module's lcat.css
+  (tasks/002). Loaded after lcat.css by the site's baseof.html override, so it wins
+  on cascade without forking the module stylesheet.
+
+  Strategy: re-set the module's own --lcat-* custom properties for the palette (every
+  module component re-themes automatically) and add a small set of evl-* components
+  (hero, shelf, cover, footer) the module does not ship. All colors are checked to
+  meet WCAG 2.1 AA contrast against their background; verify in a real browser as a
+  separate pass (tasks/005) since jsdom can't compute contrast.
+*/
+
+:root {
+  /* Palette: warm "paper" background, deep teal accent, muted ink. */
+  --lcat-fg: #1c1b18;      /* ink on paper: ~15:1 */
+  --lcat-bg: #fbf9f4;      /* warm paper */
+  --lcat-accent: #115c52;  /* deep teal: 6.0:1 on paper, carries white text at 5.9:1 */
+  --lcat-muted: #5c574e;   /* muted ink: 5.9:1 on paper */
+  --lcat-border: #e2dccd;
+  --lcat-maxw: 72rem;
+
+  /* Theme-only tokens (evl- namespace). */
+  --evl-accent-ink: #0c443c;   /* darker teal for large headings */
+  --evl-gold: #8a5a12;         /* warm secondary accent: 5.3:1 on paper */
+  --evl-surface: #ffffff;      /* raised cards */
+  --evl-surface-alt: #f3efe4;  /* tag chips / subtle fills */
+  --evl-shadow: 0 1px 2px rgba(28, 27, 24, 0.06), 0 2px 8px rgba(28, 27, 24, 0.05);
+  --evl-radius: 10px;
+}
+
+/* Typography: a serif display face for headings gives the "library" feel; body
+   stays on the module's system stack for legibility and zero web-font cost. */
+body {
+  font: 100%/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+h1, h2, .evl-brand-name, .lcat-card-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+/* Header / brand: give the module's brand link a book colophon and stronger identity. */
+.lcat-header {
+  background: var(--evl-surface);
+  border-bottom: 2px solid var(--lcat-accent);
+  padding: 0.85rem clamp(1rem, 4vw, 2rem);
+}
+.lcat-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--evl-accent-ink);
+  font-size: 1.3rem;
+}
+.lcat-brand svg { flex: none; }
+.evl-brand-name { font-weight: 700; }
+
+/* Layout: a touch more breathing room than the module default. */
+.lcat-layout { padding: 1.75rem clamp(1rem, 4vw, 2rem); gap: 2.5rem; }
+
+/* Facet sidebar: lift onto a card so it reads as a panel. */
+.lcat-sidebar {
+  background: var(--evl-surface);
+  border: 1px solid var(--lcat-border);
+  border-radius: var(--evl-radius);
+  padding: 1rem 1.1rem;
+  align-self: start;
+  box-shadow: var(--evl-shadow);
+}
+.lcat-facet summary { color: var(--evl-accent-ink); }
+
+/* Result cards. */
+.lcat-results > li { border-bottom: 1px solid var(--lcat-border); }
+.lcat-card-title a { text-decoration: none; }
+.lcat-card-title a:hover { text-decoration: underline; }
+.lcat-tags li {
+  background: var(--evl-surface-alt);
+  color: var(--lcat-fg);
+  border: 1px solid var(--lcat-border);
+}
+
+/* Cover art (tasks/002 §5): rendered by the work-card / page overrides when the
+   catalog carries a cover URL; falls back to a lettered placeholder otherwise. */
+.evl-card { display: flex; gap: 1rem; align-items: flex-start; }
+.evl-cover {
+  flex: none;
+  width: 56px;
+  aspect-ratio: 2 / 3;
+  border-radius: 4px;
+  object-fit: cover;
+  background: var(--evl-surface-alt);
+  border: 1px solid var(--lcat-border);
+  box-shadow: var(--evl-shadow);
+}
+.evl-cover--placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--lcat-muted);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.evl-cover--detail { width: 132px; float: right; margin: 0 0 1rem 1.25rem; }
+.evl-rating { color: var(--evl-gold); font-size: 0.85rem; letter-spacing: 0.1em; }
+.evl-rating span { color: var(--lcat-muted); letter-spacing: normal; }
+
+/* Homepage hero (tasks/002 §2). */
+.evl-hero {
+  max-width: var(--lcat-maxw);
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 4vw, 2rem) 0.5rem;
+}
+.evl-hero-inner {
+  background: linear-gradient(135deg, var(--evl-accent-ink), var(--lcat-accent));
+  color: #fff;
+  border-radius: var(--evl-radius);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  box-shadow: var(--evl-shadow);
+}
+.evl-hero h1 { margin: 0 0 0.4rem; color: #fff; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.evl-hero p { margin: 0.3rem 0 0; max-width: 46rem; font-size: 1.05rem; }
+.evl-hero a { color: #fff; text-decoration: underline; }
+
+/* "Featured" shelf of covers below the hero. */
+.evl-shelf { max-width: var(--lcat-maxw); margin: 1.5rem auto 0; padding: 0 clamp(1rem, 4vw, 2rem); }
+.evl-shelf h2 { margin: 0 0 0.75rem; font-size: 1.2rem; color: var(--evl-accent-ink); }
+.evl-shelf-row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 1rem;
+}
+.evl-shelf-item {
+  background: var(--evl-surface);
+  border: 1px solid var(--lcat-border);
+  border-radius: var(--evl-radius);
+  padding: 0.85rem;
+  box-shadow: var(--evl-shadow);
+}
+.evl-shelf-item a { text-decoration: none; color: var(--lcat-fg); }
+.evl-shelf-item a:hover .evl-shelf-title { text-decoration: underline; }
+.evl-shelf-title { display: block; margin-top: 0.5rem; font-weight: 600; font-size: 0.95rem; }
+.evl-shelf-author { display: block; color: var(--lcat-muted); font-size: 0.85rem; }
+
+/* Content pages (About): readable measure, module page.html untouched. */
+.evl-page { max-width: 44rem; }
+.evl-page h1 { color: var(--evl-accent-ink); }
+.evl-page h2 { color: var(--evl-accent-ink); margin-top: 1.75rem; }
+.evl-page :is(p, li) { line-height: 1.7; }
+.evl-page pre {
+  background: var(--evl-surface-alt);
+  border: 1px solid var(--lcat-border);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+}
+
+/* Persistent demo-disclosure footer (tasks/002 §4), on every page via baseof. */
+.evl-footer {
+  border-top: 1px solid var(--lcat-border);
+  background: var(--evl-surface-alt);
+  color: var(--lcat-muted);
+  padding: 1.5rem clamp(1rem, 4vw, 2rem);
+  font-size: 0.9rem;
+}
+.evl-footer-inner {
+  max-width: var(--lcat-maxw);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.evl-footer a { color: var(--lcat-accent); }
+.evl-footer-note strong { color: var(--lcat-fg); }
+.evl-footer nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* A demo ribbon so no visitor mistakes this for a real collection. */
+.evl-demo-banner {
+  background: var(--evl-gold);
+  color: #fff;
+  text-align: center;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+}
+.evl-demo-banner a { color: #fff; text-decoration: underline; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .lcat-card-title a, .evl-shelf-item a { transition: color 0.12s ease; }
+}

@@ -1,0 +1,10 @@
+{{- /* Slim, honest disclosure ribbon shown on every page (tasks/002 §4). The fuller
+       note lives in the footer; this keeps the "demo, not a real collection" fact
+       above the fold. Suppressed if the site sets params.demo = false. */ -}}
+{{- /* aside (implicit complementary landmark) + aria-label so this site-wide notice
+       is contained by a landmark -- axe "region" rule; a bare div is orphaned. */ -}}
+{{- if site.Params.demo | default true -}}
+<aside class="evl-demo-banner" aria-label="{{ i18n "demoBannerLabel" }}">
+  {{ i18n "demoBanner" }} <a href="{{ "/about/" | relURL }}">{{ i18n "demoBannerLink" }}</a>
+</aside>
+{{- end -}}
