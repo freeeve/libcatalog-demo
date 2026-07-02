@@ -21,7 +21,11 @@
     "dystopia": "https://id.loc.gov/authorities/subjects/sh85040350",
     "dystopian": "https://id.loc.gov/authorities/subjects/sh85040350",
     "adventure": "https://id.loc.gov/authorities/subjects/sh85001072",
-    "short stories": "https://id.loc.gov/authorities/subjects/sh85121813"
+    "short stories": "https://id.loc.gov/authorities/subjects/sh85121813",
+    "lgbtq": "https://homosaurus.org/v3/homoit0000827",
+    "lgbtq+": "https://homosaurus.org/v3/homoit0000827",
+    "lgbtqia+": "https://homosaurus.org/v3/homoit0000827",
+    "queer": "https://homosaurus.org/v3/homoit0000827"
   },
 
   "authorities": {
@@ -93,8 +97,8 @@
     "https://id.loc.gov/authorities/subjects/sh85047741": {
       "labels": { "en": "Feminism", "es": "Feminismo" }
     },
-    "https://homosaurus.org/v3/homoit0000282": {
-      "labels": { "en": "Gender identity", "es": "Identidad de género" }
+    "https://homosaurus.org/v3/homoit0000827": {
+      "labels": { "en": "LGBTQ+ books", "es": "Libros LGBTQ+" }
     }
   }
 }

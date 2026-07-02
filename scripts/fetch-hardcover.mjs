@@ -30,11 +30,11 @@ const ENDPOINT = "https://api.hardcover.app/v1/graphql";
 const READ_STATUS_ID = 3; // Hardcover status_id: 1=Want to Read, 2=Currently Reading, 3=Read.
 
 const args = parseArgs(process.argv.slice(2));
-const token = normalizeToken(process.env.HARDCOVER_TOKEN);
+const token = normalizeToken(process.env.HARDCOVER_API_TOKEN || process.env.HARDCOVER_TOKEN);
 if (!token) {
   console.error(
-    "HARDCOVER_TOKEN is not set. Get a token from Hardcover -> account settings -> API\n" +
-      "and export it (do not commit it):  export HARDCOVER_TOKEN='...'"
+    "HARDCOVER_API_TOKEN is not set. Get a token from Hardcover -> account settings -> API\n" +
+      "and export it (do not commit it):  export HARDCOVER_API_TOKEN='...'"
   );
   process.exit(2);
 }
@@ -95,23 +95,30 @@ function lastFirst(name) {
   return `${last}, ${parts.join(" ")}`;
 }
 
-/** Map a Hardcover reading_format_id / format string to a libcatalog format token. */
+/** Map a Hardcover reading_format_id (1 physical, 2 audiobook, 4 ebook) to a format
+ *  token, falling back to the free-text edition_format string. */
 function formatOf(edition) {
   const byId = { 1: "physical", 2: "audiobook", 4: "ebook" };
-  if (edition?.reading_format_id != null && byId[edition.reading_format_id]) return byId[edition.reading_format_id];
-  const f = (edition?.reading_format || edition?.format || "").toLowerCase();
-  if (f.includes("audio")) return "audiobook";
-  if (f.includes("e-book") || f.includes("ebook") || f.includes("kindle")) return "ebook";
+  if (byId[edition?.reading_format_id]) return byId[edition.reading_format_id];
+  const f = (edition?.edition_format || edition?.physical_format || "").toLowerCase();
+  if (f.includes("audio") || f.includes("audible")) return "audiobook";
+  if (f.includes("ebook") || f.includes("e-book") || f.includes("kindle")) return "ebook";
   if (f) return "physical";
   return undefined;
 }
 
-/** Collect a book's genre strings from Hardcover's cached_tags JSON (Genre category). */
+/** Genre strings from Hardcover's cached_tags.Genre ({tag,count}[]), most-voted first,
+ *  capped so a Work's tag list stays legible. */
 function genresOf(book) {
-  const ct = book?.cached_tags;
-  const tags = typeof ct === "string" ? safeJson(ct) : ct;
-  const genre = tags?.Genre || tags?.genre || [];
-  return [...new Set(genre.map((g) => (typeof g === "string" ? g : g?.tag)).filter(Boolean))];
+  const ct = typeof book?.cached_tags === "string" ? safeJson(book.cached_tags) : book?.cached_tags;
+  const genre = (ct && (ct.Genre || ct.genre)) || [];
+  return genre
+    .map((g) => (typeof g === "string" ? { tag: g, count: 0 } : g))
+    .filter((g) => g && g.tag)
+    .sort((a, b) => (b.count || 0) - (a.count || 0))
+    .map((g) => g.tag)
+    .filter((t, i, a) => a.indexOf(t) === i)
+    .slice(0, 8);
 }
 
 function safeJson(s) {
@@ -136,18 +143,34 @@ function workId(book) {
 function toWork(ub) {
   const book = ub.book || {};
   const editions = (book.editions || []).filter(Boolean);
-  const instances = editions.map((e, i) => {
+
+  // Collapse many editions to one representative Instance per format (preferring one
+  // with a valid ISBN), so the catalog clusters by format instead of listing dozens.
+  const byFormat = new Map();
+  for (const e of editions) {
+    const format = formatOf(e);
+    if (!format) continue;
     const isbns = [e.isbn_13, e.isbn_10].filter(Boolean);
-    return { id: `i${book.id}e${e.id ?? i}`, format: formatOf(e), ...(isbns.length ? { isbns } : {}) };
-  });
-  const contributors = (book.contributions || [])
-    .map((c) => {
-      const name = c?.author?.name;
-      if (!name) return null;
-      return { name: lastFirst(name), role: (c.contribution || "author").toLowerCase() };
-    })
-    .filter(Boolean);
-  const formats = [...new Set(instances.map((i) => i.format).filter(Boolean))];
+    const prev = byFormat.get(format);
+    if (!prev || (isbns.length && !prev.isbns.length)) byFormat.set(format, { format, isbns });
+  }
+  const instances = [...byFormat.values()].map((x) => ({
+    id: `i${book.id}${x.format}`,
+    format: x.format,
+    ...(x.isbns.length ? { isbns: x.isbns } : {}),
+  }));
+
+  const contributors = [];
+  const seenC = new Set();
+  for (const c of book.contributions || []) {
+    const name = c?.author?.name;
+    if (!name) continue;
+    const role = (c.contribution || "author").toLowerCase();
+    const key = `${name}|${role}`;
+    if (seenC.has(key)) continue;
+    seenC.add(key);
+    contributors.push({ name: lastFirst(name), role });
+  }
 
   const work = {
     id: workId(book),
@@ -156,30 +179,29 @@ function toWork(ub) {
     contributors: contributors.length ? contributors : [{ name: "Unknown" }],
     tags: genresOf(book),
     languages: ["eng"], // Hardcover rarely exposes language; default to eng (tasks/001 §2).
-    formats,
-    instances: instances.length ? instances : [{ id: `i${book.id}`, format: undefined }],
+    formats: [...byFormat.keys()],
+    instances: instances.length ? instances : [{ id: `i${book.id}` }],
   };
   if (book.description) work.description = book.description;
   const cover = book.image?.url || editions.find((e) => e.image?.url)?.image?.url;
   if (cover) work.cover = cover;
   if (ub.rating != null) work.rating = ub.rating;
-  const dateRead = (ub.user_book_reads || []).map((r) => r?.finished_at).filter(Boolean).sort().pop();
-  if (dateRead) work.dateRead = dateRead;
+  if (ub.last_read_date || ub.first_read_date) work.dateRead = ub.last_read_date || ub.first_read_date;
   return work;
 }
 
 const READ_SHELF_QUERY = `
-query ReadShelf($limit:Int!, $offset:Int!) {
-  me { id }
+query ReadShelf($userId:Int!, $limit:Int!, $offset:Int!) {
   user_books(
-    where: { status_id: { _eq: ${READ_STATUS_ID} } }
+    where: { user_id: { _eq: $userId }, status_id: { _eq: ${READ_STATUS_ID} } }
     order_by: { id: asc }
     limit: $limit
     offset: $offset
   ) {
     id
     rating
-    user_book_reads { finished_at }
+    last_read_date
+    first_read_date
     book {
       id
       slug
@@ -194,19 +216,30 @@ query ReadShelf($limit:Int!, $offset:Int!) {
         isbn_13
         isbn_10
         reading_format_id
-        reading_format
+        edition_format
+        physical_format
         image { url }
       }
     }
   }
 }`;
 
+/** Resolve the authenticated user's id (the `me` query returns a single-element list). */
+async function currentUserId() {
+  const data = await gql(`query { me { id username } }`);
+  const me = Array.isArray(data.me) ? data.me[0] : data.me;
+  if (!me?.id) throw new Error("could not resolve authenticated user from `me`");
+  process.stderr.write(`authenticated as ${me.username || me.id}\n`);
+  return me.id;
+}
+
 /** Page through the whole read shelf and return mapped Works. */
 async function fetchAllWorks() {
+  const userId = await currentUserId();
   const works = [];
   const seen = new Set();
   for (let offset = 0; ; offset += args.limit) {
-    const data = await gql(READ_SHELF_QUERY, { limit: args.limit, offset });
+    const data = await gql(READ_SHELF_QUERY, { userId, limit: args.limit, offset });
     const rows = data.user_books || [];
     for (const ub of rows) {
       if (!ub.book?.title) continue;

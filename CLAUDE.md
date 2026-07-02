@@ -9,10 +9,10 @@ site that imports the module and provides projected data under `assets/`.
 - `hugo.toml` -- imports the module, declares taxonomies, enables Pagefind search.
 - `go.mod` -- `replace`s the module to `../libcatalog/hugo` for local dev; CI pins a
   published version.
-- `assets/catalog.json` / `assets/facets.json` -- projected data (schema version 5).
-  Currently placeholder public-domain classics; the Hardcover pipeline (`tasks/001`)
-  replaces them. Keep `facets.json` consistent with `catalog.json` (regenerate, do not
-  hand-edit counts once the pipeline lands).
+- `assets/catalog.json` / `assets/facets.json` -- projected data (schema version 5),
+  generated from Eve's Hardcover *Read* shelf by the pipeline in `scripts/`
+  (`npm run data:refresh`; see `scripts/README.md`). Never hand-edit `facets.json`
+  counts -- regenerate with `npm run data:facets`.
 
 ## Build
 

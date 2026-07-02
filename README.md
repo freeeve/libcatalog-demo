@@ -6,8 +6,8 @@ accessible multilingual-capable theme, and Pagefind full-text search -- all stat
 backend. Deployed at **https://libcatalog.evefreeman.com**.
 
 This is a **demo of the framework, not a real library collection.** The catalog is
-currently seeded with a small set of public-domain classics as placeholder data; it will
-be replaced by books sourced from Hardcover (see `tasks/001`).
+Eve's real *Read* shelf, sourced from Hardcover through a reproducible pipeline (see
+`tasks/001` and `scripts/README.md`).
 
 ## How it works
 
@@ -39,12 +39,12 @@ module version instead.
 (`scripts/`, documented in `scripts/README.md`):
 
 ```
-export HARDCOVER_TOKEN='...'   # Hardcover -> account settings -> API; never committed
+export HARDCOVER_API_TOKEN='...'   # Hardcover -> account settings -> API; never committed
 npm run data:refresh           # fetch read shelf -> map controlled subjects -> regen facets
 ```
 
-Until a token is supplied the catalog ships placeholder public-domain classics; the
-subject-mapping + facet stages (`npm run data:build`) already run over that data.
+`data:fetch` needs `HARDCOVER_API_TOKEN`; `data:build` (subject mapping + facet regen)
+runs over whatever `catalog.json` is present and is safe to re-run.
 
 ## Follow-up work
 

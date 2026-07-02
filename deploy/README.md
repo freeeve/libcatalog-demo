@@ -45,7 +45,7 @@ URLs, and a branded 404. CI deploys via GitHub OIDC -- no long-lived AWS keys.
    | Variable | `CLOUDFRONT_DISTRIBUTION_ID`  | `distribution_id` output       |
    | Variable | `HUGO_VERSION`                | e.g. `0.148.2`                 |
    | Variable | `HUGO_MODULE_VERSION`         | e.g. `v0.1.0`                  |
-   | Secret   | `HARDCOVER_TOKEN` (optional)  | enables the scheduled refresh  |
+   | Secret   | `HARDCOVER_API_TOKEN` (optional)  | enables the scheduled refresh  |
 
 ## Deploying
 

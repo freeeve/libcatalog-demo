@@ -19,7 +19,7 @@ assets/facets.json       count-desc-then-alpha facet counts for every dimension
 One-shot refresh (fetch + subjects + facets):
 
 ```
-export HARDCOVER_TOKEN='...'      # Hardcover -> account settings -> API. Never commit it.
+export HARDCOVER_API_TOKEN='...'      # Hardcover -> account settings -> API. Never commit it.
 npm run data:refresh
 ```
 
@@ -33,9 +33,9 @@ Or run the stages individually: `npm run data:fetch`, then `npm run data:build`
   Work: title/subtitle, contributors (normalized to `Last, First`), genre `tags[]`,
   `formats[]`/`instances[]` from editions (ISBN-13/10), plus `cover`, `rating`, and
   `dateRead` for display. Controlled `subjects[]` are left to the next stage.
-  - The token is read from `HARDCOVER_TOKEN` and never written to disk.
+  - The token is read from `HARDCOVER_API_TOKEN` and never written to disk.
   - Hardcover's schema evolves; confirm field shape with
-    `HARDCOVER_TOKEN=... node scripts/fetch-hardcover.mjs --introspect user_books`
+    `HARDCOVER_API_TOKEN=... node scripts/fetch-hardcover.mjs --introspect user_books`
     and adjust the query if a field has moved. The mapper uses optional chaining, so a
     missing field is omitted rather than fatal.
 - **`map-subjects.mjs`** -- promotes mappable genre tags into controlled `subjects[]`

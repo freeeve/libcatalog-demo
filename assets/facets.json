@@ -3,7 +3,7 @@
   "languages": [
     {
       "value": "eng",
-      "count": 6
+      "count": 102
     }
   ],
   "subjects": [
@@ -13,15 +13,26 @@
         "en": "Fiction",
         "es": "Ficción"
       },
-      "count": 5
+      "count": 67
     },
     {
-      "id": "https://id.loc.gov/authorities/subjects/sh85062084",
+      "id": "https://id.loc.gov/authorities/subjects/sh85047114",
       "labels": {
-        "en": "Horror tales",
-        "es": "Cuentos de terror"
+        "en": "Fantasy fiction",
+        "es": "Literatura fantástica"
       },
-      "count": 2,
+      "count": 66,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ]
+    },
+    {
+      "id": "https://id.loc.gov/authorities/subjects/sh85001072",
+      "labels": {
+        "en": "Adventure stories",
+        "es": "Novela de aventuras"
+      },
+      "count": 54,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ]
@@ -32,42 +43,40 @@
         "en": "Science fiction",
         "es": "Ciencia ficción"
       },
-      "count": 2,
+      "count": 45,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ]
     },
     {
-      "id": "https://id.loc.gov/authorities/subjects/sh85044914",
+      "id": "https://id.loc.gov/authorities/subjects/sh85149267",
       "labels": {
-        "en": "Essays",
-        "es": "Ensayos"
+        "en": "Young adult fiction",
+        "es": "Ficción para adultos jóvenes"
       },
-      "count": 1
+      "count": 20,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ]
     },
     {
-      "id": "https://id.loc.gov/authorities/subjects/sh85047741",
+      "id": "https://id.loc.gov/authorities/subjects/sh85040350",
       "labels": {
-        "en": "Feminism",
-        "es": "Feminismo"
+        "en": "Dystopias",
+        "es": "Distopías"
       },
-      "count": 1
+      "count": 17,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh85118629"
+      ]
     },
     {
-      "id": "https://homosaurus.org/v3/homoit0000282",
+      "id": "https://homosaurus.org/v3/homoit0000827",
       "labels": {
-        "en": "Gender identity",
-        "es": "Identidad de género"
+        "en": "LGBTQ+ books",
+        "es": "Libros LGBTQ+"
       },
-      "count": 1
-    },
-    {
-      "id": "https://id.loc.gov/authorities/subjects/sh85086994",
-      "labels": {
-        "en": "Monsters",
-        "es": "Monstruos"
-      },
-      "count": 1
+      "count": 9
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -75,90 +84,641 @@
         "en": "Romance fiction",
         "es": "Novela romántica"
       },
+      "count": 7,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ]
+    },
+    {
+      "id": "https://id.loc.gov/authorities/subjects/sh85037260",
+      "labels": {
+        "en": "Detective and mystery stories",
+        "es": "Novela policíaca"
+      },
+      "count": 6,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ]
+    },
+    {
+      "id": "https://id.loc.gov/authorities/subjects/sh85061165",
+      "labels": {
+        "en": "Historical fiction",
+        "es": "Novela histórica"
+      },
+      "count": 6,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ]
+    },
+    {
+      "id": "https://id.loc.gov/authorities/subjects/sh98004883",
+      "labels": {
+        "en": "Suspense fiction",
+        "es": "Novela de suspenso"
+      },
+      "count": 3,
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ]
+    },
+    {
+      "id": "https://id.loc.gov/authorities/subjects/sh85062084",
+      "labels": {
+        "en": "Horror tales",
+        "es": "Cuentos de terror"
+      },
       "count": 1,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ]
     },
     {
-      "id": "https://id.loc.gov/authorities/subjects/sh85123921",
+      "id": "https://id.loc.gov/authorities/subjects/sh2026001184",
       "labels": {
-        "en": "Social classes",
-        "es": "Clases sociales"
-      },
-      "count": 1
-    },
-    {
-      "id": "https://id.loc.gov/authorities/subjects/sh85141948",
-      "labels": {
-        "en": "Vampires",
-        "es": "Vampiros"
+        "en": "Poetry",
+        "es": "Poesía"
       },
       "count": 1
     }
   ],
   "tags": [
     {
+      "value": "Science Fiction & Fantasy",
+      "count": 40
+    },
+    {
       "value": "Classics",
+      "count": 23
+    },
+    {
+      "value": "Space",
+      "count": 15
+    },
+    {
+      "value": "Epic",
+      "count": 14
+    },
+    {
+      "value": "Audiobook",
+      "count": 10
+    },
+    {
+      "value": "litrpg",
+      "count": 10
+    },
+    {
+      "value": "Action & Adventure",
+      "count": 8
+    },
+    {
+      "value": "fantasy; litrpg",
+      "count": 7
+    },
+    {
+      "value": "War",
+      "count": 7
+    },
+    {
+      "value": "cyberpunk",
+      "count": 6
+    },
+    {
+      "value": "Aliens",
       "count": 5
     },
     {
-      "value": "Nonfiction",
+      "value": "fantasy; gamelit",
+      "count": 5
+    },
+    {
+      "value": "General",
+      "count": 5
+    },
+    {
+      "value": "Hard Science Fiction",
+      "count": 5
+    },
+    {
+      "value": "Dragons & Mythical Creatures",
+      "count": 4
+    },
+    {
+      "value": "Friendship",
+      "count": 4
+    },
+    {
+      "value": "History",
+      "count": 4
+    },
+    {
+      "value": "Literary",
+      "count": 3
+    },
+    {
+      "value": "Literary Fiction",
+      "count": 3
+    },
+    {
+      "value": "Literature & Fiction",
+      "count": 3
+    },
+    {
+      "value": "Classique",
+      "count": 2
+    },
+    {
+      "value": "Contemporary",
+      "count": 2
+    },
+    {
+      "value": "Cozy",
+      "count": 2
+    },
+    {
+      "value": "First contact",
+      "count": 2
+    },
+    {
+      "value": "Free will and determinism",
+      "count": 2
+    },
+    {
+      "value": "Historical",
+      "count": 2
+    },
+    {
+      "value": "Humor",
+      "count": 2
+    },
+    {
+      "value": "Humorous",
+      "count": 2
+    },
+    {
+      "value": "Juvenile Fiction",
+      "count": 2
+    },
+    {
+      "value": "Literature",
+      "count": 2
+    },
+    {
+      "value": "LitRPG (Literary Role-Playing Game)",
+      "count": 2
+    },
+    {
+      "value": "Paranormal",
+      "count": 2
+    },
+    {
+      "value": "Progression Fantasy",
+      "count": 2
+    },
+    {
+      "value": "Thriller & Suspense",
+      "count": 2
+    },
+    {
+      "value": ".",
+      "count": 1
+    },
+    {
+      "value": "Abandoned children",
+      "count": 1
+    },
+    {
+      "value": "Blue Ridge Mountains",
+      "count": 1
+    },
+    {
+      "value": "Brothers",
+      "count": 1
+    },
+    {
+      "value": "Business & Economics",
+      "count": 1
+    },
+    {
+      "value": "Cattle drives",
+      "count": 1
+    },
+    {
+      "value": "Children",
+      "count": 1
+    },
+    {
+      "value": "Comedy & Humor",
+      "count": 1
+    },
+    {
+      "value": "Comics",
+      "count": 1
+    },
+    {
+      "value": "Coming of Age",
+      "count": 1
+    },
+    {
+      "value": "Computers",
+      "count": 1
+    },
+    {
+      "value": "cozy fantasy",
+      "count": 1
+    },
+    {
+      "value": "Cultural Heritage",
+      "count": 1
+    },
+    {
+      "value": "Druids and druidism",
+      "count": 1
+    },
+    {
+      "value": "Economics",
+      "count": 1
+    },
+    {
+      "value": "End of the world",
+      "count": 1
+    },
+    {
+      "value": "English",
+      "count": 1
+    },
+    {
+      "value": "English fiction",
+      "count": 1
+    },
+    {
+      "value": "Fairy Tales; Folk Tales; Legends & Mythology",
+      "count": 1
+    },
+    {
+      "value": "Family",
+      "count": 1
+    },
+    {
+      "value": "Fantasy fiction",
+      "count": 1
+    },
+    {
+      "value": "Féminisme",
+      "count": 1
+    },
+    {
+      "value": "Fiction / Fantasy / Epic",
+      "count": 1
+    },
+    {
+      "value": "Fiction / Fantasy / Historical",
+      "count": 1
+    },
+    {
+      "value": "Fiction / General",
+      "count": 1
+    },
+    {
+      "value": "Gaslamp",
+      "count": 1
+    },
+    {
+      "value": "Gay",
+      "count": 1
+    },
+    {
+      "value": "Gold mines and mining",
+      "count": 1
+    },
+    {
+      "value": "Gothic",
+      "count": 1
+    },
+    {
+      "value": "Graphic Novels",
+      "count": 1
+    },
+    {
+      "value": "Heartfelt",
+      "count": 1
+    },
+    {
+      "value": "Horror tales",
+      "count": 1
+    },
+    {
+      "value": "Humour",
+      "count": 1
+    },
+    {
+      "value": "Island",
+      "count": 1
+    },
+    {
+      "value": "Jeune Adulte",
+      "count": 1
+    },
+    {
+      "value": "kids-mg",
+      "count": 1
+    },
+    {
+      "value": "Large type books",
+      "count": 1
+    },
+    {
+      "value": "Life on other planets",
+      "count": 1
+    },
+    {
+      "value": "Life on other planets > Fiction",
+      "count": 1
+    },
+    {
+      "value": "Literature & Fiction|Science Fiction & Fantasy",
+      "count": 1
+    },
+    {
+      "value": "Mars (Planet)",
+      "count": 1
+    },
+    {
+      "value": "Media Tie-In",
+      "count": 1
+    },
+    {
+      "value": "Mental health",
+      "count": 1
+    },
+    {
+      "value": "Middle Grade",
+      "count": 1
+    },
+    {
+      "value": "Mythology",
+      "count": 1
+    },
+    {
+      "value": "Novella",
+      "count": 1
+    },
+    {
+      "value": "Parables",
+      "count": 1
+    },
+    {
+      "value": "Philosophical Fiction",
+      "count": 1
+    },
+    {
+      "value": "Psychology",
+      "count": 1
+    },
+    {
+      "value": "Robots",
+      "count": 1
+    },
+    {
+      "value": "Sackett family (Fictitious characters)",
+      "count": 1
+    },
+    {
+      "value": "Satire",
+      "count": 1
+    },
+    {
+      "value": "Science",
+      "count": 1
+    },
+    {
+      "value": "SpaceOpera",
+      "count": 1
+    },
+    {
+      "value": "supporting my local library",
+      "count": 1
+    },
+    {
+      "value": "Time Travel",
+      "count": 1
+    },
+    {
+      "value": "Western",
+      "count": 1
+    },
+    {
+      "value": "Women",
+      "count": 1
+    },
+    {
+      "value": "Young Adult Fiction",
       "count": 1
     }
   ],
   "formats": [
     {
+      "value": "physical",
+      "count": 93
+    },
+    {
       "value": "ebook",
-      "count": 6
+      "count": 89
     },
     {
       "value": "audiobook",
-      "count": 3
+      "count": 80
     }
   ],
   "contributors": [
     {
-      "value": "Austen, Jane",
+      "value": "L'Amour, Louis",
+      "count": 14
+    },
+    {
+      "value": "Zogarth",
+      "count": 13
+    },
+    {
+      "value": "Wells, Martha",
+      "count": 9
+    },
+    {
+      "value": "Actus",
+      "count": 6
+    },
+    {
+      "value": "pirateaba",
+      "count": 6
+    },
+    {
+      "value": "CasualFarmer",
+      "count": 5
+    },
+    {
+      "value": "Rhaegar",
+      "count": 5
+    },
+    {
+      "value": "Burns, Tex",
+      "count": 4
+    },
+    {
+      "value": "Jernigan, Scott",
+      "count": 3
+    },
+    {
+      "value": "Kuang, R.F.",
+      "count": 3
+    },
+    {
+      "value": "Meyers, Mike",
+      "count": 3
+    },
+    {
+      "value": "Weir, Andy",
+      "count": 3
+    },
+    {
+      "value": "Zevin, Gabrielle",
+      "count": 3
+    },
+    {
+      "value": "Baldree, Travis",
+      "count": 2
+    },
+    {
+      "value": "Klune, TJ",
+      "count": 2
+    },
+    {
+      "value": "Vonnegut, Kurt",
+      "count": 2
+    },
+    {
+      "value": "Adams, Douglas",
       "count": 1
     },
     {
-      "value": "Le Guin, Ursula K.",
+      "value": "Bear, Greg",
       "count": 1
     },
     {
-      "value": "Shelley, Mary Wollstonecraft",
+      "value": "Brite, Poppy Z.",
       "count": 1
     },
     {
-      "value": "Stoker, Bram",
+      "value": "Brooks, Terry",
       "count": 1
     },
     {
-      "value": "Wells, H. G.",
+      "value": "Cañas, Isabel",
       "count": 1
     },
     {
-      "value": "Woolf, Virginia",
+      "value": "Card, Orson Scott",
+      "count": 1
+    },
+    {
+      "value": "Curless, John",
+      "count": 1
+    },
+    {
+      "value": "Dinniman, Matt",
+      "count": 1
+    },
+    {
+      "value": "Gibson, William",
+      "count": 1
+    },
+    {
+      "value": "Goodkind, Terry",
+      "count": 1
+    },
+    {
+      "value": "Guin, Ursula K. Le",
+      "count": 1
+    },
+    {
+      "value": "Haig, Matt",
+      "count": 1
+    },
+    {
+      "value": "Hamilton, Josh",
+      "count": 1
+    },
+    {
+      "value": "Hosseini, Khaled",
+      "count": 1
+    },
+    {
+      "value": "Keyes, Daniel",
+      "count": 1
+    },
+    {
+      "value": "Liu, Cixin",
+      "count": 1
+    },
+    {
+      "value": "Liu, Ken",
+      "count": 1
+    },
+    {
+      "value": "Martin, George R.R.",
+      "count": 1
+    },
+    {
+      "value": "Martin, Laura Mae",
+      "count": 1
+    },
+    {
+      "value": "Miller, Madeline",
+      "count": 1
+    },
+    {
+      "value": "Older, Malka",
+      "count": 1
+    },
+    {
+      "value": "Penelope, Leslye",
+      "count": 1
+    },
+    {
+      "value": "Robinson, Kim Stanley",
+      "count": 1
+    },
+    {
+      "value": "Rundell, Katherine",
+      "count": 1
+    },
+    {
+      "value": "See, Lisa",
+      "count": 1
+    },
+    {
+      "value": "Staehle, Will",
+      "count": 1
+    },
+    {
+      "value": "Strathairn, David",
+      "count": 1
+    },
+    {
+      "value": "Tolkien, J.R.R.",
+      "count": 1
+    },
+    {
+      "value": "Verghese, Abraham",
+      "count": 1
+    },
+    {
+      "value": "Vinge, Vernor",
+      "count": 1
+    },
+    {
+      "value": "Yrsillar",
       "count": 1
     }
   ],
-  "classifications": [
-    {
-      "value": "FIC003000",
-      "count": 2
-    },
-    {
-      "value": "FIC028000",
-      "count": 2
-    },
-    {
-      "value": "FIC004000",
-      "count": 1
-    },
-    {
-      "value": "LCO010000",
-      "count": 1
-    }
-  ]
+  "classifications": []
 }

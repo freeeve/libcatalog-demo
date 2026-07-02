@@ -40,10 +40,12 @@ artifact you can inspect:
 
 ## The data
 
-The catalog is currently seeded with public-domain classics as placeholder data. The
-real content will be sourced from [Hardcover](https://hardcover.app) — the books Eve has
-actually read — through a reproducible fetch-and-project pipeline. Until then, treat the
-titles here as scaffolding for the framework, not a reading list.
+The catalog is Eve's real reading history, sourced from
+[Hardcover](https://hardcover.app) — the books on her *Read* shelf — through a
+reproducible fetch-and-project pipeline (`npm run data:refresh`). Genre tags come across
+as free text; the build then promotes the mappable ones into controlled subjects (LCSH
+and Homosaurus) while leaving quirkier tags as-is, so both dimensions appear side by
+side. Covers, ratings, and read dates come from Hardcover too.
 
 ## Source
 

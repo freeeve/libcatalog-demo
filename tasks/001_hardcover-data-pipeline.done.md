@@ -1,25 +1,26 @@
 # 001 -- Hardcover data pipeline (read shelf -> catalog.json)
 
-## Status (blocked on token)
+## Status (done)
 
-Pipeline **built and reproducible**; the real fetch is **blocked on a Hardcover API
-token**, which is not available in this environment (unauthenticated introspection
-returns "Unable to verify token"). Done:
+Pipeline built, run, and committed: `assets/catalog.json` is Eve's real Hardcover
+*Read* shelf (**102 works**, 101 covers, 97 ratings, 98 read-dates), `facets.json`
+regenerated and consistent, and the site builds/paginates over the full set.
 
-- `scripts/fetch-hardcover.mjs` -- read-shelf fetch + map to schema v5 (title,
-  subtitle, contributors as `Last, First`, genre tags, editions -> instances/formats,
-  cover/rating/dateRead). Token from `HARDCOVER_TOKEN`, never committed. `--introspect`
-  mode to confirm the live schema.
-- `scripts/gen-facets.mjs` -- regenerate `facets.json` (count-desc-then-alpha), runnable
-  now; verified idempotent.
-- `npm run data:refresh` (fetch -> subjects -> facets); documented in `scripts/README.md`
-  and the root README.
+- `scripts/fetch-hardcover.mjs` -- reads the authenticated Read shelf via Hardcover
+  GraphQL (schema confirmed by introspection: `me` -> user_id, `user_books.status_id=3`,
+  `last_read_date`, `cached_tags.Genre`, editions collapsed to one Instance per format).
+  Maps to schema v5 + `cover`/`rating`/`dateRead`/`description`. Token from
+  `HARDCOVER_API_TOKEN` (falls back to `HARDCOVER_TOKEN`); prepends `Bearer`; never
+  committed.
+- `scripts/gen-facets.mjs` / `map-subjects.mjs` -- regenerate + promote subjects;
+  idempotent. `npm run data:refresh` runs the whole chain.
+- The module content adapter forwards only a fixed field set, so cover/rating/dateRead
+  are surfaced via a documented adapter shadow (`content/works/_content.gotmpl`); upstream
+  passthrough requested in `../libcatalog/tasks/022` so the shadow can be dropped.
 
-To finish: `export HARDCOVER_TOKEN=...` then `npm run data:refresh`; confirm field
-shapes with `--introspect` first (Hardcover's schema drifts), then commit the real
-`catalog.json`/`facets.json`. The `lcat project` MARC/BIBFRAME path (§3, preferred) is
-documented as the convergent alternative but likewise needs live records to exercise.
-The catalog currently ships placeholder classics.
+Not exercised: the `lcat project` MARC/BIBFRAME path (§3, preferred) -- the direct
+Hardcover->catalog map is the documented fallback and emits the same schema-v5 shape, so
+the two converge. Re-run `npm run data:refresh` when Eve reads more.
 
 ## Context
 

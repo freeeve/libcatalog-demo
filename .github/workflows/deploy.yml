@@ -4,7 +4,7 @@ name: deploy
 # Auth is via GitHub OIDC (no long-lived AWS keys). Configure in the repo:
 #   Variables: AWS_REGION, AWS_DEPLOY_ROLE_ARN, S3_BUCKET, CLOUDFRONT_DISTRIBUTION_ID,
 #              HUGO_VERSION, HUGO_MODULE_VERSION
-#   Secrets (optional): HARDCOVER_TOKEN  (enables the read-shelf refresh)
+#   Secrets (optional): HARDCOVER_API_TOKEN  (enables the read-shelf refresh)
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: ${{ vars.HUGO_VERSION || '0.148.2' }}
-      HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+      HARDCOVER_API_TOKEN: ${{ secrets.HARDCOVER_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -48,7 +48,7 @@ jobs:
         run: scripts/pin-module.sh "${{ vars.HUGO_MODULE_VERSION }}"
 
       - name: Refresh data from Hardcover (if a token is configured)
-        if: ${{ env.HARDCOVER_TOKEN != '' }}
+        if: ${{ env.HARDCOVER_API_TOKEN != '' }}
         run: npm run data:refresh
 
       - name: Build + Pagefind index
