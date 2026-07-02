@@ -7,8 +7,10 @@
     "build": "hugo --minify --destination public",
     "search:index": "npx -y pagefind --site public",
     "build:full": "npm run build && npm run search:index",
+    "data:fetch": "node scripts/fetch-hardcover.mjs",
     "data:subjects": "node scripts/map-subjects.mjs",
     "data:facets": "node scripts/gen-facets.mjs",
-    "data:build": "npm run data:subjects && npm run data:facets"
+    "data:build": "npm run data:subjects && npm run data:facets",
+    "data:refresh": "npm run data:fetch && npm run data:build"
   }
 }

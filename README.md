@@ -33,6 +33,19 @@ Then serve `public/` (locally: `hugo server`). Local builds resolve the module f
 sibling `../libcatalog` checkout via the `replace` in `go.mod`; CI pins a published
 module version instead.
 
+## Data
+
+`assets/catalog.json` + `assets/facets.json` are produced by a reproducible pipeline
+(`scripts/`, documented in `scripts/README.md`):
+
+```
+export HARDCOVER_TOKEN='...'   # Hardcover -> account settings -> API; never committed
+npm run data:refresh           # fetch read shelf -> map controlled subjects -> regen facets
+```
+
+Until a token is supplied the catalog ships placeholder public-domain classics; the
+subject-mapping + facet stages (`npm run data:build`) already run over that data.
+
 ## Follow-up work
 
 See `tasks/` -- the Hardcover data pipeline, generic-library branding, controlled-subject
