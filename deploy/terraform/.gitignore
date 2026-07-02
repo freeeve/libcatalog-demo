@@ -14,3 +14,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 # .terraform.lock.hcl IS committed (pins provider versions/hashes).
+
+# Saved plan files (may contain resolved variable values)
+tfplan
+*.tfplan
