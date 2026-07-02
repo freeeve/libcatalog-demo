@@ -98,7 +98,8 @@
       "labels": { "en": "Feminism", "es": "Feminismo" }
     },
     "https://homosaurus.org/v3/homoit0000827": {
-      "labels": { "en": "LGBTQ+ books", "es": "Libros LGBTQ+" }
+      "_note": "Authority prefLabel is 'LGBTQ+ books'; the '+' is dropped from the display label because the module urlizes it into a term URL and a literal '+' in a path is read as a space by S3/CloudFront (404). Restore the '+' once the module slugifies URL-safely (../libcatalog/tasks/023).",
+      "labels": { "en": "LGBTQ books", "es": "Libros LGBTQ" }
     }
   }
 }

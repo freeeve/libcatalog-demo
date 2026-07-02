@@ -8,6 +8,12 @@
   (hero, shelf, cover, footer) the module does not ship. All colors are checked to
   meet WCAG 2.1 AA contrast against their background; verify in a real browser as a
   separate pass (tasks/005) since jsdom can't compute contrast.
+
+  NOTE on ownership: much of what's here is generic polish + fixes for module-theme
+  defects (narrow sidebar-less pages, link/pagination a11y, desktop widths) that should
+  live in the module's default theme, not this adopter. Those are filed upstream
+  (../libcatalog/tasks/024 defects, 025 richer default theme). Once the module absorbs
+  them, this file should shrink to brand identity only -- palette, logo, hero/about copy.
 */
 
 :root {
@@ -57,6 +63,13 @@ h1, h2, .evl-brand-name, .lcat-card-title {
 /* Layout: a touch more breathing room than the module default. */
 .lcat-layout { padding: 1.75rem clamp(1rem, 4vw, 2rem); gap: 2.5rem; }
 
+/* Sidebar-less pages (Work detail, About, 404) render <main> as the ONLY grid child;
+   with grid-template-columns: 16rem 1fr that lone child lands in the 16rem sidebar
+   track, squeezing all copy into a ~256px column -- the "narrow/mobile" look. Make a
+   lone main span the full width. (Root cause is in the module theme; see
+   ../libcatalog/tasks/024.) */
+.lcat-layout > .lcat-main:only-child { grid-column: 1 / -1; }
+
 /* Facet sidebar: lift onto a card so it reads as a panel. */
 .lcat-sidebar {
   background: var(--evl-surface);
@@ -105,12 +118,17 @@ h1, h2, .evl-brand-name, .lcat-card-title {
 /* Cover art (tasks/002 §5): rendered by the work-card / page overrides when the
    catalog carries a cover URL; falls back to a lettered placeholder otherwise. */
 .evl-card { display: flex; gap: 1rem; align-items: flex-start; }
+/* Cover box: set BOTH width and height in CSS. The <img> carries width/height HTML
+   attributes (for CLS); without an explicit CSS height the HTML height hint wins and
+   the box becomes the wrong shape, so object-fit crops to a thin slice. Explicit
+   dimensions keep every cover a true 2:3 portrait. */
 .evl-cover {
+  display: block;
   flex: none;
-  width: 56px;
-  aspect-ratio: 2 / 3;
-  border-radius: 4px;
+  width: 3.5rem;
+  height: 5.25rem; /* 2:3 of 3.5rem */
   object-fit: cover;
+  border-radius: 4px;
   background: var(--evl-surface-alt);
   border: 1px solid var(--lcat-border);
   box-shadow: var(--evl-shadow);
@@ -122,7 +140,9 @@ h1, h2, .evl-brand-name, .lcat-card-title {
   font-weight: 700;
   font-size: 1.1rem;
 }
-.evl-cover--detail { width: 132px; float: right; margin: 0 0 1rem 1.25rem; }
+.evl-cover--detail { width: 8.5rem; height: 12.75rem; float: right; margin: 0 0 1rem 1.25rem; }
+/* Featured shelf: prominent cover that fills the card width (still a true 2:3). */
+.evl-shelf-item .evl-cover { width: 100%; height: auto; aspect-ratio: 2 / 3; }
 .evl-rating { color: var(--evl-gold); font-size: 0.85rem; letter-spacing: 0.1em; }
 .evl-rating span { color: var(--lcat-muted); letter-spacing: normal; }
 
