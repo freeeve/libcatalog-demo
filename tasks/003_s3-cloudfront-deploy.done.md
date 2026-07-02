@@ -1,10 +1,16 @@
 # 003 -- Deploy to S3 + CloudFront (libcatalog.evefreeman.com)
 
-## Status (infra-as-code complete; apply blocked on an AWS account)
+## Status (DONE -- deployed and live)
 
-Everything needed to stand up and deploy is written and validated; the actual
-`terraform apply` / live deploy is **blocked on AWS credentials + DNS control**, not
-available here. Done:
+`terraform apply` succeeded and the site is serving:
+**https://libcatalog.evefreeman.com/** -> HTTP 200 over TLS, HTTP->HTTPS 301, deep
+links resolve via the rewrite function, missing paths return the branded 404, Pagefind
+assets load. Deployed with `deploy/deploy.sh` (staged cache headers + `/*` invalidation).
+Account/zone/distribution identifiers live only in gitignored Terraform state, never
+committed. CI (GitHub OIDC) still needs the module git-tagged before it can build; manual
+`deploy.sh` works today.
+
+Infra + tooling (all written, validated, and now applied):
 
 - `deploy/terraform/` -- private S3 origin (OAC, no public website hosting), CloudFront
   (compression, managed caching + security-headers policies, `index.html` root, a

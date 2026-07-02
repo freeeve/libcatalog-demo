@@ -54,6 +54,7 @@ variable "tags" {
   type        = map(string)
   default = {
     Project = "libcatalog-demo"
-    Site    = "Eve's Library"
+    # AWS tag values disallow apostrophes ([\p{L}\p{Z}\p{N}_.:/=+\-@]*), so no "Eve's".
+    Site = "Eves Library"
   }
 }
