@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "languages": [
     {
       "value": "eng",
@@ -21,10 +21,10 @@
         "en": "Fantasy fiction",
         "es": "Literatura fantástica"
       },
-      "count": 66,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 66
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -32,10 +32,10 @@
         "en": "Adventure stories",
         "es": "Novela de aventuras"
       },
-      "count": 54,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 54
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -43,10 +43,10 @@
         "en": "Science fiction",
         "es": "Ciencia ficción"
       },
-      "count": 45,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 45
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -54,10 +54,10 @@
         "en": "Young adult fiction",
         "es": "Ficción para adultos jóvenes"
       },
-      "count": 20,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 21
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -65,10 +65,10 @@
         "en": "Dystopias",
         "es": "Distopías"
       },
-      "count": 17,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh85118629"
-      ]
+      ],
+      "count": 17
     },
     {
       "id": "https://homosaurus.org/v3/homoit0000827",
@@ -84,10 +84,10 @@
         "en": "Romance fiction",
         "es": "Novela romántica"
       },
-      "count": 7,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 7
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -95,10 +95,10 @@
         "en": "Detective and mystery stories",
         "es": "Novela policíaca"
       },
-      "count": 6,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 6
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -106,10 +106,10 @@
         "en": "Historical fiction",
         "es": "Novela histórica"
       },
-      "count": 6,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 6
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh98004883",
@@ -117,21 +117,10 @@
         "en": "Suspense fiction",
         "es": "Novela de suspenso"
       },
-      "count": 3,
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
-    },
-    {
-      "id": "https://id.loc.gov/authorities/subjects/sh85062084",
-      "labels": {
-        "en": "Horror tales",
-        "es": "Cuentos de terror"
-      },
-      "count": 1,
-      "broader": [
-        "https://id.loc.gov/authorities/subjects/sh2026001126"
-      ]
+      ],
+      "count": 3
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh2026001184",
@@ -140,11 +129,22 @@
         "es": "Poesía"
       },
       "count": 1
+    },
+    {
+      "id": "https://id.loc.gov/authorities/subjects/sh85062084",
+      "labels": {
+        "en": "Horror tales",
+        "es": "Cuentos de terror"
+      },
+      "broader": [
+        "https://id.loc.gov/authorities/subjects/sh2026001126"
+      ],
+      "count": 1
     }
   ],
   "tags": [
     {
-      "value": "Science Fiction & Fantasy",
+      "value": "Science Fiction \u0026 Fantasy",
       "count": 40
     },
     {
@@ -168,15 +168,15 @@
       "count": 10
     },
     {
-      "value": "Action & Adventure",
+      "value": "Action \u0026 Adventure",
       "count": 8
     },
     {
-      "value": "fantasy; litrpg",
+      "value": "War",
       "count": 7
     },
     {
-      "value": "War",
+      "value": "fantasy; litrpg",
       "count": 7
     },
     {
@@ -188,10 +188,6 @@
       "count": 5
     },
     {
-      "value": "fantasy; gamelit",
-      "count": 5
-    },
-    {
       "value": "General",
       "count": 5
     },
@@ -200,7 +196,11 @@
       "count": 5
     },
     {
-      "value": "Dragons & Mythical Creatures",
+      "value": "fantasy; gamelit",
+      "count": 5
+    },
+    {
+      "value": "Dragons \u0026 Mythical Creatures",
       "count": 4
     },
     {
@@ -220,7 +220,7 @@
       "count": 3
     },
     {
-      "value": "Literature & Fiction",
+      "value": "Literature \u0026 Fiction",
       "count": 3
     },
     {
@@ -260,11 +260,11 @@
       "count": 2
     },
     {
-      "value": "Literature",
+      "value": "LitRPG (Literary Role-Playing Game)",
       "count": 2
     },
     {
-      "value": "LitRPG (Literary Role-Playing Game)",
+      "value": "Literature",
       "count": 2
     },
     {
@@ -276,7 +276,7 @@
       "count": 2
     },
     {
-      "value": "Thriller & Suspense",
+      "value": "Thriller \u0026 Suspense",
       "count": 2
     },
     {
@@ -296,7 +296,7 @@
       "count": 1
     },
     {
-      "value": "Business & Economics",
+      "value": "Business \u0026 Economics",
       "count": 1
     },
     {
@@ -308,7 +308,7 @@
       "count": 1
     },
     {
-      "value": "Comedy & Humor",
+      "value": "Comedy \u0026 Humor",
       "count": 1
     },
     {
@@ -321,10 +321,6 @@
     },
     {
       "value": "Computers",
-      "count": 1
-    },
-    {
-      "value": "cozy fantasy",
       "count": 1
     },
     {
@@ -352,7 +348,7 @@
       "count": 1
     },
     {
-      "value": "Fairy Tales; Folk Tales; Legends & Mythology",
+      "value": "Fairy Tales; Folk Tales; Legends \u0026 Mythology",
       "count": 1
     },
     {
@@ -361,10 +357,6 @@
     },
     {
       "value": "Fantasy fiction",
-      "count": 1
-    },
-    {
-      "value": "Féminisme",
       "count": 1
     },
     {
@@ -377,6 +369,10 @@
     },
     {
       "value": "Fiction / General",
+      "count": 1
+    },
+    {
+      "value": "Féminisme",
       "count": 1
     },
     {
@@ -420,10 +416,6 @@
       "count": 1
     },
     {
-      "value": "kids-mg",
-      "count": 1
-    },
-    {
       "value": "Large type books",
       "count": 1
     },
@@ -432,11 +424,11 @@
       "count": 1
     },
     {
-      "value": "Life on other planets > Fiction",
+      "value": "Life on other planets \u003e Fiction",
       "count": 1
     },
     {
-      "value": "Literature & Fiction|Science Fiction & Fantasy",
+      "value": "Literature \u0026 Fiction|Science Fiction \u0026 Fantasy",
       "count": 1
     },
     {
@@ -496,10 +488,6 @@
       "count": 1
     },
     {
-      "value": "supporting my local library",
-      "count": 1
-    },
-    {
       "value": "Time Travel",
       "count": 1
     },
@@ -514,11 +502,23 @@
     {
       "value": "Young Adult Fiction",
       "count": 1
+    },
+    {
+      "value": "cozy fantasy",
+      "count": 1
+    },
+    {
+      "value": "kids-mg",
+      "count": 1
+    },
+    {
+      "value": "supporting my local library",
+      "count": 1
     }
   ],
   "formats": [
     {
-      "value": "physical",
+      "value": "print",
       "count": 93
     },
     {
@@ -612,11 +612,11 @@
       "count": 1
     },
     {
-      "value": "Cañas, Isabel",
+      "value": "Card, Orson Scott",
       "count": 1
     },
     {
-      "value": "Card, Orson Scott",
+      "value": "Cañas, Isabel",
       "count": 1
     },
     {
@@ -719,6 +719,5 @@
       "value": "Yrsillar",
       "count": 1
     }
-  ],
-  "classifications": []
+  ]
 }

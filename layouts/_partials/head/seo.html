@@ -84,7 +84,7 @@
   {{- if or (not .role) (eq .role "author") }}{{ $authors = $authors | append (dict "@type" "Person" "name" .name) }}{{ end -}}
 {{- end -}}
 {{- $editions := slice -}}
-{{- $fmtMap := dict "ebook" "https://schema.org/EBook" "audiobook" "https://schema.org/AudiobookFormat" "physical" "https://schema.org/Hardcover" -}}
+{{- $fmtMap := dict "ebook" "https://schema.org/EBook" "audiobook" "https://schema.org/AudiobookFormat" "print" "https://schema.org/Hardcover" -}}
 {{- range .Params.instances -}}
   {{- $ed := dict "@type" "Book" -}}
   {{- with .format }}{{ $ed = merge $ed (dict "bookFormat" (index $fmtMap . | default "https://schema.org/Book")) }}{{ end -}}

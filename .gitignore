@@ -6,3 +6,7 @@ resources/_gen/
 # Node tooling (pagefind is pulled on demand via npx)
 node_modules/
 package-lock.json
+
+# Intermediate BIBFRAME grains + catalog.nq from `lcat hardcover` (tasks/008); the
+# projected catalog.json/facets.json under assets/ are the committed outputs.
+build/

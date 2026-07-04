@@ -1,60 +1,71 @@
 # Data pipeline
 
 How the projected data under `assets/` (`catalog.json` + `facets.json`, schema
-version 5) is produced. All commands run from the repo root.
+version 6) is produced. All commands run from the repo root.
 
 ```
 Hardcover "read" shelf
-        │  scripts/fetch-hardcover.mjs   (npm run data:fetch)
+        │  lcat hardcover      (ingest: Read shelf -> BIBFRAME grains + catalog.nq)
         ▼
-assets/catalog.json      works with tags[] (genres), instances[], extra{cover,rating,dateRead}
-        │  scripts/map-subjects.mjs      (npm run data:subjects)
+build/catalog.nq         one Work per book, one Instance per format; cover/rating/
+        │                dateRead/description carried on the feed graph as `extra`
+        │  lcat project       (project the graph at the module's current schema)
         ▼
-assets/catalog.json      + controlled subjects[] promoted from tags via data/subject-map.json
-        │  scripts/gen-facets.mjs        (npm run data:facets)
-        ▼
+assets/catalog.json      works with controlled subjects[], instances[], extra{...}
 assets/facets.json       count-desc-then-alpha facet counts for every dimension
 ```
 
-One-shot refresh (fetch + subjects + facets):
+Both steps are the real **libcatalog** pipeline (`../libcatalog/cmd/lcat`), not a
+hand-rolled transform. The schema version, controlled-subject mapping, facet
+counts, and the `held` holdings signal are all owned by the projector -- the next
+schema bump is a re-run of this pipeline, not a hand-edit. This replaces the old
+Node scripts (`fetch-hardcover.mjs`, `map-subjects.mjs`, `gen-facets.mjs`), retired
+in tasks/008 once libcatalog shipped a first-party Hardcover ingest source
+(framework tasks/026).
+
+One-shot refresh (ingest + project):
 
 ```
 export HARDCOVER_API_TOKEN='...'      # Hardcover -> account settings -> API. Never commit it.
-npm run data:refresh
+npm run data:refresh                  # = bash scripts/refresh-data.sh
 ```
 
-Or run the stages individually: `npm run data:fetch`, then `npm run data:build`
-(= `data:subjects` + `data:facets`). `data:build` is idempotent -- safe to re-run.
+Requires a sibling `../libcatalog` checkout (Go 1.25+) -- the same checkout the Hugo
+module `replace` in `go.mod` resolves against. `refresh-data.sh` runs `lcat hardcover`
+into `build/` (gitignored intermediate grains), then `lcat project` into `assets/`.
 
 ## Stages
 
-- **`fetch-hardcover.mjs`** -- reads the authenticated user's *Read* shelf from the
-  Hardcover GraphQL API (`status_id = 3`), paginating fully, and maps each book to a
-  Work: title/subtitle, contributors (normalized to `Last, First`), genre `tags[]`,
-  `formats[]`/`instances[]` from editions (ISBN-13/10). Adopter display fields (`cover`,
-  `rating`, `dateRead`, `description`) go under the reserved `extra` object, which the
-  module content adapter forwards verbatim into page params (tasks/022) -- so `covers = true`
-  renders them without shadowing the adapter. Controlled `subjects[]` are left to the next stage.
-  - The token is read from `HARDCOVER_API_TOKEN` and never written to disk.
-  - Hardcover's schema evolves; confirm field shape with
-    `HARDCOVER_API_TOKEN=... node scripts/fetch-hardcover.mjs --introspect user_books`
-    and adjust the query if a field has moved. The mapper uses optional chaining, so a
-    missing field is omitted rather than fatal.
-- **`map-subjects.mjs`** -- promotes mappable genre tags into controlled `subjects[]`
-  (LCSH / Homosaurus authority URIs with localized labels + `broader`) from the
-  data-driven table in `data/subject-map.json`, leaving unmapped tags in `tags[]`.
-  See `tasks/004`.
-- **`gen-facets.mjs`** -- regenerates `facets.json` from `catalog.json`. Never
-  hand-edit facet counts; run this instead.
+- **`lcat hardcover --out build/`** -- reads the authenticated user's *Read* shelf from
+  the Hardcover GraphQL API (`status_id = 3`), paginating fully, clusters a book's
+  editions into one Work with one Instance per format, maps genre tags to controlled
+  subjects (LCSH / Homosaurus, from `../libcatalog/ingest/hardcover/subject-map.json`),
+  and writes BIBFRAME grains + `catalog.nq` under `build/`. The token is read from
+  `HARDCOVER_API_TOKEN` and never written to disk. Adopter display fields
+  (`cover`, `rating`, `dateRead`, `description`) ride the feed graph into each Work's
+  reserved `extra` object, which the module content adapter forwards verbatim into page
+  params -- so `covers = true` renders them.
+- **`lcat project --catalog build/catalog.nq --provider hardcover --out build/projected`**
+  -- projects the graph to `catalog.json` + `facets.json` (+ an unused `redirects.json`)
+  at the module's current schema version. `refresh-data.sh` copies the two files the
+  module reads into `assets/`. Never hand-edit facet counts or the schema version --
+  re-run the projector.
 
-## Real-pipeline path (preferred, tasks/001 §3)
+### Offline replay
 
-Where an ISBN resolves to a real MARC/BIBFRAME record, that record should be run
-through `lcat project` (the libcatalog projector) instead of the direct Hardcover
-mapping, so the demo exercises the genuine BIBFRAME -> project path. `fetch-hardcover`
-emits the same schema-v5 shape `lcat project` produces, so the two paths converge on
-`catalog.json`; the direct map is the documented fallback for records with no
-retrievable bib record. Document which path each record took when this lands.
+`lcat hardcover --source <shelf.json>` replays a captured `user_books` JSON array with
+no token and no network; forward it through the npm script:
+`npm run data:refresh -- --source path/to/shelf.json`. To reproject an existing
+`build/catalog.nq` without re-fetching, run `lcat project` directly (see the header of
+`refresh-data.sh`).
+
+## The holdings signal (`held`)
+
+Schema v6 added `held` on each Work / Instance (physical items, or a live-availability
+feed that still lists the Work). This is a read-shelf demo with neither, so the projector
+honestly emits `held: false` for every Work (omitted from the JSON). The module renders
+unheld works unchanged -- there is no holdings badge -- so no visual indicator appears,
+by design. Availability stays off here (no `[params.availability]`).
 
 ## Refresh cadence
 
