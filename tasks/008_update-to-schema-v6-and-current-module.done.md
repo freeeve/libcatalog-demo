@@ -91,9 +91,15 @@ Took **option 1 (real `lcat` pipeline)** and the **honest `held`** reading:
   identity, dark-mode toggle, covers, subjects, and `print`/`ebook`/`audiobook` formats
   all render. Fixed the one stale data reference: the JSON-LD format map in
   `seo.html` (`physical` -> `print`, the projector's canonical BIBFRAME vocabulary).
-- **Deploy pin.** Still blocked on an external event: `github.com/freeeve/libcatalog/hugo`
-  is not git-tagged yet, so `scripts/pin-module.sh` has nothing to pin to (same blocker as
-  tasks/003). Bump the pin once a v6-containing version is published.
+- **Deploy pin.** Unblocked: `github.com/freeeve/libcatalog/hugo` is now tagged
+  `hugo/v0.1.0` (contains the v6 module) and pushed. Fixed `scripts/pin-module.sh`, which
+  was broken for this repo -- the demo imports the module only as a *Hugo* module (no Go
+  package imports it), so the old `go get` + `go mod tidy` failed on the placeholder
+  `v0.0.0` require and would have pruned the require entirely. It now does
+  `go mod edit -dropreplace -require=@<ver>` + `go mod download`. Verified end-to-end:
+  `pin-module.sh v0.1.0` -> `hugo --minify` builds clean against the proxy-fetched module.
+  Remaining step is external: set the CI repo variable `HUGO_MODULE_VERSION = v0.1.0`
+  (consumed at `.github/workflows/deploy.yml:48`) so the next deploy pins to it.
 
 ## Acceptance
 
