@@ -10,7 +10,7 @@
 #   Phase 2 (main.tf edit): repoint the Route 53 alias to CloudFront and delete the API
 #     Gateway resources + the old Lambda.
 module "demo" {
-  source     = "github.com/freeeve/libcatalog//backend/deploy/terraform/modules/readonly-demo?ref=v0.4.1"
+  source     = "github.com/freeeve/libcatalog//backend/deploy/terraform/modules/readonly-demo?ref=v0.4.2"
   name       = "eves-library"
   lambda_zip = var.lambda_zip
 

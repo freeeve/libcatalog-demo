@@ -7,14 +7,13 @@
 #
 #   deploy/lcatd/gen-lcsh.sh
 #
-# Requires a sibling ../libcatalog checkout and outbound internet (id.loc.gov).
+# Requires a sibling ../libcatalog checkout (>= v0.4.2) and outbound internet (id.loc.gov).
 #
 # Scheme note: this demo's catalog subjects are https://id.loc.gov/... URIs (from the
-# upstream ingest subject-map), but id.loc.gov's canonical identifier -- and so
-# vocab-subset's output -- is http://. The vocab index matches subject URIs exactly, so
-# the snapshot is realigned to https to match the catalog. (Upstream gotcha: vocab-subset
-# reports "0 terms" for an https catalog because its label-match compares against the
-# http canonical -- filed as libcatalog tasks/100.)
+# upstream ingest subject-map), while id.loc.gov's canonical identifier is http://. Since
+# v0.4.2 `lcat vocab-subset` re-schemes in-namespace URIs to the catalog's form, so the
+# snapshot is emitted https-keyed to match -- no post-processing needed (libcatalog
+# tasks/100).
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -30,8 +29,5 @@ fi
 
 echo "==> harvesting LCSH subjects from id.loc.gov (via lcat vocab-subset)"
 ( cd "$LCAT_DIR" && go run ./cmd/lcat vocab-subset --catalog "$CATALOG" --out "$OUT" --namespace "$NS" )
-
-echo "==> realigning subject URIs to https to match the catalog"
-perl -i -pe 's{<http://id\.loc\.gov/authorities/subjects/}{<https://id.loc.gov/authorities/subjects/}g' "$OUT"
 
 echo "done: $OUT ($(grep -c 'prefLabel' "$OUT") prefLabels, $(wc -l < "$OUT" | tr -d ' ') quads)"
