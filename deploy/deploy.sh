@@ -25,14 +25,20 @@ aws s3 cp "$BUILD_DIR/pagefind/" "s3://$BUCKET/pagefind/" --recursive \
   --exclude "*" --include "*.wasm" --content-type "application/wasm" \
   --cache-control "public,max-age=31536000,immutable" --metadata-directive REPLACE --no-progress || true
 
-echo "==> Static assets (css/js/img/icons -> 1 day)"
+echo "==> Static assets (img/icons -> 1 day)"
 aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
   --exclude "*.html" --exclude "pagefind/*" --exclude "sitemap.xml" --exclude "*.webmanifest" \
+  --exclude "*.css" --exclude "*.js" \
   --cache-control "public,max-age=86400" --no-progress
 
-echo "==> HTML + sitemap (short cache, must-revalidate)"
+# css/js ride the SHORT bucket: their URLs are not fingerprinted (lcat.css and friends
+# are linked plain by the module -- upstream tasks/123), so a long browser max-age
+# serves stale styles against fresh HTML after every module bump (bit us live when
+# hugo/v0.5.0 added .lcat-btn: cached lcat.css had no button styles).
+echo "==> HTML + sitemap + css/js (short cache, must-revalidate)"
 aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
   --exclude "*" --include "*.html" --include "sitemap.xml" \
+  --include "*.css" --include "*.js" --exclude "pagefind/*" \
   --cache-control "public,max-age=300,must-revalidate" --no-progress
 if [[ -f "$BUILD_DIR/site.webmanifest" ]]; then
   aws s3 cp "$BUILD_DIR/site.webmanifest" "s3://$BUCKET/site.webmanifest" \
