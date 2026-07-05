@@ -72,4 +72,5 @@ run by one person, for a dollar or two a month, edited in Markdown or a simple C
 the case this whole demo is making.
 
 Back to [all guides](/docs/), or see it live: the [catalog](/works/) and
-[events](/events/).
+[events](/events/). There's a back room too: [try the cataloging
+sandbox](/docs/cataloging-sandbox/).

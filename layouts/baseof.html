@@ -1,15 +1,16 @@
 {{- /*
   Eve's Library baseof -- a deliberate superset of the libcatalog module's
-  layouts/baseof.html (tasks/002). Hugo has no footer/head hook in the module base,
-  so an adopter that wants a persistent footer + site-wide <head> metadata must
-  shadow this one file. Everything from the module base is preserved verbatim; the
-  ONLY additions are marked "EVL+" below:
+  layouts/baseof.html (tasks/002). The module base now ships head-extra.html /
+  footer.html hooks and a hero block (upstream tasks/020) -- enough for stylesheet +
+  footer injection alone -- but this site also rebuilds the HEADER (demo banner, brand
+  colophon, primary nav), which has no hook, so the one-file shadow remains. Everything
+  from the module base is preserved verbatim; the ONLY additions are marked "EVL+":
     EVL+ theme stylesheet (loaded after lcat.css so it wins on cascade)
-    EVL+ head/seo.html partial (title, description, OG/Twitter, icons, JSON-LD)
-    EVL+ demo banner, brand colophon, and site footer partial
+    EVL+ head/seo.html partial (title, description, OG/Twitter, icons, JSON-LD;
+         replaces the module's bare <title> and its empty head-extra hook)
+    EVL+ demo banner, brand colophon, primary nav, and site footer partial
   Reconciling after a module bump = diff this file against the module's baseof and
-  re-apply the EVL+ lines. (Upstream ask to add footer/head blocks: see the task left
-  in ../libcatalog/tasks so adopters can stop shadowing this file.)
+  re-apply the EVL+ lines.
 */ -}}
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode site.Language.Lang "en" }}">

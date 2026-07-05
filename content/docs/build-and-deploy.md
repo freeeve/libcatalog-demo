@@ -20,16 +20,19 @@ git clone https://github.com/freeeve/libcatalog ../libcatalog
 
 ## 2. Build the catalog data
 
-The catalog is generated from a Hardcover "read" shelf. Put your API token in an env
-var (never commit it):
+The catalog is generated from a Hardcover "read" shelf by the real libcatalog pipeline
+(the `lcat` tool from the sibling checkout you cloned in step 1). Put your API token in
+an env var (never commit it):
 
 ```bash
 export HARDCOVER_API_TOKEN='...'   # Hardcover -> account settings -> API
-npm run data:refresh               # fetch shelf -> map controlled subjects -> regen facets
+npm run data:refresh               # lcat hardcover (ingest) -> lcat project (project)
 ```
 
-That writes `assets/catalog.json` and `assets/facets.json`. If you just want to rebuild
-facets/subjects over existing data, run `npm run data:build` (it's safe to re-run).
+That ingests the shelf into BIBFRAME records under `build/`, then projects them to
+`assets/catalog.json` and `assets/facets.json` -- the two files the Hugo module reads.
+It's safe to re-run any time; the projector owns the schema and the facet counts.
+More detail (offline replay, how subjects get mapped): `scripts/README.md` in the repo.
 
 ## 3. Build the site
 
@@ -72,5 +75,6 @@ a GitHub Actions workflow does the same automatically using short-lived credenti
 ## That's the whole loop
 
 Write Markdown → `hugo` → upload `public/`. The catalog refreshes with one command when
-you read more books. Next: [theme it](/docs/theming/) or read about
+you read more books. Next: [use your own data](/docs/use-your-own-data/),
+[theme it](/docs/theming/), or read about
 [what this costs to run](/docs/running-it/).
