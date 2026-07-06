@@ -43,11 +43,14 @@ mkdir -p "$STAGE/grains/data"
 cp -R "$GRAINS/data/works" "$STAGE/grains/data/works"
 [[ -d "$GRAINS/data/authorities" ]] && cp -R "$GRAINS/data/authorities" "$STAGE/grains/data/authorities" || true
 
-# LCSH authority snapshot (tasks/011) so the sandbox editor renders existing subjects'
-# real headings under scheme "lcsh" (LCATD_VOCAB_SCHEMES=lcsh). Regenerate with
-# gen-lcsh.sh when the catalog's subjects change.
+# Authority snapshots (tasks/011 + 020) so the sandbox renders existing subjects'
+# real headings: lcsh.nq is a corpus-sized subset (regen: gen-lcsh.sh when the
+# catalog's subjects change); homosaurus.nq is the FULL vocabulary (small enough to
+# ship whole -- the picker searches all of it locally; regen: gen-homosaurus.sh on
+# new Homosaurus releases). Schemes enabled via LCATD_VOCAB_SCHEMES in main.tf.
 mkdir -p "$STAGE/grains/data/authorities/vocab"
 cp "$HERE/lcsh.nq" "$STAGE/grains/data/authorities/vocab/lcsh.nq"
+cp "$HERE/homosaurus.nq" "$STAGE/grains/data/authorities/vocab/homosaurus.nq"
 
 echo "==> zipping"
 rm -f "$OUT/lcatd-demo.zip"

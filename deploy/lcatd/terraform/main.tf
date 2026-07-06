@@ -12,9 +12,10 @@ locals {
       # committed (dry-run doc), wiped on refresh -- nothing persists (tasks/011).
       LCATD_SANDBOX  = "1"
       LCATD_BLOB_DIR = "/var/task/grains"
-      # Bundled LCSH snapshot so existing subjects render real headings. Live LCSH
-      # subject search (id.loc.gov via /v1/vocabsuggest) works with no local load.
-      LCATD_VOCAB_SCHEMES     = "lcsh"
+      # Bundled snapshots so existing subjects render real headings: lcsh (corpus
+      # subset; live search proxies id.loc.gov via /v1/vocabsuggest) and homosaurus
+      # (FULL vocabulary -- the picker searches all ~3.9k terms locally, tasks/020).
+      LCATD_VOCAB_SCHEMES     = "lcsh,homosaurus"
       LCATD_LOCAL_AUTH        = "1"
       LCATD_BOOTSTRAP_ADMIN   = var.demo_admin
       LCATD_LOCAL_SIGNING_KEY = var.local_signing_key

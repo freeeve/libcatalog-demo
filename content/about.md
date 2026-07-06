@@ -49,7 +49,8 @@ side too, backed by the same 102 works:
 as `demo@example.org` / `readonlydemo`.
 
 It's a sandbox: **edit a record and watch your change render**, search all of LCSH in the
-subject picker (live from `id.loc.gov`), and see existing subjects with their real
+subject picker (live from `id.loc.gov`) and all of [Homosaurus](https://homosaurus.org)
+(the full vocabulary ships with the demo), and see existing subjects with their real
 headings — then refresh, and it's all back. **Nothing is ever saved.** It runs as a single
 scale-to-zero AWS Lambda behind CloudFront, so the first request after it has been idle may
 take a moment.

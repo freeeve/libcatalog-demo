@@ -25,6 +25,11 @@ puts everything back. Break nothing by trying everything.
   from the Library of Congress (`id.loc.gov`) -- the sandbox proxies the real authority
   service, so you're searching the actual Library of Congress Subject Headings, all of
   them. The subjects already on records resolve to their real headings the same way.
+- **Browse all of Homosaurus.** The sandbox also carries the complete
+  [Homosaurus](https://homosaurus.org) -- the international LGBTQ+ linked-data
+  vocabulary, nearly 4,000 terms -- bundled whole and searched locally. It shows two
+  vocabularies working side by side: one too big to ship (LCSH, searched live), one
+  small enough to carry entirely.
 - **Preview the MARC.** The editor has a dual view: the friendly form and the
   underlying MARC fields. Previewing shows how your edit lands in the record.
 - **Validate.** Run validation on a record and see what a cataloging workflow would
