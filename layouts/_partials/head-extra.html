@@ -2,7 +2,9 @@
        head does not own. SEO/OG/JSON-LD now come from the module's head-seo.html;
        this adds the site theme stylesheet (after lcat.css so it wins on cascade)
        and the icons/manifest (tasks/005). */ -}}
-{{ with resources.Get "lcat-theme.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{- /* Fingerprinted like the module's own assets (hugo/v0.6.0): the hashed URL
+       changes with content, so deploy.sh serves all css/js immutable. */ -}}
+{{ with resources.Get "lcat-theme.css" }}{{ with . | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">{{ end }}{{ end }}
 <link rel="icon" href="{{ "/favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="icon" href="{{ "/favicon.ico" | relURL }}" sizes="any">
 <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relURL }}">

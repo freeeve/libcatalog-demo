@@ -31,14 +31,18 @@ aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
   --exclude "*.css" --exclude "*.js" \
   --cache-control "public,max-age=86400" --no-progress
 
-# css/js ride the SHORT bucket: their URLs are not fingerprinted (lcat.css and friends
-# are linked plain by the module -- upstream tasks/123), so a long browser max-age
-# serves stale styles against fresh HTML after every module bump (bit us live when
-# hugo/v0.5.0 added .lcat-btn: cached lcat.css had no button styles).
-echo "==> HTML + sitemap + css/js (short cache, must-revalidate)"
+# css/js are content-hashed since hugo/v0.6.0 (module assets upstream tasks/123, the
+# site stylesheet via head-extra.html) -- upgrades change the URL, so immutable is
+# safe. The v0.5.0 stale-CSS incident (tasks/018) cannot recur: old HTML references
+# old hashes, new HTML references new ones.
+echo "==> css/js (content-hashed -> immutable)"
+aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
+  --exclude "*" --include "*.css" --include "*.js" --exclude "pagefind/*" \
+  --cache-control "public,max-age=31536000,immutable" --no-progress
+
+echo "==> HTML + sitemap (short cache, must-revalidate)"
 aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
   --exclude "*" --include "*.html" --include "sitemap.xml" \
-  --include "*.css" --include "*.js" --exclude "pagefind/*" \
   --cache-control "public,max-age=300,must-revalidate" --no-progress
 if [[ -f "$BUILD_DIR/site.webmanifest" ]]; then
   aws s3 cp "$BUILD_DIR/site.webmanifest" "s3://$BUCKET/site.webmanifest" \
