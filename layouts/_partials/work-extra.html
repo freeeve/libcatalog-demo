@@ -1,0 +1,11 @@
+{{- /* Module work-detail hook (libcatalog tasks/125): Eve's reading-log line from
+       the Hardcover passthrough extras (flat page params via the adapter,
+       tasks/022/026). Works without a rating/dateRead render nothing. Sits inside
+       the article's data-pagefind-body, so the text is search-indexed. */ -}}
+{{- if or .Params.rating .Params.dateRead }}
+<p class="evl-reading-log">
+  {{- with .Params.rating }}<span class="evl-rating" aria-label="{{ i18n "ratedOutOfFive" (dict "Rating" .) }}">★&nbsp;{{ . }}</span>{{ end -}}
+  {{- if and .Params.rating .Params.dateRead }}<span aria-hidden="true"> · </span>{{ end -}}
+  {{- with .Params.dateRead }}<span class="evl-read-date">{{ i18n "readOn" }} {{ (time.AsTime .).Format "January 2, 2006" }}</span>{{ end -}}
+</p>
+{{- end }}

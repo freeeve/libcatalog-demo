@@ -56,6 +56,9 @@
 .evl-shelf-item .evl-cover { width: 100%; height: auto; aspect-ratio: 2 / 3; }
 .evl-rating { color: var(--evl-gold); font-size: 0.85rem; letter-spacing: 0.1em; }
 .evl-rating span { color: var(--lcat-muted); letter-spacing: normal; }
+/* Reading-log line on Work pages (module work-extra hook, tasks/021). */
+.evl-reading-log { margin: 0.75rem 0 0; color: var(--lcat-muted); font-size: 0.95rem; }
+.evl-reading-log .evl-rating { font-size: inherit; }
 
 /* Homepage hero. The inner panel is an accent gradient; text on it uses --lcat-on-accent
    so it is legible whether the accent is dark (light mode) or light (dark mode). */

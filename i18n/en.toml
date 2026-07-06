@@ -55,3 +55,9 @@ other = "That page isn't on the shelf. It may have moved, or the link may be mis
 
 [notFoundHome]
 other = "Return home"
+
+[readOn]
+other = "Read"
+
+[ratedOutOfFive]
+other = "Rated {{ .Rating }} out of 5"

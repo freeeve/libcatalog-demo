@@ -22,7 +22,7 @@ This repo is a plain Hugo site that imports the libcatalog Hugo module the way a
 adopter would (`hugo.toml` -> `[module].imports`) and mounts the projected data under
 `assets/`:
 
-- `assets/catalog.json` -- the Works (schema version 6).
+- `assets/catalog.json` -- the Works (schema version 7).
 - `assets/facets.json` -- precomputed facet value/counts.
 
 The module supplies the catalog templates and assets; this repo provides config, data,

@@ -3,7 +3,7 @@
 # "Read" shelf via the real libcatalog pipeline (tasks/008):
 #
 #   Hardcover Read shelf --(lcat hardcover)--> BIBFRAME grains + catalog.nq  (build/)
-#                        --(lcat project)-----> catalog.json + facets.json   (schema v6)
+#                        --(lcat project)-----> catalog.json + facets.json   (schema v7)
 #
 # This replaces the old hand-rolled Node pipeline (scripts/*.mjs). Controlled subjects,
 # facet counts, the cover/rating/dateRead extras, and the schema version are all owned by
@@ -40,8 +40,8 @@ mkdir -p "$BUILD"
 echo "==> lcat hardcover: ingesting Read shelf -> $BUILD"
 lcat hardcover --out "$BUILD" "$@"
 
-echo "==> lcat project: -> assets/ (schema v6)"
+echo "==> lcat project: -> assets/ (schema v7)"
 lcat project --catalog "$BUILD/catalog.nq" --provider hardcover --out "$BUILD/projected"
 cp "$BUILD/projected/catalog.json" "$BUILD/projected/facets.json" "$ROOT/assets/"
 
-echo "done: assets/catalog.json + assets/facets.json regenerated (schema v6)."
+echo "done: assets/catalog.json + assets/facets.json regenerated (schema v7)."
