@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 9,
   "works": [
     {
       "id": "w0iqiaup570qf2",
@@ -18,7 +18,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -28,7 +29,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -38,7 +40,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -48,7 +51,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -131,7 +135,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -141,7 +146,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -151,7 +157,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -161,7 +168,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -236,7 +244,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -246,7 +255,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -256,7 +266,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -266,7 +277,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -351,7 +363,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -361,7 +374,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -371,7 +385,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -381,7 +396,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -455,7 +471,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -465,7 +482,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -475,7 +493,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -558,14 +577,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -575,7 +596,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -585,7 +607,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -663,7 +686,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -673,7 +697,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -683,7 +708,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -762,7 +788,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -772,7 +799,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -857,7 +885,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -867,7 +896,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -932,7 +962,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -942,7 +973,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -952,7 +984,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1027,7 +1060,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -1037,7 +1071,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -1047,7 +1082,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -1057,7 +1093,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -1067,7 +1104,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1149,7 +1187,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -1159,7 +1198,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -1169,7 +1209,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1257,7 +1298,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -1314,7 +1356,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -1324,7 +1367,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85062084",
@@ -1334,7 +1378,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -1344,7 +1389,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1429,7 +1475,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -1439,7 +1486,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -1449,7 +1497,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1527,7 +1576,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -1537,7 +1587,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1613,14 +1664,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -1630,7 +1683,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -1640,7 +1694,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1718,7 +1773,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -1728,7 +1784,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1811,7 +1868,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -1821,7 +1879,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1882,7 +1941,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -1892,7 +1952,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -1964,7 +2025,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -1974,7 +2036,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -1984,7 +2047,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2050,7 +2114,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -2060,7 +2125,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2070,7 +2136,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2141,7 +2208,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2151,7 +2219,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2227,7 +2296,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2286,7 +2356,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -2296,7 +2367,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -2306,7 +2378,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2316,7 +2389,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -2326,7 +2400,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2407,7 +2482,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -2417,7 +2493,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2427,7 +2504,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -2437,7 +2515,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -2447,7 +2526,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2529,14 +2609,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2546,7 +2628,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -2556,7 +2639,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2641,7 +2725,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -2651,7 +2736,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2661,7 +2747,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -2671,7 +2758,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2745,14 +2833,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -2762,7 +2852,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2772,7 +2863,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -2782,7 +2874,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -2792,7 +2885,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2876,7 +2970,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -2886,7 +2981,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -2945,7 +3041,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -2955,7 +3052,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -2965,7 +3063,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh98004883",
@@ -2975,7 +3074,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3058,7 +3158,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3068,7 +3169,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3189,7 +3291,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3199,7 +3302,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3281,14 +3385,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -3298,7 +3404,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3308,7 +3415,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3318,7 +3426,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -3328,7 +3437,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -3418,7 +3528,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3428,7 +3539,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3438,7 +3550,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3527,7 +3640,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3537,7 +3651,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3547,7 +3662,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3631,7 +3747,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -3641,7 +3758,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -3651,7 +3769,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3661,7 +3780,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3671,7 +3791,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3756,7 +3877,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3766,7 +3888,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3827,7 +3950,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -3837,7 +3961,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3847,7 +3972,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3857,7 +3983,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -3926,7 +4053,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -3936,7 +4064,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -3946,7 +4075,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4008,7 +4138,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4018,7 +4149,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4080,7 +4212,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4090,7 +4223,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -4100,7 +4234,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4188,7 +4323,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -4198,7 +4334,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4249,7 +4386,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -4259,7 +4397,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -4269,7 +4408,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4279,7 +4419,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4289,7 +4430,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh98004883",
@@ -4299,7 +4441,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4380,7 +4523,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4390,7 +4534,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4400,7 +4545,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4487,7 +4633,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4497,7 +4644,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4507,7 +4655,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4580,7 +4729,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4590,7 +4740,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4600,7 +4751,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4685,7 +4837,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -4695,7 +4848,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4705,7 +4859,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4715,7 +4870,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4798,7 +4954,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -4808,7 +4965,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4818,7 +4976,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4828,7 +4987,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -4838,7 +4998,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -4920,7 +5081,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -4930,7 +5092,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -4940,7 +5103,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -4950,7 +5114,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5036,7 +5201,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -5046,7 +5212,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5119,7 +5286,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -5129,7 +5297,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -5139,7 +5308,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -5149,7 +5319,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -5159,7 +5330,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5245,7 +5417,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -5302,7 +5475,8 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -5312,7 +5486,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -5322,7 +5497,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -5332,7 +5508,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -5342,7 +5519,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5426,7 +5604,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5479,7 +5658,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5529,7 +5709,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -5539,7 +5720,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -5549,7 +5731,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -5559,7 +5742,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5718,7 +5902,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -5728,7 +5913,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -5738,7 +5924,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -5748,7 +5935,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5835,7 +6023,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -5845,7 +6034,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5921,7 +6111,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -5979,7 +6170,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -5989,7 +6181,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -5999,7 +6192,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -6009,7 +6203,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6096,7 +6291,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -6106,7 +6302,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6180,7 +6377,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -6190,7 +6388,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -6200,7 +6399,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6277,7 +6477,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -6287,7 +6488,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -6364,7 +6566,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -6374,7 +6577,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -6384,7 +6588,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -6394,7 +6599,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6473,7 +6679,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -6483,7 +6690,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85037260",
@@ -6493,7 +6701,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -6503,7 +6712,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -6513,7 +6723,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6598,7 +6809,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -6608,7 +6820,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -6655,7 +6868,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -6665,7 +6879,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -6675,7 +6890,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -6685,7 +6901,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6771,7 +6988,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -6781,7 +6999,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -6791,7 +7010,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6853,7 +7073,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -6863,7 +7084,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6932,7 +7154,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -6989,7 +7212,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -6999,7 +7223,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -7009,7 +7234,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -7019,7 +7245,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -7029,7 +7256,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7096,7 +7324,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -7106,7 +7335,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7158,7 +7388,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -7168,7 +7399,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -7178,7 +7410,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7263,7 +7496,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -7273,7 +7507,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -7283,7 +7518,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -7293,7 +7529,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7375,14 +7612,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -7392,7 +7631,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -7402,7 +7642,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -7412,7 +7653,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "languages": [
@@ -7485,14 +7727,16 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001184",
           "labels": {
             "en": "Poetry",
             "es": "Poesía"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -7502,7 +7746,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -7512,7 +7757,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7596,7 +7842,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -7606,7 +7853,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -7616,7 +7864,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -7626,7 +7875,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -7636,7 +7886,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7713,7 +7964,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -7723,7 +7975,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7799,7 +8052,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -7809,7 +8063,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7874,7 +8129,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -7884,7 +8140,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -7894,7 +8151,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -7904,7 +8162,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -7914,7 +8173,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -7988,14 +8248,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -8005,7 +8267,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8082,14 +8345,16 @@
           "labels": {
             "en": "LGBTQ books",
             "es": "Libros LGBTQ"
-          }
+          },
+          "scheme": "homosaurus"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -8099,7 +8364,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -8109,7 +8375,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85078595",
@@ -8119,7 +8386,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8246,7 +8514,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8315,7 +8584,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -8325,7 +8595,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85061165",
@@ -8335,7 +8606,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -8345,7 +8617,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8431,7 +8704,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -8441,7 +8715,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh85118629"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -8451,7 +8726,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -8461,7 +8737,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8539,7 +8816,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8596,7 +8874,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -8606,7 +8885,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8672,7 +8952,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -8682,7 +8963,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -8692,7 +8974,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -8702,7 +8985,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8840,7 +9124,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -8850,7 +9135,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -8860,7 +9146,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -8870,7 +9157,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -8956,7 +9244,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -8966,7 +9255,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -9020,7 +9310,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -9177,7 +9468,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -9187,7 +9479,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -9197,7 +9490,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -9207,7 +9501,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh98004883",
@@ -9217,7 +9512,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -9302,7 +9598,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -9312,7 +9609,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -9322,7 +9620,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [
@@ -9403,7 +9702,8 @@
           "labels": {
             "en": "Fiction",
             "es": "Ficción"
-          }
+          },
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85001072",
@@ -9413,7 +9713,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -9423,7 +9724,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         },
         {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -9433,7 +9735,8 @@
           },
           "broader": [
             "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ]
+          ],
+          "scheme": "lcsh"
         }
       ],
       "tags": [

@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 9,
   "languages": [
     {
       "value": "eng",
@@ -13,6 +13,7 @@
         "en": "Fiction",
         "es": "Ficción"
       },
+      "scheme": "lcsh",
       "count": 67
     },
     {
@@ -24,6 +25,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 66
     },
     {
@@ -35,6 +37,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 54
     },
     {
@@ -46,6 +49,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 45
     },
     {
@@ -57,6 +61,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 21
     },
     {
@@ -68,6 +73,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh85118629"
       ],
+      "scheme": "lcsh",
       "count": 17
     },
     {
@@ -76,6 +82,7 @@
         "en": "LGBTQ books",
         "es": "Libros LGBTQ"
       },
+      "scheme": "homosaurus",
       "count": 9
     },
     {
@@ -87,6 +94,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 7
     },
     {
@@ -98,6 +106,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 6
     },
     {
@@ -109,6 +118,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 6
     },
     {
@@ -120,6 +130,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 3
     },
     {
@@ -128,6 +139,7 @@
         "en": "Poetry",
         "es": "Poesía"
       },
+      "scheme": "lcsh",
       "count": 1
     },
     {
@@ -139,6 +151,7 @@
       "broader": [
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
+      "scheme": "lcsh",
       "count": 1
     }
   ],

@@ -9,7 +9,7 @@ site that imports the module and provides projected data under `assets/`.
 - `hugo.toml` -- imports the module, declares taxonomies, enables Pagefind search.
 - `go.mod` -- `replace`s the module to `../libcatalog/hugo` for local dev; CI pins a
   published version.
-- `assets/catalog.json` / `assets/facets.json` -- projected data (schema version 6),
+- `assets/catalog.json` / `assets/facets.json` -- projected data (schema version 9),
   generated from Eve's Hardcover *Read* shelf by the real `lcat` pipeline
   (`npm run data:refresh` -> `lcat hardcover` then `lcat project`; see
   `scripts/README.md`). Never hand-edit the schema version or `facets.json` counts --

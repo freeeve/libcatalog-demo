@@ -65,6 +65,16 @@ buildFuture = true
   # tasks/022), falling back to a lettered placeholder. Our Hardcover pipeline supplies it.
   covers = true
 
+  # Subject vocabulary facet groups (module tasks/141, ours tasks/024): the v9 projection
+  # carries a scheme on every subject, so the sidebar renders one group per vocabulary and
+  # term URLs are scheme-prefixed (/subjects/homosaurus-.../). Order here is group order.
+  [[params.subjectSchemes]]
+    scheme = "lcsh"
+    name = "LCSH"
+  [[params.subjectSchemes]]
+    scheme = "homosaurus"
+    name = "Homosaurus"
+
   # Fake public-library info for the demo homepage (tasks/007). Not a real library.
   [params.library]
     address = "123 Static Way, Evergreen"
