@@ -22,7 +22,7 @@ This repo is a plain Hugo site that imports the libcatalog Hugo module the way a
 adopter would (`hugo.toml` -> `[module].imports`) and mounts the projected data under
 `assets/`:
 
-- `assets/catalog.json` -- the Works (schema version 7).
+- `assets/catalog.json` -- the Works (schema version 9).
 - `assets/facets.json` -- precomputed facet value/counts.
 
 The module supplies the catalog templates and assets; this repo provides config, data,
@@ -30,6 +30,14 @@ its own content sections (`content/events/`, `content/docs/`), and light `evl-*`
 in `assets/lcat-theme.css` on top of the module's default theme. A Sveltia CMS scaffold
 lives at `/admin/` (read-only until an OAuth backend is configured). The reader-facing
 tour of all of this is on the site itself: [/docs/](https://libcatalog.evefreeman.com/docs/).
+
+The facet sidebar uses the module's shared-fragment mode (`[params.facets] shared = true`):
+instead of inlining the page-invariant sidebar into every list/term page, it is published
+once per language as a fingerprinted fragment under `/lcat/` that a small loader fetches
+and inserts. Trade-off: the sidebar appears one fetch after first paint and leaves the
+crawled page HTML (no-JS readers get fallback links to the facet landing pages). A
+catalog this small gains little -- it is enabled here to showcase the feature; small
+catalogs should normally keep the inlined default.
 
 ## Build
 

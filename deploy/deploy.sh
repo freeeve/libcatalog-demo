@@ -40,9 +40,17 @@ aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
   --exclude "*" --include "*.css" --include "*.js" --exclude "pagefind/*" \
   --cache-control "public,max-age=31536000,immutable" --no-progress
 
+# The shared facet sidebar (module tasks/150, ours tasks/025) publishes fingerprinted
+# HTML fragments under /lcat/ -- extension-based rules would undercache them, so pin
+# them immutable before the catch-all *.html rule below (which excludes lcat/).
+echo "==> Shared sidebar fragments (fingerprinted -> immutable)"
+aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
+  --exclude "*" --include "lcat/*.html" \
+  --cache-control "public,max-age=31536000,immutable" --no-progress
+
 echo "==> HTML + sitemap (short cache, must-revalidate)"
 aws s3 sync "$BUILD_DIR/" "s3://$BUCKET/" \
-  --exclude "*" --include "*.html" --include "sitemap.xml" \
+  --exclude "*" --include "*.html" --exclude "lcat/*.html" --include "sitemap.xml" \
   --cache-control "public,max-age=300,must-revalidate" --no-progress
 if [[ -f "$BUILD_DIR/site.webmanifest" ]]; then
   aws s3 cp "$BUILD_DIR/site.webmanifest" "s3://$BUCKET/site.webmanifest" \

@@ -75,6 +75,15 @@ buildFuture = true
     scheme = "homosaurus"
     name = "Homosaurus"
 
+  # Shared facet sidebar (module tasks/150, ours tasks/025): publish the page-invariant
+  # sidebar once per language as a fingerprinted fragment (/lcat/facets.<lang>.<hash>.html)
+  # fetched by lcat-sidebar.js, instead of inlining it into every list/term page. This
+  # catalog is small enough that inline would be fine -- enabled to showcase the feature
+  # and give it a second real deployment. Trade-off: the sidebar appears one fetch after
+  # first paint and leaves the crawled HTML (no-JS readers get fallback taxonomy links).
+  [params.facets]
+    shared = true
+
   # Fake public-library info for the demo homepage (tasks/007). Not a real library.
   [params.library]
     address = "123 Static Way, Evergreen"
