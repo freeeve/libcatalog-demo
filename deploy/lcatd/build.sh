@@ -5,11 +5,11 @@
 #
 #   deploy/lcatd/build.sh            # -> deploy/lcatd/dist/lcatd-demo.zip
 #
-# Requires a sibling ../libcatalog checkout (Go 1.25+, Node for the SPA build) and the
+# Requires a sibling ../libcat checkout (Go 1.25+, Node for the SPA build) and the
 # grain tree under this repo's build/ (produced by `npm run data:refresh`, tasks/008).
 # The zip is grains-in-image + in-memory store, so the Lambda needs no S3/DynamoDB.
 #
-# SPA note (libcatalog tasks/098): the module's committed ui/dist is a placeholder; a
+# SPA note (libcat tasks/098): the module's committed ui/dist is a placeholder; a
 # real UI only exists after `npm run build`. This runs it before `go build`, then
 # restores the sibling's tracked dist/index.html so the sibling working tree is left as
 # found (dist/assets is gitignored).
@@ -17,13 +17,13 @@ set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$HERE/../.." && pwd)"
-BACKEND="$ROOT/../libcatalog/backend"
+BACKEND="$ROOT/../libcat/backend"
 GRAINS="$ROOT/build"                 # build/data/works/<shard>/<id>.nq
 OUT="$HERE/dist"
 STAGE="$OUT/stage"
 
 if [[ ! -d "$BACKEND/cmd/lcatd-lambda" ]]; then
-  echo "error: sibling libcatalog backend not found at $BACKEND" >&2; exit 1
+  echo "error: sibling libcat backend not found at $BACKEND" >&2; exit 1
 fi
 if [[ ! -d "$GRAINS/data/works" ]]; then
   echo "error: grain tree missing at $GRAINS/data/works -- run 'npm run data:refresh' first" >&2; exit 1

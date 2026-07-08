@@ -1,7 +1,7 @@
 # Deploy: sandbox cataloging demo (lcatd on Lambda)
 
 The companion to the static catalog (tasks/009): a public `lcatd` instance so visitors
-can explore the *cataloging* side of libcatalog -- the editor, review queue, copy
+can explore the *cataloging* side of libcat -- the editor, review queue, copy
 cataloging, profiles -- not just the finished catalog. Live at
 https://try.libcatalog.evefreeman.com.
 
@@ -10,14 +10,14 @@ watch the change render (materialized from the dry-run), search all of LCSH in t
 picker (live from `id.loc.gov`), and see existing subjects with real headings -- but
 sandbox implies read-only, so the grain store is wrapped read-only and every write is
 403'd. Nothing persists; a page refresh (or Lambda cold start) resets everything. See
-libcatalog `backend/deploy/README.md` and tasks/097, 011.
+libcat `backend/deploy/README.md` and tasks/097, 011.
 
 ## Shape (cheapest tier)
 
-One arm64 Lambda (`provided.al2023`) serving the libcatalog backend with the cataloging
+One arm64 Lambda (`provided.al2023`) serving the libcat backend with the cataloging
 SPA embedded and the BIBFRAME grains **bundled in the zip** -- in-memory document store,
 so **no DynamoDB and no S3**. Fronted by **CloudFront + a Lambda Function URL** (tasks/010,
-via the libcatalog `readonly-demo` module): CloudFront edge-caches the SPA's hashed
+via the libcat `readonly-demo` module): CloudFront edge-caches the SPA's hashed
 `/assets/*` so page loads don't wake Lambda, and a Function URL has no per-request charge.
 Scale-to-zero: ~$0 when idle. The grains are the same corpus as the static catalog (this
 repo's `build/data/works`, from `npm run data:refresh`, tasks/008).
@@ -29,15 +29,15 @@ Lambda (bootstrap + grains/ + embedded SPA)  <-  Function URL  <-  CloudFront  <
 
 ## Layout
 
-- `build.sh` -- builds `dist/lcatd-demo.zip`: `npm run build` the SPA (libcatalog
-  tasks/098), `go build` the arm64 `bootstrap` from `../libcatalog/backend/cmd/lcatd-lambda`,
+- `build.sh` -- builds `dist/lcatd-demo.zip`: `npm run build` the SPA (libcat
+  tasks/098), `go build` the arm64 `bootstrap` from `../libcat/backend/cmd/lcatd-lambda`,
   bundle `grains/` (works from this repo's `build/`, plus the LCSH snapshot below).
-  Requires a sibling `../libcatalog` checkout.
+  Requires a sibling `../libcat` checkout.
 - `lcsh.nq` + `gen-lcsh.sh` -- the corpus-sized LCSH authority snapshot bundled at
   `grains/data/authorities/vocab/lcsh.nq` so the editor renders existing subjects' real
   headings (`LCATD_VOCAB_SCHEMES=lcsh`, tasks/011). `gen-lcsh.sh` regenerates it via
   `lcat vocab-subset` (needs internet); re-run when the catalog's subjects change.
-- `terraform/` -- `cloudfront.tf` wires the libcatalog `readonly-demo` module (Lambda +
+- `terraform/` -- `cloudfront.tf` wires the libcat `readonly-demo` module (Lambda +
   Function URL + CloudFront, `?ref=backend/v0.3.0`); `main.tf` holds the shared `LCATD_*`
   env, the us-east-1 ACM cert, and the Route 53 alias -> CloudFront. Secrets in a
   gitignored `terraform.tfvars`.
@@ -85,6 +85,6 @@ gitignored `terraform.tfvars`, written by `deploy.sh`:
   load -- the Lambda has outbound internet). Existing subjects resolve to real headings
   from the bundled `lcsh.nq` snapshot (`LCATD_VOCAB_SCHEMES=lcsh`). The demo's catalog uses
   https LCSH URIs, so the snapshot is realigned to https to match (see `gen-lcsh.sh` and
-  libcatalog tasks/100).
+  libcat tasks/100).
 - **Writable production** (persistent DynamoDB + S3) is out of scope here -- see
-  libcatalog tasks/099 and `backend/deploy/terraform` (the writable reference stack).
+  libcat tasks/099 and `backend/deploy/terraform` (the writable reference stack).

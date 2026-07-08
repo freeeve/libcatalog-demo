@@ -9,4 +9,4 @@ summary: "Kick off the summer reading challenge with snacks, sign-ups, and a boo
 Start your summer reading challenge. Pick up a reading log, meet the librarians, and
 enter the raffle for a stack of new releases. Snacks provided.
 
-*This is demo content for a libcatalog + Hugo showcase -- there is no real event.*
+*This is demo content for a libcat + Hugo showcase -- there is no real event.*

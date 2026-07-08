@@ -7,11 +7,11 @@ variable "aws_region" {
 variable "domain_name" {
   description = "Public hostname for the demo."
   type        = string
-  default     = "libcatalog.evefreeman.com"
+  default     = "libcat.evefreeman.com"
 }
 
 variable "bucket_name" {
-  description = "S3 origin bucket name (private; served only via CloudFront OAC)."
+  description = "S3 origin bucket name (private; served only via CloudFront OAC). Kept at the pre-rename name: bucket names are not user-visible and renaming means a new bucket + full sync + origin repoint."
   type        = string
   default     = "libcatalog-evefreeman-com-site"
 }
@@ -36,7 +36,7 @@ variable "hosted_zone_id" {
 variable "github_repo" {
   description = "owner/name of the GitHub repo allowed to assume the deploy role via OIDC."
   type        = string
-  default     = "freeeve/libcatalog-demo"
+  default     = "freeeve/libcat-demo"
 }
 
 variable "create_oidc_provider" {
@@ -53,7 +53,7 @@ variable "tags" {
   description = "Tags applied to all resources."
   type        = map(string)
   default = {
-    Project = "libcatalog-demo"
+    Project = "libcat-demo"
     # AWS tag values disallow apostrophes ([\p{L}\p{Z}\p{N}_.:/=+\-@]*), so no "Eve's".
     Site = "Eves Library"
   }

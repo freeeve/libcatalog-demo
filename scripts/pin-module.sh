@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # pin-module.sh -- swap the local sibling `replace` for a published module version so
-# CI (which has no ../libcatalog checkout) resolves the Hugo module from the Go proxy
+# CI (which has no ../libcat checkout) resolves the Hugo module from the Go proxy
 # (tasks/003 §3). Run in CI before `hugo`; do NOT commit the result to main -- local
 # dev keeps the replace.
 #
@@ -11,12 +11,12 @@
 # hugo/ subdirectory, its git tag is prefixed (`hugo/v0.1.0`); Go maps @v0.1.0 to that
 # tag automatically -- pass the unprefixed version here.
 #
-# Prerequisite: the module must be published -- tag github.com/freeeve/libcatalog/hugo
-# in the libcatalog repo (e.g. `git tag hugo/v0.1.0 && git push origin hugo/v0.1.0`) or
+# Prerequisite: the module must be published -- tag github.com/freeeve/libcat/hugo
+# in the libcat repo (e.g. `git tag hugo/v0.1.0 && git push origin hugo/v0.1.0`) or
 # supply a pseudo-version. Until then `go mod download` fails fast with a proxy error.
 set -euo pipefail
 
-MOD="github.com/freeeve/libcatalog/hugo"
+MOD="github.com/freeeve/libcat/hugo"
 VERSION="${1:-${HUGO_MODULE_VERSION:-}}"
 if [[ -z "$VERSION" ]]; then
   echo "usage: $0 <version|pseudo-version>  (or set HUGO_MODULE_VERSION)" >&2

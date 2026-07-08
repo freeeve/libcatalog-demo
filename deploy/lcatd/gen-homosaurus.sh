@@ -13,7 +13,7 @@
 # subsetKeep) and tag every quad with the <authority:homosaurus> graph the index
 # expects. lcat vocab-subset is not used here: it fetches per-term <uri>.skos.nt
 # (an id.loc.gov convention) and a whole-vocabulary dump is one request instead of
-# thousands (generalizing it is libcatalog tasks/124).
+# thousands (generalizing it is libcat tasks/124).
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

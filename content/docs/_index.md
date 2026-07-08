@@ -1,6 +1,6 @@
 ---
 title: "How this site is built"
-description: "How Eve's Library is built: Hugo, the libcatalog module, static hosting, and how to run or theme your own."
+description: "How Eve's Library is built: Hugo, the libcat module, static hosting, and how to run or theme your own."
 ---
 
 **Eve's Library is a demo.** Everything you see — the homepage, the events, and the

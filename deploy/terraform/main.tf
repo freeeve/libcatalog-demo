@@ -33,11 +33,15 @@ resource "aws_cloudfront_origin_access_control" "site" {
 }
 
 resource "aws_cloudfront_function" "rewrite" {
-  name    = "libcatalog-demo-rewrite"
+  name    = "libcat-demo-rewrite"
   runtime = "cloudfront-js-2.0"
   comment = "Append index.html for Hugo pretty URLs on an S3/OAC origin."
   publish = true
   code    = file("${path.module}/cloudfront-rewrite.js")
+  # The rename (tasks/026) changed the function name, which forces replacement; the new
+  # function must exist and take over the association before the old one is deleted --
+  # CloudFront refuses to delete a function still attached to a distribution.
+  lifecycle { create_before_destroy = true }
 }
 
 data "aws_cloudfront_cache_policy" "optimized" {
@@ -51,7 +55,7 @@ data "aws_cloudfront_response_headers_policy" "security" {
 resource "aws_cloudfront_distribution" "site" {
   enabled             = true
   is_ipv6_enabled     = true
-  comment             = "Eve's Library (libcatalog demo)"
+  comment             = "Eve's Library (libcat demo)"
   default_root_object = "index.html"
   aliases             = [var.domain_name]
   price_class         = "PriceClass_100"
@@ -207,7 +211,7 @@ data "aws_iam_policy_document" "github_trust" {
 data "aws_caller_identity" "current" {}
 
 resource "aws_iam_role" "deploy" {
-  name               = "libcatalog-demo-deploy"
+  name               = "libcat-demo-deploy"
   assume_role_policy = data.aws_iam_policy_document.github_trust.json
   tags               = var.tags
 }

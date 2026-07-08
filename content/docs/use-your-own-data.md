@@ -5,7 +5,7 @@ weight: 25
 ---
 
 Everything about this site except the data is generic. The catalog you're browsing is
-Eve's Hardcover *Read* shelf, but the pipeline that produced it -- libcatalog's `lcat`
+Eve's Hardcover *Read* shelf, but the pipeline that produced it -- libcat's `lcat`
 tool -- takes other sources too. Swap the source, re-run two commands, and the same
 site design serves your collection.
 
@@ -39,7 +39,7 @@ and no network: `npm run data:refresh -- --source shelf.json`.
 
 ## Source: MARC records
 
-Libraries with a real ILS export MARC. libcatalog ingests it directly:
+Libraries with a real ILS export MARC. libcat ingests it directly:
 
 ```bash
 lcat ingest --provider marc --source records.mrc --out build/

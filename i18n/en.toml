@@ -3,7 +3,7 @@
 # copy translation-ready: add i18n/<lang>.toml with the same keys to localize.
 
 [demoBanner]
-other = "Demo site — a showcase of the libcatalog framework, not a real library collection."
+other = "Demo site — a showcase of the libcat framework, not a real library collection."
 
 [demoBannerLink]
 other = "What is this?"
@@ -13,7 +13,7 @@ other = "Demo notice"
 
 # Footer. footerBuiltWith is safeHTML so the repo link renders inline.
 [footerBuiltWith]
-other = "Built with <a href=\"https://github.com/freeeve/libcatalog\" rel=\"external\">libcatalog</a> + Hugo."
+other = "Built with <a href=\"https://github.com/freeeve/libcat\" rel=\"external\">libcat</a> + Hugo."
 
 [footerDemoNote]
 other = "A demo, not a real collection."
@@ -35,7 +35,7 @@ other = "Cataloging demo"
 other = "Welcome to Eve's Library"
 
 [heroLede]
-other = "A public reading catalog built with the libcatalog Hugo module: one page per work, faceted browsing, controlled subjects with authority links, and static full-text search — no backend."
+other = "A public reading catalog built with the libcat Hugo module: one page per work, faceted browsing, controlled subjects with authority links, and static full-text search — no backend."
 
 [heroCta]
 other = "Read how it's built →"

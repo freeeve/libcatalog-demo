@@ -1,11 +1,11 @@
 ---
 title: "Try the cataloging sandbox"
-summary: "A hands-on tour of lcatd, libcatalog's cataloging backend: edit a record, search all of LCSH, watch your change render — and refresh to undo everything."
+summary: "A hands-on tour of lcatd, libcat's cataloging backend: edit a record, search all of LCSH, watch your change render — and refresh to undo everything."
 weight: 50
 ---
 
 The static site you're reading needs no server -- but the *records* behind it were made
-somewhere. That somewhere is **lcatd**, libcatalog's cataloging backend: the tool a
+somewhere. That somewhere is **lcatd**, libcat's cataloging backend: the tool a
 cataloger would actually use. A public sandbox instance runs at:
 
 **[try.libcatalog.evefreeman.com ↗](https://try.libcatalog.evefreeman.com/)**
@@ -37,7 +37,7 @@ puts everything back. Break nothing by trying everything.
 
 ## What it demonstrates
 
-libcatalog is two tiers. Tier 1 is the static discovery site (this one): cheap, fast,
+libcat is two tiers. Tier 1 is the static discovery site (this one): cheap, fast,
 nothing to run. Tier 2 is lcatd, for the back room: record editing with dry-run
 preview, review queues, copy cataloging, batch operations, controlled-vocabulary
 management, and MARC round-tripping. Publish from Tier 2 and Tier 1 rebuilds -- the
@@ -50,6 +50,6 @@ visitors, keeps the whole demo catalog in memory, and needs no database. Idle co
 effectively $0; that's why a public demo like this can just stay up. (It also means the
 first request after a quiet spell takes a moment to wake up.) Adopters who want the
 same thing get it as a ready-made Terraform module in the
-[libcatalog repo](https://github.com/freeeve/libcatalog).
+[libcat repo](https://github.com/freeeve/libcat).
 
 Back to [all guides](/docs/), or [see how the static site is built](/docs/how-it-works/).

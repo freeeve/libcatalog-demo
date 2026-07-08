@@ -1,6 +1,6 @@
 # Deploy: S3 + CloudFront
 
-Static hosting for https://libcatalog.evefreeman.com (tasks/003). Private S3 origin,
+Static hosting for https://libcat.evefreeman.com (tasks/003). Private S3 origin,
 CloudFront with Origin Access Control + TLS, a viewer-request function for Hugo pretty
 URLs, and a branded 404. CI deploys via GitHub OIDC -- no long-lived AWS keys.
 
@@ -28,9 +28,9 @@ URLs, and a branded 404. CI deploys via GitHub OIDC -- no long-lived AWS keys.
    validation CNAME and an alias/ANAME for the domain to the `distribution_domain_name`
    output. CloudFront only goes ACTIVE once the cert validates.
 
-2. **Publish the module.** CI has no `../libcatalog` checkout, so the `replace` in
+2. **Publish the module.** CI has no `../libcat` checkout, so the `replace` in
    `go.mod` must be dropped and a **published** version required. Tag the module in the
-   libcatalog repo (e.g. `git tag hugo/v0.1.0 && git push origin hugo/v0.1.0`), then set
+   libcat repo (e.g. `git tag hugo/v0.1.0 && git push origin hugo/v0.1.0`), then set
    `HUGO_MODULE_VERSION` below. Local dev keeps the `replace`; `pin-module.sh` only runs
    in CI, so nothing local leaks into the deployed build.
 

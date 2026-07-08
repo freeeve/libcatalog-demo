@@ -1,12 +1,12 @@
 ---
 title: "About this demo"
 layout: about
-description: "Eve's Library is a public demo of the libcatalog framework and its Hugo module — BIBFRAME to projector to a faceted, accessible, statically searchable catalog."
+description: "Eve's Library is a public demo of the libcat framework and its Hugo module — BIBFRAME to projector to a faceted, accessible, statically searchable catalog."
 ---
 
 **Eve's Library is a demo, not a real library collection.** It exists to show what an
-adopter gets from the [libcatalog](https://github.com/freeeve/libcatalog) framework and
-its [Hugo module](https://github.com/freeeve/libcatalog/tree/main/hugo): a faceted,
+adopter gets from the [libcat](https://github.com/freeeve/libcat) framework and
+its [Hugo module](https://github.com/freeeve/libcat/tree/main/hugo): a faceted,
 accessible, multilingual-capable discovery site with static full-text search — and no
 backend to run.
 
@@ -41,7 +41,7 @@ artifact you can inspect:
 ## Try the cataloging backend
 
 The discovery site above is static — no backend to run. But the records themselves are
-produced by libcatalog's cataloging backend (`lcatd`): a record editor, a review queue,
+produced by libcat's cataloging backend (`lcatd`): a record editor, a review queue,
 copy cataloging, and editing profiles. A live **sandbox** instance lets you explore that
 side too, backed by the same 102 works:
 
@@ -66,5 +66,5 @@ side. Covers, ratings, and read dates come from Hardcover too.
 
 ## Source
 
-- Framework + Hugo module: <https://github.com/freeeve/libcatalog>
+- Framework + Hugo module: <https://github.com/freeeve/libcat>
 - This adopter site: a plain Hugo site that imports the module.

@@ -1,7 +1,7 @@
-# Eve's Library -- a libcatalog + Hugo demo
+# Eve's Library -- a libcat + Hugo demo
 
-A public demo library site built with the [libcatalog](https://github.com/freeeve/libcatalog)
-framework and its Hugo module, deployed at **https://libcatalog.evefreeman.com**. It shows
+A public demo library site built with the [libcat](https://github.com/freeeve/libcat)
+framework and its Hugo module, deployed at **https://libcat.evefreeman.com**. It shows
 what an adopter gets on both tiers:
 
 - **The static discovery site** (this repo): a normal library website -- homepage, events,
@@ -18,7 +18,7 @@ real *Read* shelf, sourced from Hardcover through the real `lcat` pipeline (see
 
 ## How it works
 
-This repo is a plain Hugo site that imports the libcatalog Hugo module the way any
+This repo is a plain Hugo site that imports the libcat Hugo module the way any
 adopter would (`hugo.toml` -> `[module].imports`) and mounts the projected data under
 `assets/`:
 
@@ -29,7 +29,7 @@ The module supplies the catalog templates and assets; this repo provides config,
 its own content sections (`content/events/`, `content/docs/`), and light `evl-*` branding
 in `assets/lcat-theme.css` on top of the module's default theme. A Sveltia CMS scaffold
 lives at `/admin/` (read-only until an OAuth backend is configured). The reader-facing
-tour of all of this is on the site itself: [/docs/](https://libcatalog.evefreeman.com/docs/).
+tour of all of this is on the site itself: [/docs/](https://libcat.evefreeman.com/docs/).
 
 The facet sidebar uses the module's shared-fragment mode (`[params.facets] shared = true`):
 instead of inlining the page-invariant sidebar into every list/term page, it is published
@@ -49,12 +49,12 @@ npm run build:full
 ```
 
 Then serve `public/` (locally: `hugo server`). Local builds resolve the module from a
-sibling `../libcatalog` checkout via the `replace` in `go.mod`; CI pins a published
+sibling `../libcat` checkout via the `replace` in `go.mod`; CI pins a published
 module version instead (`scripts/pin-module.sh`, repo var `HUGO_MODULE_VERSION`).
 
 ## Data
 
-`assets/catalog.json` + `assets/facets.json` are produced by the real libcatalog
+`assets/catalog.json` + `assets/facets.json` are produced by the real libcat
 pipeline -- `lcat hardcover` (ingest the *Read* shelf into BIBFRAME grains) then
 `lcat project` (project to the module's schema). Documented in `scripts/README.md`:
 
@@ -63,7 +63,7 @@ export HARDCOVER_API_TOKEN='...'   # Hardcover -> account settings -> API; never
 npm run data:refresh               # lcat hardcover -> build/  then  lcat project -> assets/
 ```
 
-Requires the sibling `../libcatalog` checkout. Never hand-edit the schema version or
+Requires the sibling `../libcat` checkout. Never hand-edit the schema version or
 facet counts -- they are owned by the projector; re-run the refresh.
 
 ## Deploy

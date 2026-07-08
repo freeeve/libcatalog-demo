@@ -1,4 +1,4 @@
-baseURL = "https://libcatalog.evefreeman.com/"
+baseURL = "https://libcat.evefreeman.com/"
 title = "Eve's Library"
 languageCode = "en-us"
 defaultContentLanguage = "en"
@@ -6,11 +6,11 @@ defaultContentLanguage = "en"
 # Upcoming events are future-dated; without this Hugo skips future content (tasks/007).
 buildFuture = true
 
-# Adopt the libcatalog Hugo module: one page per Work, faceted navigation, accessible
+# Adopt the libcat Hugo module: one page per Work, faceted navigation, accessible
 # multilingual chrome -- all from the projected catalog.json / facets.json under assets/.
 [module]
   [[module.imports]]
-    path = "github.com/freeeve/libcatalog/hugo"
+    path = "github.com/freeeve/libcat/hugo"
 
 [pagination]
   pagerSize = 12
@@ -25,7 +25,7 @@ buildFuture = true
   contributor = "contributors"
   classification = "classifications"
 
-# Pagefind search (libcatalog tasks/017): real ranked, per-language, CJK-capable
+# Pagefind search (libcat tasks/017): real ranked, per-language, CJK-capable
 # full-text over the built HTML. Post-build step: `npm run search:index` after `hugo`.
 [params.search]
   engine = "pagefind"
@@ -54,13 +54,13 @@ buildFuture = true
   weight = 50
 
 [params]
-  # This is a public demo of the libcatalog framework + Hugo, not a real collection.
+  # This is a public demo of the libcat framework + Hugo, not a real collection.
   demo = true
-  tagline = "a libcatalog + Hugo demo"
-  description = "Eve's Library is a public demo of the libcatalog framework and its Hugo module: a faceted, accessible, statically searchable catalog with no backend."
+  tagline = "a libcat + Hugo demo"
+  description = "Eve's Library is a public demo of the libcat framework and its Hugo module: a faceted, accessible, statically searchable catalog with no backend."
   ogImage = "/og-default.png"  # social share fallback for pages without a cover (tasks/005)
 
-  # Cover art (libcatalog tasks/025): the module renders a cover slot on result cards and
+  # Cover art (libcat tasks/025): the module renders a cover slot on result cards and
   # Work detail pages from each Work's extra.cover (forwarded by the content adapter,
   # tasks/022), falling back to a lettered placeholder. Our Hardcover pipeline supplies it.
   covers = true

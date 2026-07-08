@@ -11,16 +11,16 @@ comments.
 ## 1. Get the code
 
 ```bash
-git clone https://github.com/freeeve/libcatalog-demo
-cd libcatalog-demo
-# The catalog templates come from the libcatalog module; for local dev this repo
+git clone https://github.com/freeeve/libcat-demo
+cd libcat-demo
+# The catalog templates come from the libcat module; for local dev this repo
 # resolves it from a sibling checkout (see go.mod). For CI it pins a published version.
-git clone https://github.com/freeeve/libcatalog ../libcatalog
+git clone https://github.com/freeeve/libcat ../libcat
 ```
 
 ## 2. Build the catalog data
 
-The catalog is generated from a Hardcover "read" shelf by the real libcatalog pipeline
+The catalog is generated from a Hardcover "read" shelf by the real libcat pipeline
 (the `lcat` tool from the sibling checkout you cloned in step 1). Put your API token in
 an env var (never commit it):
 

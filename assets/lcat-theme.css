@@ -1,5 +1,5 @@
 /*
-  Eve's Library -- adopter chrome layered on top of the libcatalog module's lcat.css,
+  Eve's Library -- adopter chrome layered on top of the libcat module's lcat.css,
   loaded after it via the module's head-extra.html hook (no template shadows left).
 
   Strategy (module-defaults pass): the catalog (works list, Work detail, facets) now
@@ -57,7 +57,7 @@
 .evl-rating { color: var(--evl-gold); font-size: 0.85rem; letter-spacing: 0.1em; }
 .evl-rating span { color: var(--lcat-muted); letter-spacing: normal; }
 /* Search chrome is the module's, bugs and all: the Pagefind drawer layout issues
-   are base-theme problems tracked upstream (libcatalog tasks/127) -- per repo
+   are base-theme problems tracked upstream (libcat tasks/127) -- per repo
    policy this file carries NO stopgaps for module bugs (tasks/022 outcome). */
 
 /* Reading-log line on Work pages (module work-extra hook, tasks/021). */

@@ -15,12 +15,12 @@ assets/catalog.json      works with controlled subjects[], instances[], extra{..
 assets/facets.json       count-desc-then-alpha facet counts for every dimension
 ```
 
-Both steps are the real **libcatalog** pipeline (`../libcatalog/cmd/lcat`), not a
+Both steps are the real **libcat** pipeline (`../libcat/cmd/lcat`), not a
 hand-rolled transform. The schema version, controlled-subject mapping, facet
 counts, and the `held` holdings signal are all owned by the projector -- the next
 schema bump is a re-run of this pipeline, not a hand-edit. This replaces the old
 Node scripts (`fetch-hardcover.mjs`, `map-subjects.mjs`, `gen-facets.mjs`), retired
-in tasks/008 once libcatalog shipped a first-party Hardcover ingest source
+in tasks/008 once libcat shipped a first-party Hardcover ingest source
 (framework tasks/026).
 
 One-shot refresh (ingest + project):
@@ -30,7 +30,7 @@ export HARDCOVER_API_TOKEN='...'      # Hardcover -> account settings -> API. Ne
 npm run data:refresh                  # = bash scripts/refresh-data.sh
 ```
 
-Requires a sibling `../libcatalog` checkout (Go 1.25+) -- the same checkout the Hugo
+Requires a sibling `../libcat` checkout (Go 1.25+) -- the same checkout the Hugo
 module `replace` in `go.mod` resolves against. `refresh-data.sh` runs `lcat hardcover`
 into `build/` (gitignored intermediate grains), then `lcat project` into `assets/`.
 
@@ -39,7 +39,7 @@ into `build/` (gitignored intermediate grains), then `lcat project` into `assets
 - **`lcat hardcover --out build/`** -- reads the authenticated user's *Read* shelf from
   the Hardcover GraphQL API (`status_id = 3`), paginating fully, clusters a book's
   editions into one Work with one Instance per format, maps genre tags to controlled
-  subjects (LCSH / Homosaurus, from `../libcatalog/ingest/hardcover/subject-map.json`),
+  subjects (LCSH / Homosaurus, from `../libcat/ingest/hardcover/subject-map.json`),
   and writes BIBFRAME grains + `catalog.nq` under `build/`. The token is read from
   `HARDCOVER_API_TOKEN` and never written to disk. Adopter display fields
   (`cover`, `rating`, `dateRead`, `description`) ride the feed graph into each Work's

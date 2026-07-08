@@ -7,18 +7,18 @@
 #
 #   deploy/lcatd/gen-lcsh.sh
 #
-# Requires a sibling ../libcatalog checkout (>= v0.4.2) and outbound internet (id.loc.gov).
+# Requires a sibling ../libcat checkout (>= v0.4.2) and outbound internet (id.loc.gov).
 #
 # Scheme note: this demo's catalog subjects are https://id.loc.gov/... URIs (from the
 # upstream ingest subject-map), while id.loc.gov's canonical identifier is http://. Since
 # v0.4.2 `lcat vocab-subset` re-schemes in-namespace URIs to the catalog's form, so the
-# snapshot is emitted https-keyed to match -- no post-processing needed (libcatalog
+# snapshot is emitted https-keyed to match -- no post-processing needed (libcat
 # tasks/100).
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$HERE/../.." && pwd)"
-LCAT_DIR="$ROOT/../libcatalog"
+LCAT_DIR="$ROOT/../libcat"
 CATALOG="$ROOT/assets/catalog.json"
 OUT="$HERE/lcsh.nq"
 NS="https://id.loc.gov/authorities/subjects/"

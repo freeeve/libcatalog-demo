@@ -1,5 +1,5 @@
 # CloudFront + Lambda Function URL front door for the read-only demo (tasks/010),
-# via the libcatalog turnkey module. Cheaper (no API Gateway per-request charge) and
+# via the libcat turnkey module. Cheaper (no API Gateway per-request charge) and
 # faster (CloudFront edge-caches the SPA's hashed /assets/* so page loads don't wake
 # Lambda). Reuses the same zip, grains, env, and us-east-1 ACM cert as the API Gateway
 # path; only the edge changes (task non-goal: no LCATD_* / code / grain changes).
@@ -10,7 +10,7 @@
 #   Phase 2 (main.tf edit): repoint the Route 53 alias to CloudFront and delete the API
 #     Gateway resources + the old Lambda.
 module "demo" {
-  source     = "github.com/freeeve/libcatalog//backend/deploy/terraform/modules/readonly-demo?ref=v0.7.2"
+  source     = "github.com/freeeve/libcat//backend/deploy/terraform/modules/readonly-demo?ref=v0.7.2"
   name       = "eves-library"
   lambda_zip = var.lambda_zip
 

@@ -14,7 +14,7 @@ terraform {
   # Remote state is recommended so CI and local share one state. Fill in and uncomment:
   # backend "s3" {
   #   bucket = "evefreeman-tfstate"
-  #   key    = "libcatalog-demo/terraform.tfstate"
+  #   key    = "libcat-demo/terraform.tfstate"
   #   region = "us-east-1"
   # }
 }

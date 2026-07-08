@@ -4,7 +4,7 @@ summary: "The module ships an accessible light/dark theme out of the box; re-bra
 weight: 30
 ---
 
-The libcatalog module ships a complete, accessible default theme -- including **light and
+The libcat module ships a complete, accessible default theme -- including **light and
 dark modes with a toggle in the header** -- driven by CSS custom properties. An adopter
 themes by **layering on top**, no forking, in escalating order of effort:
 

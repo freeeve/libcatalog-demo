@@ -1,6 +1,6 @@
 ---
-title: "How Hugo and libcatalog fit together"
-summary: "The moving parts: Hugo builds the site, libcatalog turns a catalog into pages, Pagefind adds search."
+title: "How Hugo and libcat fit together"
+summary: "The moving parts: Hugo builds the site, libcat turns a catalog into pages, Pagefind adds search."
 weight: 10
 ---
 
@@ -25,17 +25,17 @@ location: "Computer Lab"
 A beginner-friendly workshop on building a static website...
 ```
 
-## Where libcatalog comes in
+## Where libcat comes in
 
 The **catalog** at [/works/](/works/) is the one part that isn't hand-written Markdown.
-It's produced by the [libcatalog](https://github.com/freeeve/libcatalog) framework and
+It's produced by the [libcat](https://github.com/freeeve/libcat) framework and
 its Hugo module. The pipeline is deliberately boring — each stage is a file you can open:
 
 1. **Bibliographic data** (BIBFRAME/MARC records, or in this demo a reading list from
    [Hardcover](https://hardcover.app)) is the source of truth.
 2. **The projector** (`lcat project`) flattens that into two static JSON files:
    `catalog.json` (one entry per work) and `facets.json` (precomputed facet counts).
-3. **The libcatalog Hugo module** reads those JSON files and *mints one page per work* —
+3. **The libcat Hugo module** reads those JSON files and *mints one page per work* —
    via a Hugo "content adapter", with no per-book Markdown — plus the facet navigation and
    work detail pages. This site simply imports the module:
 
@@ -43,7 +43,7 @@ its Hugo module. The pipeline is deliberately boring — each stage is a file yo
    # hugo.toml
    [module]
      [[module.imports]]
-       path = "github.com/freeeve/libcatalog/hugo"
+       path = "github.com/freeeve/libcat/hugo"
    ```
 
 4. **Pagefind** indexes the built HTML afterward, giving real full-text search that runs
@@ -55,7 +55,7 @@ you get a catalog without running catalog software.
 
 ## Controlled subjects vs. tags
 
-libcatalog also models the difference between **controlled subjects** — authority URIs
+libcat also models the difference between **controlled subjects** — authority URIs
 with localized labels, like [LCSH](https://id.loc.gov/authorities/subjects.html) and
 [Homosaurus](https://homosaurus.org) — and free **tags** (genre strings). Both are faceted
 side by side; on a work page the subjects carry a resolving `↗` link to the authority

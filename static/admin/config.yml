@@ -3,7 +3,7 @@
 # (Sveltia supports several); until then the UI loads read-only. Docs: /docs/running-it/.
 backend:
   name: github
-  repo: freeeve/libcatalog-demo
+  repo: freeeve/libcat-demo
   branch: main
 # For editing on your own machine without OAuth, run a local proxy and uncomment:
 # local_backend: true
