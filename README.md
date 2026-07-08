@@ -9,7 +9,7 @@ what an adopter gets on both tiers:
   (LCSH / Homosaurus) beside free tags, accessible multilingual-capable chrome, cover art,
   light/dark theme, and Pagefind full-text search. All static; no backend.
 - **The cataloging backend** (`lcatd`), live as a public sandbox at
-  **https://try.libcatalog.evefreeman.com** -- sign in as `demo@example.org` /
+  **https://try.libcat.evefreeman.com** -- sign in as `demo@example.org` /
   `readonlydemo`, edit records, search LCSH; nothing persists.
 
 This is a **demo of the framework, not a real library collection.** The catalog is Eve's

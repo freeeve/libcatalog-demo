@@ -11,9 +11,9 @@ variable "domain_name" {
 }
 
 variable "bucket_name" {
-  description = "S3 origin bucket name (private; served only via CloudFront OAC). Kept at the pre-rename name: bucket names are not user-visible and renaming means a new bucket + full sync + origin repoint."
+  description = "S3 origin bucket name (private; served only via CloudFront OAC). Bucket names are immutable, so changing this replaces the bucket; the site is re-synced from a build afterwards (contents are disposable)."
   type        = string
-  default     = "libcatalog-evefreeman-com-site"
+  default     = "libcat-evefreeman-com-site"
 }
 
 variable "manage_dns" {

@@ -8,7 +8,7 @@ The static site you're reading needs no server -- but the *records* behind it we
 somewhere. That somewhere is **lcatd**, libcat's cataloging backend: the tool a
 cataloger would actually use. A public sandbox instance runs at:
 
-**[try.libcatalog.evefreeman.com ↗](https://try.libcatalog.evefreeman.com/)**
+**[try.libcat.evefreeman.com ↗](https://try.libcat.evefreeman.com/)**
 -- sign in as `demo@example.org` / `readonlydemo`.
 
 It's loaded with the same 102 works you see in [the catalog](/works/). It runs in

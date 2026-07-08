@@ -13,7 +13,7 @@ variable "name" {
 variable "domain" {
   description = "Public hostname for the cataloging demo."
   type        = string
-  default     = "try.libcatalog.evefreeman.com"
+  default     = "try.libcat.evefreeman.com"
 }
 
 variable "hosted_zone_id" {

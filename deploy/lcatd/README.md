@@ -3,7 +3,7 @@
 The companion to the static catalog (tasks/009): a public `lcatd` instance so visitors
 can explore the *cataloging* side of libcat -- the editor, review queue, copy
 cataloging, profiles -- not just the finished catalog. Live at
-https://try.libcatalog.evefreeman.com.
+https://try.libcat.evefreeman.com.
 
 Runs in **sandbox mode** (`LCATD_SANDBOX=1`, tasks/011): a visitor can edit a record and
 watch the change render (materialized from the dry-run), search all of LCSH in the subject
@@ -23,7 +23,7 @@ Scale-to-zero: ~$0 when idle. The grains are the same corpus as the static catal
 repo's `build/data/works`, from `npm run data:refresh`, tasks/008).
 
 ```
-Lambda (bootstrap + grains/ + embedded SPA)  <-  Function URL  <-  CloudFront  <-  try.libcatalog.evefreeman.com
+Lambda (bootstrap + grains/ + embedded SPA)  <-  Function URL  <-  CloudFront  <-  try.libcat.evefreeman.com
   LCATD_SANDBOX=1, in-memory store, grains at /var/task/grains          edge-caches /assets/*; /config + /v1/* pass through
 ```
 
@@ -60,7 +60,7 @@ never go stale; the signing key is preserved).
 ## Configuration (terraform variables)
 
 Non-secret vars have sensible defaults (`variables.tf`): `domain`
-(`try.libcatalog.evefreeman.com`), `demo_admin` (`demo@example.org:readonlydemo` -- read-only,
+(`try.libcat.evefreeman.com`), `demo_admin` (`demo@example.org:readonlydemo` -- read-only,
 safe to publish), `provider_name` (`hardcover`), `region` (`us-east-1`). Lambda memory
 (cold-start lever) is the module's `memory_size` default (1024). Secrets go in the
 gitignored `terraform.tfvars`, written by `deploy.sh`:

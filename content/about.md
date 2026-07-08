@@ -45,7 +45,7 @@ produced by libcat's cataloging backend (`lcatd`): a record editor, a review que
 copy cataloging, and editing profiles. A live **sandbox** instance lets you explore that
 side too, backed by the same 102 works:
 
-**[try.libcatalog.evefreeman.com ↗](https://try.libcatalog.evefreeman.com/)** — sign in
+**[try.libcat.evefreeman.com ↗](https://try.libcat.evefreeman.com/)** — sign in
 as `demo@example.org` / `readonlydemo`.
 
 It's a sandbox: **edit a record and watch your change render**, search all of LCSH in the

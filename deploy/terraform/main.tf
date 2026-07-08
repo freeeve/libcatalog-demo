@@ -7,6 +7,9 @@
 resource "aws_s3_bucket" "site" {
   bucket = var.bucket_name
   tags   = var.tags
+  # The bucket holds only deploy output (rebuilt from source every deploy), so letting
+  # Terraform empty it on destroy/replace is safe and makes bucket renames one apply.
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_ownership_controls" "site" {
