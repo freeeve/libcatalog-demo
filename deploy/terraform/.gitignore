@@ -18,3 +18,4 @@ terraform.rc
 # Saved plan files (may contain resolved variable values)
 tfplan
 *.tfplan
+*.log

@@ -44,26 +44,22 @@ libcatalog.evefreeman.com -> libcat.evefreeman.com:
 - Note: libcat's README (v0.25.0+) already links libcat.evefreeman.com (the
   rename sweep updated the URL), so that link dangles until this lands.
 
-## Status 2026-07-08 (session)
+## Status 2026-07-08 -- APPLIED + VERIFIED
 
-Done: go.mod/hugo.toml/pin-module.sh on the libcat paths; repo-wide
-libcatalog->libcat sweep (bucket name + try.libcatalog sandbox domain kept);
-terraform for the new domain/OIDC trust/function+role rename; GitHub repo
-renamed to freeeve/libcat-demo (local remote repointed); CI
-HUGO_MODULE_VERSION=v0.26.0; build + a11y audit green against ../libcat.
+Scope grew mid-task (Eve): the sandbox subdomain moved too
+(try.libcat.evefreeman.com), and the S3 bucket WAS renamed after all
+(`libcat-evefreeman-com-site`; replace + re-sync, force_destroy now set since
+contents are disposable deploy output). Old subdomains get no redirect.
 
-Remaining (user):
-1. `cd deploy/terraform && terraform init && AWS_PROFILE=deeplibby-admin
-   terraform plan` -- expect: cert reissue (new domain), distribution
-   alias/comment update, function + deploy-role replacement (renames),
-   old-domain A/AAAA replaced by libcat.evefreeman.com ones. Then `apply`.
-2. `gh variable set AWS_DEPLOY_ROLE_ARN --body "$(terraform output -raw
-   deploy_role_arn)"` (classifier-blocked for the session; CI deploys stay
-   red until 1+2 land -- the OIDC sub claim already carries the new repo
-   name).
-3. Re-run the deploy workflow (or push) to publish to the new domain.
-4. Rename the local dir: `mv ~/libcatalog-demo ~/libcat-demo` (left to the
-   user -- it is this session's cwd).
-5. Optional follow-up, out of scope here: the sandbox still lives at
-   try.libcatalog.evefreeman.com (deploy/lcatd/terraform has its own domain
-   config) -- decide whether it becomes try.libcat.evefreeman.com.
+Done + verified live: repo freeeve/libcat-demo; module paths/pin on
+github.com/freeeve/libcat/hugo, CI pin v0.26.0 (schema v9 unchanged); both
+terraform stacks applied under AWS_PROFILE=deeplibby-admin (new certs + DNS,
+old libcatalog/try.libcatalog records gone, role libcat-demo-deploy, function
+libcat-demo-rewrite, bucket swapped + site synced + invalidated); CI vars
+AWS_DEPLOY_ROLE_ARN / S3_BUCKET / HUGO_MODULE_VERSION updated.
+https://libcat.evefreeman.com/ 200, https://try.libcat.evefreeman.com/config
+sandbox:true. deploy/terraform/terraform.tfvars (gitignored) now records
+hosted_zone_id + create_oidc_provider=false for future plans.
+
+Remaining: `mv ~/libcatalog-demo ~/libcat-demo` (user -- it is the session's
+cwd).
