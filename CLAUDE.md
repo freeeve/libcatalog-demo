@@ -22,6 +22,5 @@ site that imports the module and provides projected data under `assets/`.
 
 ## Conventions
 
-Task files live in `tasks/` (numbered `NNN_description.md`); status via rename
-(`.in-progress.md` / `.done.md`). Do not commit `public/` (gitignored). This repo does not
-contain the module -- template/asset changes belong in the libcat repo, not here.
+Do not commit `public/` (gitignored). This repo does not contain the module --
+template/asset changes belong in the libcat repo, not here.
