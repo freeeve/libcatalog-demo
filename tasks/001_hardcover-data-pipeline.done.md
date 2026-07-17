@@ -16,7 +16,7 @@ regenerated and consistent, and the site builds/paginates over the full set.
   idempotent. `npm run data:refresh` runs the whole chain.
 - The module content adapter forwards only a fixed field set, so cover/rating/dateRead
   are surfaced via a documented adapter shadow (`content/works/_content.gotmpl`); upstream
-  passthrough requested in `../libcatalog/tasks/022` so the shadow can be dropped.
+  passthrough requested in `../libcat/tasks/022` so the shadow can be dropped.
 
 Not exercised: the `lcat project` MARC/BIBFRAME path (§3, preferred) -- the direct
 Hardcover->catalog map is the documented fallback and emits the same schema-v5 shape, so
@@ -27,7 +27,7 @@ the two converge. Re-run `npm run data:refresh` when Eve reads more.
 The demo currently ships placeholder public-domain classics in `assets/catalog.json`.
 The real content is the books Eve has read, tracked on Hardcover. This task builds the
 pipeline that turns Eve's Hardcover "read" shelf into the projected `catalog.json` +
-`facets.json` the libcatalog module consumes (schema **version 5**).
+`facets.json` the libcat module consumes (schema **version 5**).
 
 ## Inputs
 
@@ -69,5 +69,5 @@ pipeline that turns Eve's Hardcover "read" shelf into the projected `catalog.jso
 ## Refs
 
 - Hardcover API: https://api.hardcover.app/v1/graphql , https://docs.hardcover.app
-- libcatalog projector contract (`tasks/009`), schema version 5 (module README "Schema
-  version"); controlled subjects vs tags (libcatalog `tasks/012`).
+- libcat projector contract (`tasks/009`), schema version 5 (module README "Schema
+  version"); controlled subjects vs tags (libcat `tasks/012`).

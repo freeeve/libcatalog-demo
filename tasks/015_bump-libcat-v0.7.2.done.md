@@ -1,4 +1,4 @@
-# 015 -- Bump libcatalog to v0.7.2 (backend + hugo module + terraform ref)
+# 015 -- Bump libcat to v0.7.2 (backend + hugo module + terraform ref)
 
 Upstream is at v0.7.2 (backend/v0.7.2, hugo/v0.4.2; schema still v6, no data regen
 needed). We are pinned at:
@@ -28,7 +28,7 @@ needed). We are pinned at:
 
 Done. Wrinkle: upstream tags v0.5.0..v0.7.2 were local-only at first ("invalid ref"
 from terraform); parked the ref on v0.4.2 (readonly-demo module byte-identical
-v0.4.2..v0.7.2) and filed ../libcatalog/tasks/117 -- the concurrent session pushed
+v0.4.2..v0.7.2) and filed ../libcat/tasks/117 -- the concurrent session pushed
 main + tags mid-task, so the ref now really pins v0.7.2 (`terraform plan`: no
 changes). Lambda rebuilt from the sibling at backend/v0.7.2 and applied (in-place,
 one change). Verified live: sandbox:true + schemes ["lcsh","folk"] ("folk" is the new

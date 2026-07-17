@@ -1,15 +1,15 @@
 # 008 -- Update to catalog schema v6 (holdings signal) + adopt the current module
 
-> Filed from the libcatalog framework repo (cross-repo note, uncommitted): the
+> Filed from the libcat framework repo (cross-repo note, uncommitted): the
 > framework moved ahead of this demo. Left uncommitted so a session working in
 > this repo owns whether/when to pick it up.
 
 ## Why (build is currently broken)
 
-Against the current libcatalog Hugo module the demo **fails to build**:
+Against the current libcat Hugo module the demo **fails to build**:
 
 ```
-ERROR libcatalog: catalog.json schema version 5, module targets 6 --
+ERROR libcat: catalog.json schema version 5, module targets 6 --
 reproject with a matching lcat (tasks/009)
 Error: error building site: logged 1 error(s)
 ```
@@ -17,17 +17,17 @@ Error: error building site: logged 1 error(s)
 The projector/module advanced to **schema v6** while this repo still emits
 **v5**. v6 added the **holdings signal** -- `Work.Held` / `Instance.Held`:
 physical items, or a live-availability identifier whose feed still lists the
-Work (libcatalog tasks/078). `assets/catalog.json` and `assets/facets.json` are
+Work (libcat tasks/078). `assets/catalog.json` and `assets/facets.json` are
 both `version: 5`, and works have no `held` field, so the module's version guard
 rejects the build.
 
-(Local dev resolves the module via the `replace => ../libcatalog/hugo` in
+(Local dev resolves the module via the `replace => ../libcat/hugo` in
 `go.mod`, so this bites immediately on a local `hugo` build, not just deploy.)
 
 ## Options to regenerate at v6
 
-1. **Preferred -- switch to the real `lcat` pipeline.** libcatalog now ships a
-   first-party **Hardcover ingest source** (`libcatalog/ingest/hardcover/`,
+1. **Preferred -- switch to the real `lcat` pipeline.** libcat now ships a
+   first-party **Hardcover ingest source** (`libcat/ingest/hardcover/`,
    framework tasks/026) and a `Held` signal the projector fills. Retire the
    hand-rolled JS pipeline (`scripts/fetch-hardcover.mjs`, `scripts/gen-facets.mjs`)
    in favour of Hardcover -> BIBFRAME grains -> `lcat project`, which emits
@@ -62,7 +62,7 @@ templates can drift from new module markup. Availability stays **off** by design
 ## Deploy pin
 
 `scripts/pin-module.sh` swaps the local `replace` for a published module version
-in CI/deploy. Once `github.com/freeeve/libcatalog/hugo` is tagged at a version
+in CI/deploy. Once `github.com/freeeve/libcat/hugo` is tagged at a version
 that includes the v6 module, bump the pin (tasks/003) so the deployed build
 matches local.
 
@@ -74,7 +74,7 @@ Took **option 1 (real `lcat` pipeline)** and the **honest `held`** reading:
   `gen-facets.mjs`) and `data/subject-map.json`. `npm run data:refresh` now runs
   `scripts/refresh-data.sh` = `lcat hardcover --out build/` then
   `lcat project --provider hardcover --out assets/` against the sibling
-  `../libcatalog` checkout. Schema version, controlled subjects, facet counts, and the
+  `../libcat` checkout. Schema version, controlled subjects, facet counts, and the
   holdings signal are projector-owned now; the next bump is a re-run. Regenerated 102
   works / 262 instances at **schema v6** (parity with the old v5 corpus: 101 covers, 95
   with subjects, 13 subjects, rating on 97). Projection is deterministic and work IDs are
@@ -91,7 +91,7 @@ Took **option 1 (real `lcat` pipeline)** and the **honest `held`** reading:
   identity, dark-mode toggle, covers, subjects, and `print`/`ebook`/`audiobook` formats
   all render. Fixed the one stale data reference: the JSON-LD format map in
   `seo.html` (`physical` -> `print`, the projector's canonical BIBFRAME vocabulary).
-- **Deploy pin.** Unblocked: `github.com/freeeve/libcatalog/hugo` is now tagged
+- **Deploy pin.** Unblocked: `github.com/freeeve/libcat/hugo` is now tagged
   `hugo/v0.1.0` (contains the v6 module) and pushed. Fixed `scripts/pin-module.sh`, which
   was broken for this repo -- the demo imports the module only as a *Hugo* module (no Go
   package imports it), so the old `go get` + `go mod tidy` failed on the placeholder

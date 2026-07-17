@@ -1,11 +1,11 @@
 # 011 -- Richer cataloging demo: sandbox editing + working LCSH subjects
 
-> Filed from the libcatalog framework repo (cross-repo note, uncommitted). Left
+> Filed from the libcat framework repo (cross-repo note, uncommitted). Left
 > uncommitted so a session working in this repo owns whether/when to pick it up.
 
 ## Status (2026-07-05): DONE
 
-Live at https://try.libcatalog.evefreeman.com/. Flipped the demo Lambda's env from
+Live at https://try.libcat.evefreeman.com/. Flipped the demo Lambda's env from
 `LCATD_READ_ONLY=1` to **`LCATD_SANDBOX=1`** (implies read-only) and added
 `LCATD_VOCAB_SCHEMES=lcsh`; bundled a corpus-sized LCSH snapshot at
 `grains/data/authorities/vocab/lcsh.nq`. CloudFront/Function-URL infra (010) unchanged --
@@ -21,7 +21,7 @@ Live at https://try.libcatalog.evefreeman.com/. Flipped the demo Lambda's env fr
 Scheme gotcha: the demo's catalog uses **https** LCSH URIs (upstream ingest subject-map),
 but `lcat vocab-subset`/id.loc.gov emit the **http** canonical, and the vocab index matches
 URIs exactly -- so the raw snapshot reported "0 terms" and wouldn't resolve. `gen-lcsh.sh`
-realigns the snapshot to https to match the catalog. Filed the tool fix as libcatalog
+realigns the snapshot to https to match the catalog. Filed the tool fix as libcat
 tasks/100. Scope point 3 (static-catalog labels) was already satisfied -- `catalog.json`
 subjects already carry en/es labels inline. Copy updated on the About page.
 
@@ -30,7 +30,7 @@ NOTE: the About-page copy change is committed but the **static site needs a rede
 
 ## Why
 
-`009` shipped a read-only cataloging demo. libcatalog now supports a fuller,
+`009` shipped a read-only cataloging demo. libcat now supports a fuller,
 interactive demo without giving up "nothing persists" -- three new capabilities
 (all verified upstream):
 
@@ -65,9 +65,9 @@ interactive demo without giving up "nothing persists" -- three new capabilities
 
 ## Notes
 
-- Needs the libcatalog version carrying these features (backend sandbox +
+- Needs the libcat version carrying these features (backend sandbox +
   dry-run-doc; the `lcat vocab-subset` subcommand in the root module). Pin the
-  demo's libcatalog checkout / module refs accordingly.
+  demo's libcat checkout / module refs accordingly.
 - Known upstream edge: a raw client that *executes* (non-dry-run) an edit against
   a read-only/sandbox instance gets a 500 (blocked at the blob store) rather than
   a clean 403; the sandbox UI only ever dry-runs, so it is unreachable in normal

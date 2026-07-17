@@ -1,9 +1,9 @@
 # 024 -- bump to hugo/v0.9.0 (scheme-aware subjects, schema v8)
 
-Filed from libcatalog (tasks/141, 2026-07-06). Leave uncommitted for the
+Filed from libcat (tasks/141, 2026-07-06). Leave uncommitted for the
 demo session to pick up.
 
-libcatalog tagged `hugo/v0.9.0` + `v0.15.0`: the projector now emits schema
+libcat tagged `hugo/v0.9.0` + `v0.15.0`: the projector now emits schema
 **v8** (subjects carry a `scheme` vocabulary code) and the module targets it
 -- a v7 catalog.json fails the version check, so the module bump and the
 reproject (with a v0.15.0 `lcat project`) must land together.
@@ -21,11 +21,11 @@ What changes:
 - Term pages now title with the human label plus vocabulary.
 
 Recipe: bump `HUGO_MODULE_VERSION` to v0.9.0, rebuild `lcat` from
-libcatalog v0.15.0, reproject, deploy.
+libcat v0.15.0, reproject, deploy.
 
 ## Done (2026-07-06)
 
-Landed on **hugo/v0.21.0** (lockstep `v0.21.0`), not v0.9.0 -- libcatalog
+Landed on **hugo/v0.21.0** (lockstep `v0.21.0`), not v0.9.0 -- libcat
 tagged through v0.21.0 the same day, the working-tree `replace` builds
 against that state, and the module now targets schema **v9** (v8's subject
 schemes plus `{value, label}` classifications and language display names,
@@ -43,7 +43,7 @@ module tasks/142).
   the language facet shows "English" via the module's LOC table.
 - `HUGO_MODULE_VERSION` repo variable bumped v0.8.0 -> v0.21.0
   (`hugo/v0.21.0` is pushed; the Go proxy resolves it).
-- Module bug found while verifying, filed as libcatalog tasks/149 (left
+- Module bug found while verifying, filed as libcat tasks/149 (left
   uncommitted there per policy): term page head `<title>`/`og:title` use the
   humanized slug ("Homosaurus-Lgbtq-Books") instead of the resolved display
   label the h1 gets.

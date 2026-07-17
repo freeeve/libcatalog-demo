@@ -19,11 +19,11 @@ pages -- layered on top of the module without forking its templates.
    shadowing `layouts/list.html` (or a `home.html`) so the module list still renders
    below.
 3. **About / demo disclosure.** Add an `/about/` page stating plainly this is a demo of
-   the **libcatalog framework + Hugo**, with links to both repos and a short "how it's
+   the **libcat framework + Hugo**, with links to both repos and a short "how it's
    built" note (BIBFRAME -> projector -> Hugo module -> Pagefind). Needs a simple page
    layout for non-Work content (the module's `page.html` expects Work params), e.g. a
    `layouts/page.html` guard or a dedicated section layout.
-4. **Persistent demo note.** A footer on every page: "Built with libcatalog + Hugo -- a
+4. **Persistent demo note.** A footer on every page: "Built with libcat + Hugo -- a
    demo, not a real collection." Add it via a `baseof.html` override or a footer partial.
 5. **Cover art (optional).** If `tasks/001` captured cover URLs, surface them on the Work
    card and detail (extend the card partial). Respect Hardcover/source image terms; fall
@@ -32,7 +32,7 @@ pages -- layered on top of the module without forking its templates.
 ## Acceptance
 
 - The site looks like a branded public-library catalog titled "Eve's Library".
-- Every page carries a clear, honest "this is a libcatalog + Hugo demo" note, and an
+- Every page carries a clear, honest "this is a libcat + Hugo demo" note, and an
   About page explains it.
 - Overrides sit on top of the module (no vendored copy of module templates); the module
   can still be version-bumped without merge pain.
@@ -40,6 +40,6 @@ pages -- layered on top of the module without forking its templates.
 
 ## Refs
 
-- libcatalog module override model (hugo/README "Overriding"), `layouts/baseof.html`,
+- libcat module override model (hugo/README "Overriding"), `layouts/baseof.html`,
   `layouts/list.html`, `layouts/page.html`, `layouts/_partials/work-card.html`,
-  `assets/lcat.css`. Accessibility posture: libcatalog `tasks/014`.
+  `assets/lcat.css`. Accessibility posture: libcat `tasks/014`.

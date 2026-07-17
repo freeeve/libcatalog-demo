@@ -1,6 +1,6 @@
-# 012 -- Bump libcatalog to v0.4.1 (read-only guard fix)
+# 012 -- Bump libcat to v0.4.1 (read-only guard fix)
 
-> Filed from the libcatalog framework repo (cross-repo note, uncommitted). Left
+> Filed from the libcat framework repo (cross-repo note, uncommitted). Left
 > uncommitted so a session working in this repo owns whether/when to pick it up.
 
 ## Status (2026-07-05): DONE
@@ -12,7 +12,7 @@ checkout, which carries the guard fix (`backend/httpapi/readonly.go` allowlist n
 unchanged in v0.4.1, so `terraform apply` was a single in-place Lambda update (0 add, 1
 change, 0 destroy); no CloudFront/DNS change.
 
-Verified live on `try.libcatalog.evefreeman.com` with a real work id: `subjects/lookup`
+Verified live on `try.libcat.evefreeman.com` with a real work id: `subjects/lookup`
 -> 200 (`{"candidates":[],...}`, not a read-only error), `marc/preview` -> 200 (returns the
 MARC), `validate` -> 400 `empty patch` (reached the handler, i.e. past the guard -- was
 403 before). Sandbox (`sandbox:true`) + LCSH from 011 unaffected; `POST /v1/publish` still
@@ -28,15 +28,15 @@ The sandbox demo (`011`) is live, but a few editor actions return
 - MARC preview (`POST /v1/works/{id}/marc/preview`),
 - Record validation (`POST /v1/works/{id}/validate`).
 
-libcatalog's read-only/sandbox guard was 403'ing these because they are POSTs
+libcat's read-only/sandbox guard was 403'ing these because they are POSTs
 outside its allowlist, even though none of them persist anything. Fixed
 upstream in **v0.4.1** (they're now allowlisted alongside copycat search and the
 dry-run endpoints).
 
 ## Steps
 
-1. **Bump the pin to `v0.4.1`** everywhere the demo references libcatalog: the
-   terraform module (`...readonly-demo?ref=v0.4.1`), and the libcatalog checkout
+1. **Bump the pin to `v0.4.1`** everywhere the demo references libcat: the
+   terraform module (`...readonly-demo?ref=v0.4.1`), and the libcat checkout
    the Lambda build compiles `cmd/lcatd` + `cmd/lcat` from.
 2. **Rebuild the Lambda zip** (`build-zip.sh`, or the demo's `deploy/lcatd`
    build) from v0.4.1 so the deployed `lcatd` includes the fix.

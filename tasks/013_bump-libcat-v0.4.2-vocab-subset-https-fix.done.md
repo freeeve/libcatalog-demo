@@ -1,6 +1,6 @@
-# 013 -- Bump libcatalog to v0.4.2 (vocab-subset https fix; drop the band-aid)
+# 013 -- Bump libcat to v0.4.2 (vocab-subset https fix; drop the band-aid)
 
-> Filed from the libcatalog framework repo (cross-repo note, uncommitted). Left
+> Filed from the libcat framework repo (cross-repo note, uncommitted). Left
 > uncommitted so a session working in this repo owns whether/when to pick it up.
 
 ## Status (2026-07-05): DONE
@@ -12,7 +12,7 @@ so it writes **12 terms** (was "0 terms") and a resolving snapshot directly. Reg
 `lcsh.nq` is **byte-identical** to the committed band-aid output, so no redeploy: the
 terraform module is unchanged and the fix is in the `lcat` CLI (build tooling), not lcatd
 (`terraform plan` = no changes). The deployed editor already resolves the subjects
-("Fiction", etc., verified in 011/012). libcatalog `tasks/100` (the tool fix) is closed
+("Fiction", etc., verified in 011/012). libcat `tasks/100` (the tool fix) is closed
 upstream.
 
 ## Why
@@ -28,7 +28,7 @@ snapshot directly. The post-generation rewrite is no longer needed.
 
 ## Steps
 
-1. Bump the libcatalog checkout / `lcat` build to **v0.4.2** (the module `?ref`
+1. Bump the libcat checkout / `lcat` build to **v0.4.2** (the module `?ref`
    is already at v0.4.2 upstream; nothing else in v0.4.2 changed).
 2. **Remove the http->https rewrite band-aid** from the snapshot build and run
    `lcat vocab-subset --catalog <catalog.json>

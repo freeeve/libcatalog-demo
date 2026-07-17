@@ -24,12 +24,12 @@ Done (verified in this repo):
 
 Remaining (out of this repo):
 
-- **Link-back** -- must land in the libcatalog repo, not here; task filed there
-  (`../libcatalog/tasks/021`), now that the site is live.
+- **Link-back** -- must land in the libcat repo, not here; task filed there
+  (`../libcat/tasks/021`), now that the site is live.
 
 ## Context
 
-Final polish so the demo is a credible showcase and discoverable, and so the libcatalog
+Final polish so the demo is a credible showcase and discoverable, and so the libcat
 project points at it.
 
 ## Scope
@@ -47,9 +47,9 @@ project points at it.
    bibliographic markup.
 4. **Performance.** Confirm CloudFront compression + cache headers (`tasks/003`), lazy-
    load cover images, and check a Lighthouse pass (performance + a11y + SEO).
-5. **Link-back.** Once live, add the demo URL to the libcatalog repos:
+5. **Link-back.** Once live, add the demo URL to the libcat repos:
    - top-level `README.md` and `hugo/README.md` (a "Live demo" line).
-   - NOTE: that change lands in the **libcatalog** repo, not here. Per the workspace
+   - NOTE: that change lands in the **libcat** repo, not here. Per the workspace
      convention, make it there (or leave a task file there); do not edit that repo from
      this one.
 
@@ -57,9 +57,9 @@ project points at it.
 
 - Clean axe audit + verified contrast; Pagefind search fully keyboard/AT accessible.
 - Valid OG/Twitter/sitemap/robots/favicon; good Lighthouse scores.
-- libcatalog READMEs link to https://libcatalog.evefreeman.com.
+- libcat READMEs link to https://libcat.evefreeman.com.
 
 ## Refs
 
-- libcatalog `tasks/014` (a11y audit tooling), `tasks/017` (Pagefind). Hugo SEO
+- libcat `tasks/014` (a11y audit tooling), `tasks/017` (Pagefind). Hugo SEO
   internals (`_internal/opengraph`, `schema`, `twitter_cards`).

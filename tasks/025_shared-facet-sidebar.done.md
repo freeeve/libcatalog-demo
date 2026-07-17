@@ -1,7 +1,7 @@
-# 025 -- enable the shared facet sidebar (libcatalog tasks/150)
+# 025 -- enable the shared facet sidebar (libcat tasks/150)
 
-Filed from libcatalog (2026-07-06). libcatalog 862bda0 (main, in the local
-`replace ../libcatalog/hugo` this repo already tracks) adds an opt-in shared
+Filed from libcat (2026-07-06). libcat 862bda0 (main, in the local
+`replace ../libcat/hugo` this repo already tracks) adds an opt-in shared
 facet sidebar: instead of inlining the page-invariant sidebar into every
 list/term page, the module publishes it once per language as a fingerprinted
 fragment (`/lcat/facets.<lang>.<hash>.html`) fetched and inserted by
@@ -34,7 +34,7 @@ before queerbooks (their tasks/011) leans on it at scale.
 
 ## Done (2026-07-06)
 
-All five steps, verified against libcatalog 862bda0 via the local `replace`:
+All five steps, verified against libcat 862bda0 via the local `replace`:
 
 - `hugo.toml`: `[params.facets] shared = true` (new block; negatives stay off).
 - Rebuilt: `/lcat/facets.en.<sha256>.html` publishes (9.5k, all six groups:
@@ -52,6 +52,6 @@ All five steps, verified against libcatalog 862bda0 via the local `replace`:
 
 Production note: 862bda0 is unreleased (no hugo tag past v0.21.1), so CI --
 pinned to v0.21.1 -- ignores the unknown `shared` param and keeps inlining;
-the config is inert until the next module release. When libcatalog tags it,
+the config is inert until the next module release. When libcat tags it,
 bump the `HUGO_MODULE_VERSION` repo variable and the feature goes live with
 the cache rule already in place.

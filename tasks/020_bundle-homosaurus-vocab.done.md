@@ -7,7 +7,7 @@ Homosaurus at all.
 Approach: Homosaurus is small (~3.9k terms), so unlike LCSH (corpus subset) we
 bundle the WHOLE vocabulary -- every term searchable locally via `/v1/terms`,
 no live proxy needed. `lcat vocab-subset` couldn't do this (it fetches per-term
-`<uri>.skos.nt`, an id.loc.gov convention; generalizing = libcatalog tasks/124),
+`<uri>.skos.nt`, an id.loc.gov convention; generalizing = libcat tasks/124),
 so `deploy/lcatd/gen-homosaurus.sh` converts the official n-triples dump
 (https://homosaurus.org/v3.nt, 7.4MB) to a 3.5MB `homosaurus.nq`: SKOS surface
 predicates only, quads tagged `<authority:homosaurus>`.
@@ -35,6 +35,6 @@ the copy changes.
 Done (repo v0.8.0). Deployed: in-place Lambda update (new zip + env). Verified live:
 `/config` schemes `["homosaurus","lcsh","folk"]`; resolve homoit0000827 ->
 "LGBTQ+ books"; `/v1/terms?scheme=homosaurus&q=pride` -> 7 local hits (full-vocab
-search); writes still 403. Upstream ask filed: libcatalog tasks/124 (vocab-subset
+search); writes still 403. Upstream ask filed: libcat tasks/124 (vocab-subset
 --fetch-suffix / --dump modes). Static site copy (About + sandbox guide) deployed
 via CI.

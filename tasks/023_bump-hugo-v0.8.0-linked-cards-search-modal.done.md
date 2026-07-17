@@ -16,7 +16,7 @@ Schema stays v7 -- no data refresh, no demo file changes; this bump is CI-pin-on
 
 Verified against the sibling head (build + axe 504 pages clean + CDP-driven
 modal screenshots light/dark; kuang link -> minted page exists). BLOCKED on
-upstream pushing the `hugo/v0.8.0` tag (asked via ../libcatalog/tasks/132).
+upstream pushing the `hugo/v0.8.0` tag (asked via ../libcat/tasks/132).
 Once pushed: verify `scripts/pin-module.sh v0.8.0` builds, set CI
 `HUGO_MODULE_VERSION=v0.8.0`, commit this task done (triggers deploy), verify
 live.

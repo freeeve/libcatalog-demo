@@ -1,12 +1,12 @@
 # 010 -- Migrate the read-only demo from API Gateway to CloudFront + Function URL
 
-> Filed from the libcatalog framework repo (cross-repo note, uncommitted). Left
+> Filed from the libcat framework repo (cross-repo note, uncommitted). Left
 > uncommitted so a session working in this repo owns whether/when to pick it up.
 
 ## Status (2026-07-04): DONE
 
-Migrated `try.libcatalog.evefreeman.com` from API Gateway v2 to **CloudFront + Lambda
-Function URL** via the libcatalog `readonly-demo` module
+Migrated `try.libcat.evefreeman.com` from API Gateway v2 to **CloudFront + Lambda
+Function URL** via the libcat `readonly-demo` module
 (`?ref=backend/v0.3.0`), reusing the same zip, grains, `LCATD_*` env, and us-east-1 ACM
 cert (front-door only; no code/env/grain change). `deploy/lcatd/terraform/cloudfront.tf`
 adds the module; `main.tf` now holds just the shared env, cert, and the Route 53 alias
@@ -23,8 +23,8 @@ faster (edge-cached assets don't wake Lambda). Teardown/redeploy unchanged
 
 ## Why
 
-`009` is live at https://try.libcatalog.evefreeman.com/ on **Lambda + API Gateway
-v2**. libcatalog `backend/v0.3.0` now ships a turnkey module for a *cheaper and
+`009` is live at https://try.libcat.evefreeman.com/ on **Lambda + API Gateway
+v2**. libcat `backend/v0.3.0` now ships a turnkey module for a *cheaper and
 more responsive* front door -- **Lambda Function URL + CloudFront** -- backing the
 same Lambda, grains, and env. Two wins over API Gateway:
 
@@ -40,7 +40,7 @@ edge/front-door changes.
 
 ## The module
 
-`github.com/freeeve/libcatalog//backend/deploy/terraform/modules/readonly-demo?ref=backend/v0.3.0`
+`github.com/freeeve/libcat//backend/deploy/terraform/modules/readonly-demo?ref=backend/v0.3.0`
 provisions the arm64 Lambda, a public Function URL, and a CloudFront distribution
 wired with the correct cache split (hashed `/assets/*` cached hard; `/config` +
 `/v1/*` never cached, forwarded all-viewer-except-Host; HTML served fresh). See
@@ -50,16 +50,16 @@ its README for the consumer block and `build-zip.sh` (SPA + bootstrap + grains).
 
 1. **ACM cert in us-east-1.** CloudFront requires the alias cert in **us-east-1**
    (API Gateway's cert is likely in the deploy region). Request/validate a
-   `try.libcatalog.evefreeman.com` cert in us-east-1 (DNS-validated via Route 53).
+   `try.libcat.evefreeman.com` cert in us-east-1 (DNS-validated via Route 53).
 2. **Swap the terraform** in `deploy/lcatd/terraform`: replace the API-GW +
    lambda resources with the module block, reusing the existing grains-bundled
    zip (the current `deploy.sh` build, or the module's `build-zip.sh`), the same
-   `environment`, `aliases = ["try.libcatalog.evefreeman.com"]`, and
+   `environment`, `aliases = ["try.libcat.evefreeman.com"]`, and
    `acm_certificate_arn` = the us-east-1 cert. Keep the stable
    `LCATD_LOCAL_SIGNING_KEY` (gitignored tfvars) so warm sessions survive, and
    `LCATD_VOCAB_SCHEMES` trimmed for a faster cold start.
 3. **`terraform apply`** -> note the `cloudfront_domain` output.
-4. **Repoint DNS.** Move the Route 53 alias for `try.libcatalog.evefreeman.com`
+4. **Repoint DNS.** Move the Route 53 alias for `try.libcat.evefreeman.com`
    from the API-GW domain to the CloudFront distribution.
 5. **Verify live:** assets come from the edge (`x-cache: Hit from cloudfront`, no
    Lambda invocation), `/config` -> `readOnly:true` and `/v1/*` pass through,
@@ -72,12 +72,12 @@ its README for the consumer block and `build-zip.sh` (SPA + bootstrap + grains).
 
 - No change to the Lambda code, grains, or `LCATD_*` env -- this is purely the
   edge/front-door.
-- Writable production (DynamoDB/S3 + worker model) stays out of scope (libcatalog
+- Writable production (DynamoDB/S3 + worker model) stays out of scope (libcat
   `tasks/099`).
 
 ## Acceptance
 
-- `try.libcatalog.evefreeman.com` is served through CloudFront + a Lambda Function
+- `try.libcat.evefreeman.com` is served through CloudFront + a Lambda Function
   URL; SPA assets are edge-cached; the old API Gateway is gone.
 - The demo still passes 009's checks (sign-in, read-only banner, 102 works,
   writes 403), and page loads no longer wake Lambda for static assets.

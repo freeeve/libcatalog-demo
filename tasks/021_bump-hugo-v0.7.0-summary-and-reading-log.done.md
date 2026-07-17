@@ -1,6 +1,6 @@
 # 021 -- Bump to hugo/v0.7.0: summaries (schema v7) + rating/dateRead via work-extra hook
 
-Unblocked: libcatalog pushed `hugo/v0.7.0` and `v0.8.0` (tasks/124/125). What
+Unblocked: libcat pushed `hugo/v0.7.0` and `v0.8.0` (tasks/124/125). What
 shipped, and what this site does with it:
 
 - Work descriptions are now first-class `bf:summary` -> catalog.json `summary`
@@ -12,7 +12,7 @@ shipped, and what this site does with it:
 
 Steps:
 
-1. Bump the module: `hugo mod get github.com/freeeve/libcatalog/hugo@v0.7.0`.
+1. Bump the module: `hugo mod get github.com/freeeve/libcat/hugo@v0.7.0`.
 2. Re-ingest and reproject with a `v0.8.0` `lcat` -- REQUIRED, not optional:
    the adapter fails the build on catalog.json version != 7, and descriptions
    only enter the graph as bf:summary on re-ingest (tasks/124 shipped no
@@ -45,4 +45,4 @@ HUGO_MODULE_VERSION v0.6.0 -> v0.7.0 (published pin verified). Sandbox Lambda
 also rebuilt (v0.8.0 backend + v7 grains) and applied: summary present in the
 work doc, 102 works, schemes + 403s intact. Upstream finding filed: the
 SearchAction JSON-LD advertises /works/?q= but search-pagefind.html never reads
-it (libcatalog tasks/126).
+it (libcat tasks/126).

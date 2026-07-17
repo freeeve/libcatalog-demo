@@ -1,12 +1,12 @@
 # 009 -- Live read-only cataloging demo (lcatd with LCATD_READ_ONLY)
 
-> Filed from the libcatalog framework repo (cross-repo note, uncommitted). Left
+> Filed from the libcat framework repo (cross-repo note, uncommitted). Left
 > uncommitted so a session working in this repo owns whether/when to pick it up.
 
-## Status (2026-07-04): DONE -- live at https://try.libcatalog.evefreeman.com/
+## Status (2026-07-04): DONE -- live at https://try.libcat.evefreeman.com/
 
 Hosting: **AWS Lambda + API Gateway v2 HTTP API** (scale-to-zero, ~$0 idle). The two
-upstream blockers were resolved in libcatalog first:
+upstream blockers were resolved in libcat first:
 - **`097` (done)** -- `cmd/lcatd-lambda` now calls `config.FromEnv` + the shared
   `appdeps.Build`, which gates the container-only worker tickers off in read-only mode.
 - **`098` (done, filed by this session)** -- the release build now compiles the SPA
@@ -15,7 +15,7 @@ upstream blockers were resolved in libcatalog first:
 Deployed from this repo (`deploy/lcatd/`): a single arm64 Lambda serving the backend in
 `LCATD_READ_ONLY=1`, cataloging SPA embedded, **BIBFRAME grains bundled in the zip**
 (in-memory doc store -- no DynamoDB, no S3, IAM = logs only), fronted by an API Gateway
-v2 HTTP API on `try.libcatalog.evefreeman.com` (ACM DNS-validated + Route 53). Grains are
+v2 HTTP API on `try.libcat.evefreeman.com` (ACM DNS-validated + Route 53). Grains are
 the **same `lcat hardcover` output** as tasks/008 (`build/data/works/**.nq`) -- one ingest
 feeds both the static catalog and the editor (102 works).
 
@@ -35,8 +35,8 @@ Container form (what was verified; the Lambda form reuses the same env + grains 
 
 ```
 # 1. Build the SPA first (tasks/098) so the embedded UI boots, then the binary.
-(cd ../libcatalog/backend/ui && npm ci && npm run build)
-(cd ../libcatalog/backend && go build -o lcatd ./cmd/lcatd)   # or ./cmd/lcatd-lambda post-097
+(cd ../libcat/backend/ui && npm ci && npm run build)
+(cd ../libcat/backend && go build -o lcatd ./cmd/lcatd)   # or ./cmd/lcatd-lambda post-097
 
 # 2. Grains = the tasks/008 ingest output (build/data/works/**.nq). For Lambda,
 #    upload that tree to the LCATD_S3_BUCKET under the same data/works/ key layout.
@@ -59,13 +59,13 @@ panels read empty; seed `data/authorities/` too for a richer editor demo.
 
 ## Why
 
-Eve's Library shows the **patron-facing output** of libcatalog: the static,
+Eve's Library shows the **patron-facing output** of libcat: the static,
 faceted, searchable catalog. It doesn't show the **cataloging side** -- the
 editor, review queue, copy cataloging, editing profiles -- because that's a
 running backend (`lcatd`), not a static site.
 
-libcatalog now ships a **deployment-wide read-only mode** (`LCATD_READ_ONLY=1`,
-released in `backend/v0.2.0`, libcatalog commit `cd99922`). It makes a public
+libcat now ships a **deployment-wide read-only mode** (`LCATD_READ_ONLY=1`,
+released in `backend/v0.2.0`, libcat commit `cd99922`). It makes a public
 `lcatd` safe to expose: the grain store is wrapped read-only and an HTTP guard
 rejects editorial/config writes, so **nothing a visitor does persists to the
 grains or config**, while sign-in, reads, external search, and **dry-run
@@ -90,10 +90,10 @@ UI live.
 ## Scope
 
 1. **Deploy an `lcatd` container** with `LCATD_READ_ONLY=1` behind a subdomain
-   (e.g. `try.libcatalog.evefreeman.com`, or a path off the demo). Persistence
+   (e.g. `try.libcat.evefreeman.com`, or a path off the demo). Persistence
    can be the simplest tier: in-memory document store + a local/mounted blob dir
    of pre-projected grains (resets on restart -- fine, even desirable, for a
-   demo). DynamoDB/S3 (libcatalog `095`) only if durable demo state is wanted.
+   demo). DynamoDB/S3 (libcat `095`) only if durable demo state is wanted.
 2. **Pre-seed the grains** the editor shows: project the same Eve's Library
    corpus (or a curated subset) into BIBFRAME grains under the blob dir, so the
    admin UI opens real records that match the public catalog. Reuse the Go
@@ -106,16 +106,16 @@ UI live.
    scratch (staged drafts, queued review decisions); a periodic restart clears
    it. A scheduled bounce (or ephemeral container) keeps it tidy.
 5. **Link from Eve's Library** (About page / footer): "This catalog was built
-   with libcatalog -- try the cataloging backend that produced it."
+   with libcat -- try the cataloging backend that produced it."
 
 ## Considerations
 
 - Public-instance hygiene: resource limits, and the built-in abuse/rate limiting
   (`LCATD_ABUSE_SECRET`) for the login/suggest paths.
-- Known rough edge (libcatalog): the dry-run editor endpoints' *execute* path
+- Known rough edge (libcat): the dry-run editor endpoints' *execute* path
   returns 500 (blocked at the blob store) rather than a clean 403 if a client
   bypasses the UI; the UI hides those buttons, so it only affects scripted
-  callers. libcatalog may map it to 403 later.
+  callers. libcat may map it to 403 later.
 - Same-origin: serve the SPA and API from one origin (lcatd already embeds the
   SPA and serves `/config`), so no CORS setup is needed.
 

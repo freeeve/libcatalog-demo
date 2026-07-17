@@ -13,7 +13,7 @@ Stopgap here (adopter CSS in lcat-theme.css, no shadow): position
 `.pagefind-ui__drawer:not(.pagefind-ui__hidden)` as an absolute overlay dropdown
 anchored under the search box (themed surface/border/shadow, max-height +
 overflow, z-index), plus map the unset `--pagefind-ui-tag` chip background to
---lcat-surface-alt (was unreadable in dark mode). Filed upstream as libcatalog
+--lcat-surface-alt (was unreadable in dark mode). Filed upstream as libcat
 tasks/127 with both fixes; these rules drop when the module ships them.
 
 Verified with CDP-driven headless Chrome (type into the Pagefind input, wait,
@@ -22,7 +22,7 @@ dropdown card, header intact, one correct highlighted result, readable chips.
 
 ## Reverted (2026-07-06, v0.9.2)
 
-Owner policy set after this shipped: base-theme bugs get FILED (libcatalog
+Owner policy set after this shipped: base-theme bugs get FILED (libcat
 tasks/127, updated with the deeper evidence -- filter/results columns overlap
 inside the drawer even with the overlay, single mount confirmed), and the base
 behavior stays as-is downstream. The v0.9.1 stopgap CSS (drawer overlay +

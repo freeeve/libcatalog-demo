@@ -1,9 +1,9 @@
-# 003 -- Deploy to S3 + CloudFront (libcatalog.evefreeman.com)
+# 003 -- Deploy to S3 + CloudFront (libcat.evefreeman.com)
 
 ## Status (DONE -- deployed and live)
 
 `terraform apply` succeeded and the site is serving:
-**https://libcatalog.evefreeman.com/** -> HTTP 200 over TLS, HTTP->HTTPS 301, deep
+**https://libcat.evefreeman.com/** -> HTTP 200 over TLS, HTTP->HTTPS 301, deep
 links resolve via the rewrite function, missing paths return the branded 404, Pagefind
 assets load. Deployed with `deploy/deploy.sh` (staged cache headers + `/*` invalidation).
 Account/zone/distribution identifiers live only in gitignored Terraform state, never
@@ -40,7 +40,7 @@ This task stands up the hosting and a reproducible build+deploy pipeline.
 
 - AWS account + credentials with S3, CloudFront, ACM, and (if DNS lives there) Route 53
   access.
-- Control of `evefreeman.com` DNS to point `libcatalog` at CloudFront and validate the
+- Control of `evefreeman.com` DNS to point `libcat` at CloudFront and validate the
   ACM cert.
 - The GitHub repo (this one) for CI.
 
@@ -52,7 +52,7 @@ This task stands up the hosting and a reproducible build+deploy pipeline.
    - CloudFront distribution: default root object `index.html`, compression on, sensible
      cache policy, and a **custom error / rewrite** so Hugo's `ugly`-free URLs and 404
      resolve (403/404 -> `/404.html` or a function that appends `index.html`).
-   - ACM cert (us-east-1) for `libcatalog.evefreeman.com`; DNS validation.
+   - ACM cert (us-east-1) for `libcat.evefreeman.com`; DNS validation.
    - Route 53 (or external DNS) A/AAAA alias -> the distribution.
 2. **Build pipeline.**
    - `hugo --minify --destination public`
@@ -62,20 +62,20 @@ This task stands up the hosting and a reproducible build+deploy pipeline.
    - CloudFront invalidation (`/*` or targeted paths).
 3. **Module version pinning for CI.** The local `go.mod` `replace`s the module to a
    sibling checkout, which CI won't have. Before/at CI: remove the `replace` and require a
-   **published** `github.com/freeeve/libcatalog/hugo` version (tag the module in the
-   libcatalog repo, or use a pseudo-version). Document the bump step.
+   **published** `github.com/freeeve/libcat/hugo` version (tag the module in the
+   libcat repo, or use a pseudo-version). Document the bump step.
 4. **CI (GitHub Actions).** On push to `main`: set up Hugo extended + Go, build, index,
    sync, invalidate. Store AWS creds via OIDC role (preferred) or repo secrets. Optionally
    run the Hardcover fetch (`tasks/001`) on a schedule to refresh content.
 
 ## Acceptance
 
-- `https://libcatalog.evefreeman.com` serves the built, Pagefind-indexed site over TLS,
+- `https://libcat.evefreeman.com` serves the built, Pagefind-indexed site over TLS,
   with correct MIME types and working deep links / 404.
 - A single CI run (or one documented command) builds and deploys from scratch.
 - No local-only `replace` leaks into the deployed build; the module version is pinned.
 
 ## Refs
 
-- ARCHITECTURE §6 (S3/CloudFront static tier). Pagefind post-build (libcatalog
+- ARCHITECTURE §6 (S3/CloudFront static tier). Pagefind post-build (libcat
   `tasks/017`, this repo's `npm run search:index`). Hugo Deploy / `aws s3 sync`.

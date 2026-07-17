@@ -1,7 +1,7 @@
 # 019 -- Bump to hugo/v0.6.0; drop the theme-toggle shadow and short-TTL cache stopgap
 
-libcatalog hugo/v0.6.0 ships the fixes this site is carrying workarounds for
-(libcatalog tasks/122 and 123):
+libcat hugo/v0.6.0 ships the fixes this site is carrying workarounds for
+(libcat tasks/122 and 123):
 
 - theme-toggle.html now pipes its jsonify'd labels through safeJS upstream, so
   the local shadow `layouts/_partials/theme-toggle.html` (the one-line quoted-label
@@ -13,7 +13,7 @@ libcatalog hugo/v0.6.0 ships the fixes this site is carrying workarounds for
 
 Steps:
 
-1. Bump the module: `hugo mod get github.com/freeeve/libcatalog/hugo@v0.6.0`
+1. Bump the module: `hugo mod get github.com/freeeve/libcat/hugo@v0.6.0`
    (or update the go.mod require) and rebuild.
 2. Delete `layouts/_partials/theme-toggle.html`; verify the toggle label renders
    without literal quotation marks after paint().

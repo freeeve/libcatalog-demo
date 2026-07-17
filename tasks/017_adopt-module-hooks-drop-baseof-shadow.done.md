@@ -1,4 +1,4 @@
-# 017 -- Adopt libcatalog hugo/v0.5.0 hooks; drop the baseof shadow (zero shadows)
+# 017 -- Adopt libcat hugo/v0.5.0 hooks; drop the baseof shadow (zero shadows)
 
 Upstream shipped our promotion asks (their tasks/118-120 -> hugo/v0.5.0): header
 nav from `[[menu.main]]` + banner/brand hooks, default SEO head (lifted from this

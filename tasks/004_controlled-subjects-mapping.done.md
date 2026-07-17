@@ -2,7 +2,7 @@
 
 ## Context
 
-libcatalog draws a first-class distinction between **controlled subjects** (authority
+libcat draws a first-class distinction between **controlled subjects** (authority
 URIs with localized labels -- e.g. LCSH, Homosaurus) and **uncontrolled tags** (free
 genre strings). The demo should exercise that distinction so the subjects facet and the
 authority `↗` links on Work pages are populated with real data, not left empty.
@@ -19,7 +19,7 @@ authority `↗` links on Work pages are populated with real data, not left empty
    Verify each URI resolves. Add `labels.es` (or other) for a subset if the demo goes
    multilingual, to show localized subject labels.
 3. **Hierarchy (optional).** Where an authority exposes a broader term, populate
-   `broader[]` so the vocabulary-hierarchy behavior (libcatalog `tasks/015`) is
+   `broader[]` so the vocabulary-hierarchy behavior (libcat `tasks/015`) is
    demonstrated.
 4. **Regenerate facets.** `subjects` in `facets.json` must reflect the mapped subjects
    with correct counts (regenerate, don't hand-edit).
@@ -33,6 +33,6 @@ authority `↗` links on Work pages are populated with real data, not left empty
 
 ## Refs
 
-- libcatalog `tasks/012` (controlled subjects vs tags vs labels), `tasks/015` (subject
+- libcat `tasks/012` (controlled subjects vs tags vs labels), `tasks/015` (subject
   `broader` hierarchy), `tasks/008` (identifier classification scheme). Module rendering:
   `layouts/page.html` subjects section, `layouts/_partials/facets.html`.

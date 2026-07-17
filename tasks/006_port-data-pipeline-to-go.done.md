@@ -4,7 +4,7 @@
 
 The data pipeline is currently three Node ESM scripts driven by `npm run data:refresh`
 (`scripts/fetch-hardcover.mjs`, `map-subjects.mjs`, `gen-facets.mjs`). The rest of the
-libcatalog ecosystem is Go (`lcat project`, the `ingest/` sources, the projector). Porting
+libcat ecosystem is Go (`lcat project`, the `ingest/` sources, the projector). Porting
 the pipeline to Go removes the Node/`npx` dependency from build+deploy and lets it reuse
 the framework's own types and projector instead of re-implementing them.
 
@@ -23,10 +23,10 @@ the framework's own types and projector instead of re-implementing them.
    projection input).
 3. **Where it should live.** Two options -- decide as part of this task:
    - a small module-local Go command in this repo (e.g. `cmd/data`), or
-   - contribute a **Hardcover ingest source upstream** to libcatalog
+   - contribute a **Hardcover ingest source upstream** to libcat
      (`ingest/hardcover/`, alongside `ingest/overdrive/`) so any adopter can use it, and
      drive it here via `lcat`. The upstream option matches the ecosystem best; per the
-     workspace convention, propose it with a task in the libcatalog repo rather than
+     workspace convention, propose it with a task in the libcat repo rather than
      editing it from here.
 4. **Keep `npm run data:refresh` working** (or replace it with the Go entrypoint) so the
    deploy flow (`tasks/003`, `.github/workflows/deploy.yml`) and docs stay coherent; update
@@ -42,16 +42,16 @@ the framework's own types and projector instead of re-implementing them.
 ## Decision (2026-07-02)
 
 Resolved in favor of the upstream option (§3, second bullet): the port lands as a
-**first-party Hardcover ingest provider in libcatalog** (`ingest/hardcover/`, mirroring
+**first-party Hardcover ingest provider in libcat** (`ingest/hardcover/`, mirroring
 `ingest/overdrive/`), not an adopter-local `cmd/data`. That routes this demo through the
 real ingest -> `lcat project` pipeline, so `catalog.json` + `facets.json` come from the
 genuine projector (schema v5, projector facet ordering) instead of the bespoke Node
 `gen-facets.mjs` -- exactly §2's intent.
 
 Per the workspace convention, the upstream change is proposed as a task there, left
-uncommitted: `../libcatalog/tasks/026_hardcover-ingest-source.md`. It captures the full
+uncommitted: `../libcat/tasks/026_hardcover-ingest-source.md`. It captures the full
 port spec (GraphQL fetch, BIBFRAME crosswalk, in-graph controlled subjects, and the
-cover/rating/dateRead/description extras, which need `../libcatalog/tasks/022`
+cover/rating/dateRead/description extras, which need `../libcat/tasks/022`
 adapter-forward-extra-params first).
 
 **Deferred here:** this repo keeps the Node pipeline (`scripts/*.mjs`,
