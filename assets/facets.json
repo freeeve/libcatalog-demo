@@ -3,7 +3,7 @@
   "languages": [
     {
       "value": "eng",
-      "count": 102
+      "count": 103
     }
   ],
   "subjects": [
@@ -14,7 +14,7 @@
         "es": "Ficción"
       },
       "scheme": "lcsh",
-      "count": 67
+      "count": 68
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85047114",
@@ -38,7 +38,7 @@
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
       "scheme": "lcsh",
-      "count": 54
+      "count": 55
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85118629",
@@ -50,7 +50,7 @@
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
       "scheme": "lcsh",
-      "count": 45
+      "count": 46
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85149267",
@@ -62,7 +62,7 @@
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
       "scheme": "lcsh",
-      "count": 21
+      "count": 20
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh85040350",
@@ -74,7 +74,7 @@
         "https://id.loc.gov/authorities/subjects/sh85118629"
       ],
       "scheme": "lcsh",
-      "count": 17
+      "count": 16
     },
     {
       "id": "https://homosaurus.org/v3/homoit0000827",
@@ -131,7 +131,7 @@
         "https://id.loc.gov/authorities/subjects/sh2026001126"
       ],
       "scheme": "lcsh",
-      "count": 3
+      "count": 2
     },
     {
       "id": "https://id.loc.gov/authorities/subjects/sh2026001184",
@@ -158,11 +158,11 @@
   "tags": [
     {
       "value": "Science Fiction \u0026 Fantasy",
-      "count": 40
+      "count": 39
     },
     {
       "value": "Classics",
-      "count": 23
+      "count": 24
     },
     {
       "value": "Space",
@@ -174,7 +174,7 @@
     },
     {
       "value": "Audiobook",
-      "count": 10
+      "count": 11
     },
     {
       "value": "litrpg",
@@ -186,11 +186,19 @@
     },
     {
       "value": "War",
-      "count": 7
+      "count": 8
     },
     {
       "value": "fantasy; litrpg",
       "count": 7
+    },
+    {
+      "value": "General",
+      "count": 6
+    },
+    {
+      "value": "Hard Science Fiction",
+      "count": 6
     },
     {
       "value": "cyberpunk",
@@ -201,11 +209,7 @@
       "count": 5
     },
     {
-      "value": "General",
-      "count": 5
-    },
-    {
-      "value": "Hard Science Fiction",
+      "value": "Literary Fiction",
       "count": 5
     },
     {
@@ -229,11 +233,11 @@
       "count": 3
     },
     {
-      "value": "Literary Fiction",
+      "value": "Literature",
       "count": 3
     },
     {
-      "value": "Literature \u0026 Fiction",
+      "value": "Satire",
       "count": 3
     },
     {
@@ -253,7 +257,7 @@
       "count": 2
     },
     {
-      "value": "Free will and determinism",
+      "value": "Graphic Novels",
       "count": 2
     },
     {
@@ -265,10 +269,6 @@
       "count": 2
     },
     {
-      "value": "Humorous",
-      "count": 2
-    },
-    {
       "value": "Juvenile Fiction",
       "count": 2
     },
@@ -277,7 +277,7 @@
       "count": 2
     },
     {
-      "value": "Literature",
+      "value": "Literature \u0026 Fiction",
       "count": 2
     },
     {
@@ -286,6 +286,10 @@
     },
     {
       "value": "Progression Fantasy",
+      "count": 2
+    },
+    {
+      "value": "Psychology",
       "count": 2
     },
     {
@@ -369,6 +373,10 @@
       "count": 1
     },
     {
+      "value": "Family saga",
+      "count": 1
+    },
+    {
       "value": "Fantasy fiction",
       "count": 1
     },
@@ -405,10 +413,6 @@
       "count": 1
     },
     {
-      "value": "Graphic Novels",
-      "count": 1
-    },
-    {
       "value": "Heartfelt",
       "count": 1
     },
@@ -417,15 +421,19 @@
       "count": 1
     },
     {
+      "value": "Humorous",
+      "count": 1
+    },
+    {
       "value": "Humour",
       "count": 1
     },
     {
-      "value": "Island",
+      "value": "India",
       "count": 1
     },
     {
-      "value": "Jeune Adulte",
+      "value": "Island",
       "count": 1
     },
     {
@@ -473,14 +481,6 @@
       "count": 1
     },
     {
-      "value": "Philosophical Fiction",
-      "count": 1
-    },
-    {
-      "value": "Psychology",
-      "count": 1
-    },
-    {
       "value": "Robots",
       "count": 1
     },
@@ -489,11 +489,15 @@
       "count": 1
     },
     {
-      "value": "Satire",
+      "value": "Sad",
       "count": 1
     },
     {
       "value": "Science",
+      "count": 1
+    },
+    {
+      "value": "Space colonies",
       "count": 1
     },
     {
@@ -589,6 +593,10 @@
       "count": 3
     },
     {
+      "value": "Vonnegut, Kurt",
+      "count": 3
+    },
+    {
       "value": "Weir, Andy",
       "count": 3
     },
@@ -602,10 +610,6 @@
     },
     {
       "value": "Klune, TJ",
-      "count": 2
-    },
-    {
-      "value": "Vonnegut, Kurt",
       "count": 2
     },
     {

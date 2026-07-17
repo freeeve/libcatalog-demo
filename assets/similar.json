@@ -4,25 +4,51 @@
   "works": {
     "w0iqiaup570qf2": [
       {
-        "id": "wcr5m01qphd6dm",
-        "title": "Circe",
+        "id": "wlecs9kl65t68s",
+        "title": "Elsewhere",
         "shared": [
-          "Literature \u0026 Fiction",
+          "Juvenile Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w1hdg4f5131ba6",
+        "title": "The Covenant of Water",
+        "shared": [
+          "Literary Fiction",
           "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
       {
-        "id": "wlecs9kl65t68s",
-        "title": "Elsewhere",
+        "id": "wcr5m01qphd6dm",
+        "title": "Circe",
         "shared": [
-          "Juvenile Fiction"
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
       {
-        "id": "wp2fohlfl09oj8",
-        "title": "The Primal Hunter 3",
+        "id": "wn3fpftme9e8cm",
+        "title": "Tomorrow, and Tomorrow, and Tomorrow",
         "shared": [
-          "Literature \u0026 Fiction"
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "wdv7ko8v4e2do8",
+        "title": "The Midnight Library",
+        "shared": [
+          "Literary Fiction"
+        ]
+      },
+      {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
@@ -39,29 +65,6 @@
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh98004883",
           "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wfl0lg9qsoe1gm",
-        "title": "The Mimicking of Known Successes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "w9gk2ffsrb2uf6",
-        "title": "The Martian",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
         ]
       }
     ],
@@ -147,13 +150,14 @@
     ],
     "w0nqmvm69v4k5q": [
       {
-        "id": "w83h0te7a082jm",
-        "title": "Exit Strategy",
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
         "shared": [
-          "Free will and determinism",
           "Wells, Martha",
+          "Audiobook",
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85040350",
+          "https://id.loc.gov/authorities/subjects/sh85037260"
         ]
       },
       {
@@ -168,13 +172,12 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
+        "id": "w83h0te7a082jm",
+        "title": "Exit Strategy",
         "shared": [
           "Wells, Martha",
           "Audiobook",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "Space"
         ]
       },
       {
@@ -315,14 +318,6 @@
         ]
       },
       {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "Hard Science Fiction",
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
         "id": "w0k0vof5a9t5p0",
         "title": "The Primal Hunter 8",
         "shared": [
@@ -361,14 +356,29 @@
           "cyberpunk",
           "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
+      },
+      {
+        "id": "wb62eovv2kh5gc",
+        "title": "The Three-Body Problem",
+        "shared": [
+          "Hard Science Fiction"
+        ]
       }
     ],
     "w11ae1bc770igg": [
+      {
+        "id": "wau98e67i6b6hi",
+        "title": "Flowers for Algernon",
+        "shared": [
+          "Psychology"
+        ]
+      },
       {
         "id": "w8rthbf2n2fbre",
         "title": "Legends \u0026 Lattes",
         "shared": [
           "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
@@ -380,6 +390,30 @@
           "https://homosaurus.org/v3/homoit0000827",
           "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "w6i6sh4r5gjlde",
+        "title": "Somewhere Beyond the Sea",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wa4r34oepq2gqm",
+        "title": "The Cloud Roads",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wo9nj16u72ofv4",
+        "title": "The Monsters We Defy",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -396,36 +430,6 @@
         "shared": [
           "https://homosaurus.org/v3/homoit0000827",
           "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wpm0gru7ln5nqo",
-        "title": "Bookshops \u0026 Bonedust",
-        "shared": [
-          "https://homosaurus.org/v3/homoit0000827",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w6i6sh4r5gjlde",
-        "title": "Somewhere Beyond the Sea",
-        "shared": [
-          "https://homosaurus.org/v3/homoit0000827"
-        ]
-      },
-      {
-        "id": "wa4r34oepq2gqm",
-        "title": "The Cloud Roads",
-        "shared": [
-          "https://homosaurus.org/v3/homoit0000827"
         ]
       }
     ],
@@ -519,12 +523,21 @@
         "shared": [
           "Friendship",
           "General",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
+        "shared": [
+          "General",
+          "War"
+        ]
+      },
+      {
         "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "General",
           "War"
@@ -540,10 +553,12 @@
         ]
       },
       {
-        "id": "w9tehhehmdvbtq",
-        "title": "Cat's Cradle",
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
         "shared": [
-          "Literature"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
       {
@@ -555,29 +570,52 @@
         ]
       },
       {
-        "id": "wk0n9jbf75ksp2",
-        "title": "The Burning God",
+        "id": "w9tehhehmdvbtq",
+        "title": "Cat's Cradle",
         "shared": [
-          "War",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "Literature"
         ]
       },
       {
-        "id": "w38t7er1qh6r1u",
-        "title": "The Left Hand of Darkness",
+        "id": "wau98e67i6b6hi",
+        "title": "Flowers for Algernon",
         "shared": [
-          "Friendship"
-        ]
-      },
-      {
-        "id": "wb62eovv2kh5gc",
-        "title": "The Three-Body Problem",
-        "shared": [
-          "General"
+          "Literature"
         ]
       }
     ],
     "w1hdg4f5131ba6": [
+      {
+        "id": "wcr5m01qphd6dm",
+        "title": "Circe",
+        "shared": [
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wn3fpftme9e8cm",
+        "title": "Tomorrow, and Tomorrow, and Tomorrow",
+        "shared": [
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "w0iqiaup570qf2",
+        "title": "The Hobbit, or There and Back Again",
+        "shared": [
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wdv7ko8v4e2do8",
+        "title": "The Midnight Library",
+        "shared": [
+          "Literary Fiction"
+        ]
+      },
       {
         "id": "w4u21a159fm0i8",
         "title": "Vampires of El Norte",
@@ -587,54 +625,27 @@
         ]
       },
       {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wcr5m01qphd6dm",
-        "title": "Circe",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
         "id": "wg0vt75phonbj6",
         "title": "The Dragon Republic",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "wik7h7252lavo8",
-        "title": "Lady Tan's Circle of Women",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "wk0n9jbf75ksp2",
         "title": "The Burning God",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "wq5sr742hfa7m2",
         "title": "Sackett's Land",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -731,13 +742,22 @@
         ]
       },
       {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
         "id": "wfl0lg9qsoe1gm",
         "title": "The Mimicking of Known Successes",
         "shared": [
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350",
           "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -749,32 +769,32 @@
         ]
       },
       {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wk0n9jbf75ksp2",
-        "title": "The Burning God",
+        "id": "w1d90qohue2uqu",
+        "title": "A Thousand Splendid Suns",
         "shared": [
           "War",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w0nqmvm69v4k5q",
-        "title": "System Collapse",
+        "id": "wgtc52vrqplv3m",
+        "title": "The Poppy War",
         "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
     "w38t7er1qh6r1u": [
+      {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "Friendship",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
       {
         "id": "wau98e67i6b6hi",
         "title": "Flowers for Algernon",
@@ -798,18 +818,11 @@
         ]
       },
       {
-        "id": "woh4jig67snvn6",
-        "title": "The Storied Life of A. J. Fikry",
-        "shared": [
-          "Friendship",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
         "shared": [
-          "Friendship"
+          "Friendship",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -830,11 +843,12 @@
         ]
       },
       {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -881,21 +895,32 @@
         "title": "The Burning God",
         "shared": [
           "War",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
         "shared": [
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w2m9dc7g0tej80",
         "title": "Ender's Game",
         "shared": [
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wgtc52vrqplv3m",
+        "title": "The Poppy War",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -906,15 +931,15 @@
         ]
       },
       {
-        "id": "wgtc52vrqplv3m",
-        "title": "The Poppy War",
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "War"
         ]
       },
       {
         "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "War"
         ]
@@ -924,15 +949,8 @@
         "title": "Legends \u0026 Lattes",
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85078595",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wfl0lg9qsoe1gm",
-        "title": "The Mimicking of Known Successes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85078595",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -1059,6 +1077,24 @@
         ]
       },
       {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "werrdhae5cs93k",
+        "title": "Wizard's First Rule",
+        "shared": [
+          "Audiobook",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wesgb3ep2uq7ji",
         "title": "Fugitive Telemetry",
         "shared": [
@@ -1072,15 +1108,6 @@
         "shared": [
           "Audiobook",
           "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
-        "shared": [
-          "https://homosaurus.org/v3/homoit0000827",
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
@@ -1105,13 +1132,6 @@
         "shared": [
           "Audiobook"
         ]
-      },
-      {
-        "id": "wclag676s9ld2g",
-        "title": "The Wandering Inn",
-        "shared": [
-          "Audiobook"
-        ]
       }
     ],
     "w6uo0u2smvgcek": [
@@ -1120,7 +1140,8 @@
         "title": "Ride the River",
         "shared": [
           "History",
-          "L'Amour, Louis"
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -1144,7 +1165,16 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -1164,13 +1194,6 @@
       {
         "id": "wfpug34g5k3eg6",
         "title": "Trouble Shooter: A Hopalong Cassidy Novel",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wjal4iqk2971iu",
-        "title": "The Riders of High Rock",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -1312,7 +1335,16 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -1332,13 +1364,6 @@
       {
         "id": "wfpug34g5k3eg6",
         "title": "Trouble Shooter: A Hopalong Cassidy Novel",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wjal4iqk2971iu",
-        "title": "The Riders of High Rock",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -1473,11 +1498,12 @@
         ]
       },
       {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -1542,12 +1568,13 @@
     ],
     "w83h0te7a082jm": [
       {
-        "id": "w0nqmvm69v4k5q",
-        "title": "System Collapse",
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
         "shared": [
-          "Free will and determinism",
           "Wells, Martha",
+          "Audiobook",
           "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
@@ -1556,23 +1583,34 @@
         "title": "Artificial Condition",
         "shared": [
           "Wells, Martha",
+          "Audiobook",
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
+        "id": "w0nqmvm69v4k5q",
+        "title": "System Collapse",
+        "shared": [
+          "Wells, Martha",
+          "Audiobook",
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
+        "id": "wrpvpl22cdg4p8",
+        "title": "Rogue Protocol",
+        "shared": [
+          "Wells, Martha",
+          "Audiobook",
+          "Space"
         ]
       },
       {
         "id": "wb7obkph37eqv4",
         "title": "All Systems Red",
-        "shared": [
-          "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
         "shared": [
           "Wells, Martha",
           "Space",
@@ -1596,25 +1634,24 @@
         ]
       },
       {
-        "id": "wrpvpl22cdg4p8",
-        "title": "Rogue Protocol",
+        "id": "wa4r34oepq2gqm",
+        "title": "The Cloud Roads",
         "shared": [
           "Wells, Martha",
-          "Space"
-        ]
-      },
-      {
-        "id": "wfl0lg9qsoe1gm",
-        "title": "The Mimicking of Known Successes",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350",
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
     "w872qb23uo765s": [
+      {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
       {
         "id": "w4u21a159fm0i8",
         "title": "Vampires of El Norte",
@@ -1641,40 +1678,35 @@
         ]
       },
       {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
+        "id": "wg0vt75phonbj6",
+        "title": "The Dragon Republic",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
-        ]
-      },
-      {
-        "id": "w9gk2ffsrb2uf6",
-        "title": "The Martian",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
-        "id": "w1hdg4f5131ba6",
-        "title": "The Covenant of Water",
-        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wq5sr742hfa7m2",
+        "title": "Sackett's Land",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       }
     ],
@@ -1684,7 +1716,8 @@
         "title": "Somewhere Beyond the Sea",
         "shared": [
           "Klune, TJ",
-          "https://homosaurus.org/v3/homoit0000827"
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -1696,19 +1729,13 @@
         ]
       },
       {
-        "id": "wgk60gl1jnv0sk",
-        "title": "Beware of Chicken 4",
-        "shared": [
-          "Humorous"
-        ]
-      },
-      {
         "id": "w8rthbf2n2fbre",
         "title": "Legends \u0026 Lattes",
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85078595",
           "https://homosaurus.org/v3/homoit0000827",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -1734,6 +1761,14 @@
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85078595",
           "https://homosaurus.org/v3/homoit0000827"
+        ]
+      },
+      {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -1873,24 +1908,27 @@
         ]
       },
       {
-        "id": "wb7obkph37eqv4",
-        "title": "All Systems Red",
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
+        "id": "w11ae1bc770igg",
+        "title": "Lost Souls",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
+        "id": "w6i6sh4r5gjlde",
+        "title": "Somewhere Beyond the Sea",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -1955,16 +1993,6 @@
     ],
     "w9gk2ffsrb2uf6": [
       {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "Weir, Andy",
-          "Hard Science Fiction",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
         "id": "wdj5a6lbj2is4g",
         "title": "Artemis",
         "shared": [
@@ -1972,6 +2000,15 @@
           "Hard Science Fiction",
           "https://id.loc.gov/authorities/subjects/sh98004883",
           "https://id.loc.gov/authorities/subjects/sh85037260"
+        ]
+      },
+      {
+        "id": "wufg2nd4qorh8i",
+        "title": "Project Hail Mary",
+        "shared": [
+          "Weir, Andy",
+          "Hard Science Fiction",
+          "Space"
         ]
       },
       {
@@ -2001,6 +2038,15 @@
         ]
       },
       {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
         "shared": [
@@ -2012,14 +2058,6 @@
       {
         "id": "w14s88evpcre3k",
         "title": "The Primal Hunter",
-        "shared": [
-          "Action \u0026 Adventure",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
-        ]
-      },
-      {
-        "id": "w50hpgopvot3da",
-        "title": "The Primal Hunter 2",
         "shared": [
           "Action \u0026 Adventure",
           "https://id.loc.gov/authorities/subjects/sh85040350"
@@ -2064,19 +2102,20 @@
         ]
       },
       {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wdj5a6lbj2is4g",
         "title": "Artemis",
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh98004883",
           "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
@@ -2108,15 +2147,32 @@
     ],
     "w9tehhehmdvbtq": [
       {
-        "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
         "shared": [
-          "Vonnegut, Kurt"
+          "Vonnegut, Kurt",
+          "Satire"
+        ]
+      },
+      {
+        "id": "wn54qtdcai0m9m",
+        "title": "Slaughterhouse-Five",
+        "shared": [
+          "Vonnegut, Kurt",
+          "Satire"
         ]
       },
       {
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
+        "shared": [
+          "Literature",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wau98e67i6b6hi",
+        "title": "Flowers for Algernon",
         "shared": [
           "Literature"
         ]
@@ -2139,34 +2195,20 @@
         ]
       },
       {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wdj5a6lbj2is4g",
         "title": "Artemis",
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh98004883",
           "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
-        ]
-      },
-      {
-        "id": "w9gk2ffsrb2uf6",
-        "title": "The Martian",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
         ]
       }
     ],
@@ -2177,6 +2219,15 @@
         "shared": [
           "Wells, Martha",
           "https://homosaurus.org/v3/homoit0000827"
+        ]
+      },
+      {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Wells, Martha",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -2197,14 +2248,6 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
-        "shared": [
-          "Wells, Martha",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
         "id": "w0nqmvm69v4k5q",
         "title": "System Collapse",
         "shared": [
@@ -2216,8 +2259,7 @@
         "id": "w83h0te7a082jm",
         "title": "Exit Strategy",
         "shared": [
-          "Wells, Martha",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "Wells, Martha"
         ]
       },
       {
@@ -2255,10 +2297,33 @@
     ],
     "wau98e67i6b6hi": [
       {
+        "id": "w11ae1bc770igg",
+        "title": "Lost Souls",
+        "shared": [
+          "Psychology",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "w38t7er1qh6r1u",
         "title": "The Left Hand of Darkness",
         "shared": [
           "Classique"
+        ]
+      },
+      {
+        "id": "w1d90qohue2uqu",
+        "title": "A Thousand Splendid Suns",
+        "shared": [
+          "Literature",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w9tehhehmdvbtq",
+        "title": "Cat's Cradle",
+        "shared": [
+          "Literature"
         ]
       },
       {
@@ -2279,45 +2344,33 @@
         ]
       },
       {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wdj5a6lbj2is4g",
         "title": "Artemis",
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh98004883",
           "https://id.loc.gov/authorities/subjects/sh85037260"
         ]
-      },
-      {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
-        ]
-      },
-      {
-        "id": "w9gk2ffsrb2uf6",
-        "title": "The Martian",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
       }
     ],
     "wb62eovv2kh5gc": [
+      {
+        "id": "wdj5a6lbj2is4g",
+        "title": "Artemis",
+        "shared": [
+          "Hard Science Fiction",
+          "https://id.loc.gov/authorities/subjects/sh98004883",
+          "https://id.loc.gov/authorities/subjects/sh85037260"
+        ]
+      },
       {
         "id": "w38t7er1qh6r1u",
         "title": "The Left Hand of Darkness",
@@ -2330,15 +2383,16 @@
         "title": "The Storied Life of A. J. Fikry",
         "shared": [
           "General",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w2m9dc7g0tej80",
-        "title": "Ender's Game",
+        "id": "w9gk2ffsrb2uf6",
+        "title": "The Martian",
         "shared": [
-          "Aliens",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "Hard Science Fiction",
+          "https://id.loc.gov/authorities/subjects/sh98004883"
         ]
       },
       {
@@ -2350,38 +2404,34 @@
         ]
       },
       {
+        "id": "w2m9dc7g0tej80",
+        "title": "Ender's Game",
+        "shared": [
+          "Aliens",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w0tm5ekugsuul8",
+        "title": "Neuromancer",
+        "shared": [
+          "Hard Science Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
         "shared": [
-          "General"
-        ]
-      },
-      {
-        "id": "wdkjfsb5uenqc4",
-        "title": "A Fire Upon the Deep",
-        "shared": [
-          "Aliens"
-        ]
-      },
-      {
-        "id": "wdv7ko8v4e2do8",
-        "title": "The Midnight Library",
-        "shared": [
-          "General"
-        ]
-      },
-      {
-        "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
-        "shared": [
-          "General"
+          "General",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
     "wb7obkph37eqv4": [
       {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
         "shared": [
           "Wells, Martha",
           "Space",
@@ -2390,12 +2440,13 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
+        "id": "wivq08uf1id582",
+        "title": "Artificial Condition",
         "shared": [
           "Wells, Martha",
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -2412,8 +2463,7 @@
         "title": "Exit Strategy",
         "shared": [
           "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "Space"
         ]
       },
       {
@@ -2507,11 +2557,12 @@
         ]
       },
       {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85040350",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2523,32 +2574,35 @@
         ]
       },
       {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85040350",
+          "https://id.loc.gov/authorities/subjects/sh85037260"
         ]
       },
       {
-        "id": "w0k0vof5a9t5p0",
-        "title": "The Primal Hunter 8",
+        "id": "wivq08uf1id582",
+        "title": "Artificial Condition",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85040350",
+          "https://id.loc.gov/authorities/subjects/sh85037260"
         ]
       },
       {
-        "id": "w0nqmvm69v4k5q",
-        "title": "System Collapse",
+        "id": "wg0vt75phonbj6",
+        "title": "The Dragon Republic",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w0st9o2j2u7g8o",
-        "title": "The Primal Hunter 9",
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -2644,8 +2698,8 @@
         "id": "w14s88evpcre3k",
         "title": "The Primal Hunter",
         "shared": [
-          "Audiobook",
-          "litrpg"
+          "litrpg",
+          "Audiobook"
         ]
       },
       {
@@ -2679,6 +2733,21 @@
     ],
     "wcr5m01qphd6dm": [
       {
+        "id": "w1hdg4f5131ba6",
+        "title": "The Covenant of Water",
+        "shared": [
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wp2fohlfl09oj8",
+        "title": "The Primal Hunter 3",
+        "shared": [
+          "Literature \u0026 Fiction"
+        ]
+      },
+      {
         "id": "wn3fpftme9e8cm",
         "title": "Tomorrow, and Tomorrow, and Tomorrow",
         "shared": [
@@ -2690,7 +2759,8 @@
         "id": "w0iqiaup570qf2",
         "title": "The Hobbit, or There and Back Again",
         "shared": [
-          "Literature \u0026 Fiction"
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2698,13 +2768,6 @@
         "title": "The Midnight Library",
         "shared": [
           "Literary Fiction"
-        ]
-      },
-      {
-        "id": "wp2fohlfl09oj8",
-        "title": "The Primal Hunter 3",
-        "shared": [
-          "Literature \u0026 Fiction"
         ]
       },
       {
@@ -2716,25 +2779,19 @@
         ]
       },
       {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w1hdg4f5131ba6",
-        "title": "The Covenant of Water",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
         "id": "wg0vt75phonbj6",
         "title": "The Dragon Republic",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -2768,7 +2825,24 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2779,22 +2853,8 @@
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
         "id": "wf4mfrj1iqdthm",
         "title": "The Daybreakers",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wli4qu30u0b746",
-        "title": "Sackett",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -2815,8 +2875,7 @@
         "title": "Project Hail Mary",
         "shared": [
           "Weir, Andy",
-          "Hard Science Fiction",
-          "https://id.loc.gov/authorities/subjects/sh98004883"
+          "Hard Science Fiction"
         ]
       },
       {
@@ -2826,6 +2885,13 @@
           "Thriller \u0026 Suspense",
           "Hard Science Fiction",
           "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
+        "id": "wb62eovv2kh5gc",
+        "title": "The Three-Body Problem",
+        "shared": [
+          "Hard Science Fiction"
         ]
       },
       {
@@ -2849,7 +2915,8 @@
         "title": "Legends \u0026 Lattes",
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2858,14 +2925,6 @@
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85062084",
           "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       }
     ],
@@ -2876,7 +2935,7 @@
         "shared": [
           "Aliens",
           "War",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2886,6 +2945,15 @@
           "War",
           "https://id.loc.gov/authorities/subjects/sh85062084",
           "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2897,11 +2965,19 @@
         ]
       },
       {
-        "id": "wk0n9jbf75ksp2",
-        "title": "The Burning God",
+        "id": "w1d90qohue2uqu",
+        "title": "A Thousand Splendid Suns",
         "shared": [
           "War",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wgtc52vrqplv3m",
+        "title": "The Poppy War",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -2916,20 +2992,6 @@
         "title": "Network Effect",
         "shared": [
           "Aliens"
-        ]
-      },
-      {
-        "id": "w1d90qohue2uqu",
-        "title": "A Thousand Splendid Suns",
-        "shared": [
-          "War"
-        ]
-      },
-      {
-        "id": "wgtc52vrqplv3m",
-        "title": "The Poppy War",
-        "shared": [
-          "War"
         ]
       }
     ],
@@ -2997,6 +3059,16 @@
     ],
     "wdv7ko8v4e2do8": [
       {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "Literary",
+          "General",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wn3fpftme9e8cm",
         "title": "Tomorrow, and Tomorrow, and Tomorrow",
         "shared": [
@@ -3006,12 +3078,11 @@
         ]
       },
       {
-        "id": "woh4jig67snvn6",
-        "title": "The Storied Life of A. J. Fikry",
+        "id": "w1hdg4f5131ba6",
+        "title": "The Covenant of Water",
         "shared": [
-          "Literary",
-          "General",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
       {
@@ -3023,10 +3094,19 @@
         ]
       },
       {
+        "id": "w0iqiaup570qf2",
+        "title": "The Hobbit, or There and Back Again",
+        "shared": [
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
         "shared": [
-          "General"
+          "General",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -3037,27 +3117,10 @@
         ]
       },
       {
-        "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "General"
-        ]
-      },
-      {
-        "id": "w4u21a159fm0i8",
-        "title": "Vampires of El Norte",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85062084",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wfl0lg9qsoe1gm",
-        "title": "The Mimicking of Known Successes",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       }
     ],
@@ -3069,6 +3132,15 @@
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
@@ -3090,24 +3162,8 @@
         ]
       },
       {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
         "id": "wb7obkph37eqv4",
         "title": "All Systems Red",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
         "shared": [
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85037260"
@@ -3126,11 +3182,27 @@
         "title": "Ender's Game",
         "shared": [
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w7f6c3ibad7gki",
+        "title": "The Primal Hunter 13",
+        "shared": [
+          "Space"
         ]
       }
     ],
     "werrdhae5cs93k": [
+      {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Audiobook",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
       {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
@@ -3141,11 +3213,11 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
+        "id": "w6i6sh4r5gjlde",
+        "title": "Somewhere Beyond the Sea",
         "shared": [
           "Audiobook",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -3165,8 +3237,17 @@
         ]
       },
       {
-        "id": "w6i6sh4r5gjlde",
-        "title": "Somewhere Beyond the Sea",
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "w83h0te7a082jm",
+        "title": "Exit Strategy",
         "shared": [
           "Audiobook"
         ]
@@ -3174,20 +3255,6 @@
       {
         "id": "wclag676s9ld2g",
         "title": "The Wandering Inn",
-        "shared": [
-          "Audiobook"
-        ]
-      },
-      {
-        "id": "wiar499bc1gba4",
-        "title": "Return of the Runebound Professor (Book 4)",
-        "shared": [
-          "Audiobook"
-        ]
-      },
-      {
-        "id": "wij7q3qjpoo2rg",
-        "title": "Beware of Chicken",
         "shared": [
           "Audiobook"
         ]
@@ -3216,6 +3283,15 @@
         ]
       },
       {
+        "id": "w83h0te7a082jm",
+        "title": "Exit Strategy",
+        "shared": [
+          "Wells, Martha",
+          "Audiobook",
+          "Space"
+        ]
+      },
+      {
         "id": "wrpvpl22cdg4p8",
         "title": "Rogue Protocol",
         "shared": [
@@ -3231,15 +3307,6 @@
           "Wells, Martha",
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w83h0te7a082jm",
-        "title": "Exit Strategy",
-        "shared": [
-          "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -3264,8 +3331,8 @@
         "shared": [
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85040350",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       }
     ],
@@ -3275,19 +3342,29 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
-        "shared": [
-          "L'Amour, Louis"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w7noclsgtee3b4",
         "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -3316,13 +3393,6 @@
       {
         "id": "wkmvallsrn5a26",
         "title": "The Trail To Seven Pines",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wli4qu30u0b746",
-        "title": "Sackett",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -3369,6 +3439,14 @@
         ]
       },
       {
+        "id": "wk2j74a728huhi",
+        "title": "Fae and Fare",
+        "shared": [
+          "litrpg",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wfl0lg9qsoe1gm",
         "title": "The Mimicking of Known Successes",
         "shared": [
@@ -3380,13 +3458,6 @@
       {
         "id": "w28f4ploegtkho",
         "title": "Azarinth Healer: Book One",
-        "shared": [
-          "litrpg"
-        ]
-      },
-      {
-        "id": "w7f6c3ibad7gki",
-        "title": "The Primal Hunter 13",
         "shared": [
           "litrpg"
         ]
@@ -3431,6 +3502,15 @@
     ],
     "wfl0lg9qsoe1gm": [
       {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
         "shared": [
@@ -3457,14 +3537,6 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
         "id": "wpdq46qa7jdjqg",
         "title": "Home: Habitat, Range, Niche, Territory",
         "shared": [
@@ -3481,19 +3553,19 @@
         ]
       },
       {
-        "id": "w2m9dc7g0tej80",
-        "title": "Ender's Game",
+        "id": "w8f06lkbq09cl2",
+        "title": "The House in the Cerulean Sea",
         "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://homosaurus.org/v3/homoit0000827"
         ]
       },
       {
-        "id": "w83h0te7a082jm",
-        "title": "Exit Strategy",
+        "id": "wpm0gru7ln5nqo",
+        "title": "Bookshops \u0026 Bonedust",
         "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://homosaurus.org/v3/homoit0000827"
         ]
       }
     ],
@@ -3527,7 +3599,24 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -3538,22 +3627,8 @@
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
         "id": "wf4mfrj1iqdthm",
         "title": "The Daybreakers",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wli4qu30u0b746",
-        "title": "Sackett",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -3566,7 +3641,8 @@
         "shared": [
           "Kuang, R.F.",
           "Historical",
-          "Epic"
+          "Epic",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -3574,7 +3650,25 @@
         "title": "The Burning God",
         "shared": [
           "Kuang, R.F.",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wq5sr742hfa7m2",
+        "title": "Sackett's Land",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
@@ -3601,20 +3695,6 @@
       {
         "id": "w50hpgopvot3da",
         "title": "The Primal Hunter 2",
-        "shared": [
-          "Epic"
-        ]
-      },
-      {
-        "id": "w7rovpe12dc796",
-        "title": "The Primal Hunter 11",
-        "shared": [
-          "Epic"
-        ]
-      },
-      {
-        "id": "w8qm7sc23bjpnk",
-        "title": "The Primal Hunter 4",
         "shared": [
           "Epic"
         ]
@@ -3650,13 +3730,6 @@
         ]
       },
       {
-        "id": "w8f06lkbq09cl2",
-        "title": "The House in the Cerulean Sea",
-        "shared": [
-          "Humorous"
-        ]
-      },
-      {
         "id": "wgtc52vrqplv3m",
         "title": "The Poppy War",
         "shared": [
@@ -3676,6 +3749,13 @@
         "shared": [
           "Action \u0026 Adventure"
         ]
+      },
+      {
+        "id": "w7rovpe12dc796",
+        "title": "The Primal Hunter 11",
+        "shared": [
+          "Action \u0026 Adventure"
+        ]
       }
     ],
     "wgtc52vrqplv3m": [
@@ -3686,6 +3766,7 @@
           "Kuang, R.F.",
           "Historical",
           "Epic",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
@@ -3695,6 +3776,7 @@
         "shared": [
           "Kuang, R.F.",
           "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
@@ -3718,14 +3800,16 @@
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
         "shared": [
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w2m9dc7g0tej80",
         "title": "Ender's Game",
         "shared": [
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -3736,8 +3820,8 @@
         ]
       },
       {
-        "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "War"
         ]
@@ -3851,6 +3935,15 @@
         ]
       },
       {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
         "shared": [
@@ -3868,24 +3961,8 @@
         ]
       },
       {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
         "id": "wb7obkph37eqv4",
         "title": "All Systems Red",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
         "shared": [
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85037260"
@@ -3897,6 +3974,14 @@
         "shared": [
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
+        "id": "w2m9dc7g0tej80",
+        "title": "Ender's Game",
+        "shared": [
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -3994,17 +4079,19 @@
         ]
       },
       {
-        "id": "w0nqmvm69v4k5q",
-        "title": "System Collapse",
+        "id": "w6i6sh4r5gjlde",
+        "title": "Somewhere Beyond the Sea",
         "shared": [
-          "Audiobook"
+          "Audiobook",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w14s88evpcre3k",
-        "title": "The Primal Hunter",
+        "id": "werrdhae5cs93k",
+        "title": "Wizard's First Rule",
         "shared": [
-          "Audiobook"
+          "Audiobook",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -4015,6 +4102,39 @@
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85062084",
           "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "wg0vt75phonbj6",
+        "title": "The Dragon Republic",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wq5sr742hfa7m2",
+        "title": "Sackett's Land",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4038,38 +4158,18 @@
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
-      },
-      {
-        "id": "wg0vt75phonbj6",
-        "title": "The Dragon Republic",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "wk0n9jbf75ksp2",
-        "title": "The Burning God",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "wq5sr742hfa7m2",
-        "title": "Sackett's Land",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
+      }
+    ],
+    "wimlld0dsmpl24": [
       {
         "id": "w8rthbf2n2fbre",
         "title": "Legends \u0026 Lattes",
         "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
-      }
-    ],
-    "wimlld0dsmpl24": [
+      },
       {
         "id": "w4u21a159fm0i8",
         "title": "Vampires of El Norte",
@@ -4087,10 +4187,34 @@
         ]
       },
       {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
+        "id": "wg0vt75phonbj6",
+        "title": "The Dragon Republic",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "wq5sr742hfa7m2",
+        "title": "Sackett's Land",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
+        ]
+      },
+      {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
@@ -4100,34 +4224,6 @@
         "shared": [
           "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "w9gk2ffsrb2uf6",
-        "title": "The Martian",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
-        "id": "w1hdg4f5131ba6",
-        "title": "The Covenant of Water",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "wb7obkph37eqv4",
-        "title": "All Systems Red",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260"
         ]
       }
     ],
@@ -4139,7 +4235,8 @@
           "Wells, Martha",
           "Audiobook",
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -4150,6 +4247,15 @@
           "Audiobook",
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
+        "id": "w83h0te7a082jm",
+        "title": "Exit Strategy",
+        "shared": [
+          "Wells, Martha",
+          "Audiobook",
+          "Space"
         ]
       },
       {
@@ -4168,15 +4274,6 @@
           "Wells, Martha",
           "Space",
           "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w83h0te7a082jm",
-        "title": "Exit Strategy",
-        "shared": [
-          "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -4203,6 +4300,79 @@
           "https://id.loc.gov/authorities/subjects/sh85037260",
           "https://id.loc.gov/authorities/subjects/sh85040350",
           "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      }
+    ],
+    "wj2gshjd8grtb8": [
+      {
+        "id": "wn54qtdcai0m9m",
+        "title": "Slaughterhouse-Five",
+        "shared": [
+          "Vonnegut, Kurt",
+          "Graphic Novels",
+          "Satire",
+          "General",
+          "War"
+        ]
+      },
+      {
+        "id": "w9tehhehmdvbtq",
+        "title": "Cat's Cradle",
+        "shared": [
+          "Vonnegut, Kurt",
+          "Satire"
+        ]
+      },
+      {
+        "id": "w1d90qohue2uqu",
+        "title": "A Thousand Splendid Suns",
+        "shared": [
+          "General",
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w4u21a159fm0i8",
+        "title": "Vampires of El Norte",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85062084",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
+      {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "General",
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wk0n9jbf75ksp2",
+        "title": "The Burning God",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w2m9dc7g0tej80",
+        "title": "Ender's Game",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wgtc52vrqplv3m",
+        "title": "The Poppy War",
+        "shared": [
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -4236,7 +4406,24 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4247,22 +4434,8 @@
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
         "id": "wf4mfrj1iqdthm",
         "title": "The Daybreakers",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wli4qu30u0b746",
-        "title": "Sackett",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -4274,7 +4447,8 @@
         "title": "The Poppy War",
         "shared": [
           "Kuang, R.F.",
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4282,7 +4456,8 @@
         "title": "The Dragon Republic",
         "shared": [
           "Kuang, R.F.",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4298,14 +4473,16 @@
         "id": "w1d90qohue2uqu",
         "title": "A Thousand Splendid Suns",
         "shared": [
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w2m9dc7g0tej80",
         "title": "Ender's Game",
         "shared": [
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4316,18 +4493,17 @@
         ]
       },
       {
-        "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "War"
         ]
       },
       {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
+        "id": "wn54qtdcai0m9m",
+        "title": "Slaughterhouse-Five",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "War"
         ]
       }
     ],
@@ -4421,7 +4597,24 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4432,22 +4625,8 @@
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
         "id": "wf4mfrj1iqdthm",
         "title": "The Daybreakers",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wli4qu30u0b746",
-        "title": "Sackett",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -4492,16 +4671,17 @@
     ],
     "wlecs9kl65t68s": [
       {
-        "id": "wn3fpftme9e8cm",
-        "title": "Tomorrow, and Tomorrow, and Tomorrow",
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
         "shared": [
           "Zevin, Gabrielle",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
-        "id": "woh4jig67snvn6",
-        "title": "The Storied Life of A. J. Fikry",
+        "id": "wn3fpftme9e8cm",
+        "title": "Tomorrow, and Tomorrow, and Tomorrow",
         "shared": [
           "Zevin, Gabrielle",
           "https://id.loc.gov/authorities/subjects/sh85078595"
@@ -4511,7 +4691,17 @@
         "id": "w0iqiaup570qf2",
         "title": "The Hobbit, or There and Back Again",
         "shared": [
-          "Juvenile Fiction"
+          "Juvenile Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       },
       {
@@ -4540,34 +4730,27 @@
         ]
       },
       {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
+        "id": "wg0vt75phonbj6",
+        "title": "The Dragon Republic",
         "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       }
     ],
     "wli4qu30u0b746": [
       {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
         "shared": [
           "History",
-          "L'Amour, Louis"
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "History",
           "L'Amour, Louis"
@@ -4586,7 +4769,16 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4609,13 +4801,6 @@
         "shared": [
           "L'Amour, Louis"
         ]
-      },
-      {
-        "id": "wjal4iqk2971iu",
-        "title": "The Riders of High Rock",
-        "shared": [
-          "L'Amour, Louis"
-        ]
       }
     ],
     "wn3fpftme9e8cm": [
@@ -4626,7 +4811,8 @@
           "Zevin, Gabrielle",
           "Literary",
           "Friendship",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4638,6 +4824,14 @@
         ]
       },
       {
+        "id": "wlecs9kl65t68s",
+        "title": "Elsewhere",
+        "shared": [
+          "Zevin, Gabrielle",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "w8f06lkbq09cl2",
         "title": "The House in the Cerulean Sea",
         "shared": [
@@ -4646,10 +4840,19 @@
         ]
       },
       {
-        "id": "wlecs9kl65t68s",
-        "title": "Elsewhere",
+        "id": "w1d90qohue2uqu",
+        "title": "A Thousand Splendid Suns",
         "shared": [
-          "Zevin, Gabrielle"
+          "Friendship",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w1hdg4f5131ba6",
+        "title": "The Covenant of Water",
+        "shared": [
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85061165"
         ]
       },
       {
@@ -4661,34 +4864,32 @@
         ]
       },
       {
-        "id": "w1d90qohue2uqu",
-        "title": "A Thousand Splendid Suns",
+        "id": "w0iqiaup570qf2",
+        "title": "The Hobbit, or There and Back Again",
         "shared": [
-          "Friendship"
-        ]
-      },
-      {
-        "id": "w38t7er1qh6r1u",
-        "title": "The Left Hand of Darkness",
-        "shared": [
-          "Friendship"
-        ]
-      },
-      {
-        "id": "w4u21a159fm0i8",
-        "title": "Vampires of El Norte",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85062084",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "Literary Fiction",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
     "wn54qtdcai0m9m": [
       {
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
+        "shared": [
+          "Vonnegut, Kurt",
+          "Graphic Novels",
+          "Satire",
+          "General",
+          "War"
+        ]
+      },
+      {
         "id": "w9tehhehmdvbtq",
         "title": "Cat's Cradle",
         "shared": [
-          "Vonnegut, Kurt"
+          "Vonnegut, Kurt",
+          "Satire"
         ]
       },
       {
@@ -4696,7 +4897,8 @@
         "title": "A Thousand Splendid Suns",
         "shared": [
           "General",
-          "War"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4713,7 +4915,8 @@
         "title": "The Storied Life of A. J. Fikry",
         "shared": [
           "General",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4721,7 +4924,8 @@
         "title": "The Burning God",
         "shared": [
           "War",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4729,25 +4933,29 @@
         "title": "Ender's Game",
         "shared": [
           "War",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "wb62eovv2kh5gc",
-        "title": "The Three-Body Problem",
+        "id": "wgtc52vrqplv3m",
+        "title": "The Poppy War",
         "shared": [
-          "General"
-        ]
-      },
-      {
-        "id": "wdv7ko8v4e2do8",
-        "title": "The Midnight Library",
-        "shared": [
-          "General"
+          "War",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
     "wo9nj16u72ofv4": [
+      {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85078595"
+        ]
+      },
       {
         "id": "wfl0lg9qsoe1gm",
         "title": "The Mimicking of Known Successes",
@@ -4759,12 +4967,27 @@
         ]
       },
       {
-        "id": "w8rthbf2n2fbre",
-        "title": "Legends \u0026 Lattes",
+        "id": "w11ae1bc770igg",
+        "title": "Lost Souls",
         "shared": [
           "https://homosaurus.org/v3/homoit0000827",
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6i6sh4r5gjlde",
+        "title": "Somewhere Beyond the Sea",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wa4r34oepq2gqm",
+        "title": "The Cloud Roads",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4790,28 +5013,6 @@
           "https://homosaurus.org/v3/homoit0000827",
           "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
-      },
-      {
-        "id": "wdj5a6lbj2is4g",
-        "title": "Artemis",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh98004883",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "w11ae1bc770igg",
-        "title": "Lost Souls",
-        "shared": [
-          "https://homosaurus.org/v3/homoit0000827"
-        ]
-      },
-      {
-        "id": "w6i6sh4r5gjlde",
-        "title": "Somewhere Beyond the Sea",
-        "shared": [
-          "https://homosaurus.org/v3/homoit0000827"
-        ]
       }
     ],
     "woh4jig67snvn6": [
@@ -4826,6 +5027,15 @@
         ]
       },
       {
+        "id": "w1d90qohue2uqu",
+        "title": "A Thousand Splendid Suns",
+        "shared": [
+          "Friendship",
+          "General",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wdv7ko8v4e2do8",
         "title": "The Midnight Library",
         "shared": [
@@ -4834,18 +5044,11 @@
         ]
       },
       {
-        "id": "w1d90qohue2uqu",
-        "title": "A Thousand Splendid Suns",
-        "shared": [
-          "Friendship",
-          "General"
-        ]
-      },
-      {
         "id": "wlecs9kl65t68s",
         "title": "Elsewhere",
         "shared": [
-          "Zevin, Gabrielle"
+          "Zevin, Gabrielle",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -4856,6 +5059,15 @@
         ]
       },
       {
+        "id": "w8rthbf2n2fbre",
+        "title": "Legends \u0026 Lattes",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
+          "https://id.loc.gov/authorities/subjects/sh85037260"
+        ]
+      },
+      {
         "id": "wb62eovv2kh5gc",
         "title": "The Three-Body Problem",
         "shared": [
@@ -4863,18 +5075,10 @@
         ]
       },
       {
-        "id": "wn54qtdcai0m9m",
-        "title": "Slaughterhouse-Five, or The Children's Crusade",
+        "id": "wj2gshjd8grtb8",
+        "title": "Slaughterhouse-Five",
         "shared": [
           "General"
-        ]
-      },
-      {
-        "id": "w4u21a159fm0i8",
-        "title": "Vampires of El Norte",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85062084",
-          "https://id.loc.gov/authorities/subjects/sh85078595"
         ]
       }
     ],
@@ -5037,19 +5241,29 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
-        "shared": [
-          "L'Amour, Louis"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w7noclsgtee3b4",
         "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -5078,13 +5292,6 @@
       {
         "id": "wjal4iqk2971iu",
         "title": "The Riders of High Rock",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wkmvallsrn5a26",
-        "title": "The Trail To Seven Pines",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -5171,6 +5378,16 @@
     ],
     "wpdq46qa7jdjqg": [
       {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Wells, Martha",
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
         "shared": [
@@ -5183,15 +5400,6 @@
       {
         "id": "wb7obkph37eqv4",
         "title": "All Systems Red",
-        "shared": [
-          "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
         "shared": [
           "Wells, Martha",
           "Space",
@@ -5212,8 +5420,7 @@
         "title": "Exit Strategy",
         "shared": [
           "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "Space"
         ]
       },
       {
@@ -5233,14 +5440,12 @@
         ]
       },
       {
-        "id": "wfl0lg9qsoe1gm",
-        "title": "The Mimicking of Known Successes",
+        "id": "wa4r34oepq2gqm",
+        "title": "The Cloud Roads",
         "shared": [
-          "Space",
+          "Wells, Martha",
           "https://homosaurus.org/v3/homoit0000827",
-          "https://id.loc.gov/authorities/subjects/sh85037260",
-          "https://id.loc.gov/authorities/subjects/sh85078595",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -5282,6 +5487,14 @@
         ]
       },
       {
+        "id": "woh4jig67snvn6",
+        "title": "The Storied Life of A. J. Fikry",
+        "shared": [
+          "https://id.loc.gov/authorities/subjects/sh85078595",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
         "id": "wdj5a6lbj2is4g",
         "title": "Artemis",
         "shared": [
@@ -5290,24 +5503,19 @@
         ]
       },
       {
-        "id": "wn3fpftme9e8cm",
-        "title": "Tomorrow, and Tomorrow, and Tomorrow",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
-        "id": "woh4jig67snvn6",
-        "title": "The Storied Life of A. J. Fikry",
-        "shared": [
-          "https://id.loc.gov/authorities/subjects/sh85078595"
-        ]
-      },
-      {
         "id": "w11ae1bc770igg",
         "title": "Lost Souls",
         "shared": [
-          "https://homosaurus.org/v3/homoit0000827"
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6i6sh4r5gjlde",
+        "title": "Somewhere Beyond the Sea",
+        "shared": [
+          "https://homosaurus.org/v3/homoit0000827",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -5387,15 +5595,24 @@
     ],
     "wq5sr742hfa7m2": [
       {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
         "shared": [
-          "L'Amour, Louis"
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -5431,13 +5648,6 @@
       {
         "id": "wkmvallsrn5a26",
         "title": "The Trail To Seven Pines",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wli4qu30u0b746",
-        "title": "Sackett",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -5565,19 +5775,29 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
-        "shared": [
-          "L'Amour, Louis"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
         "id": "w7noclsgtee3b4",
         "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -5609,16 +5829,19 @@
         "shared": [
           "L'Amour, Louis"
         ]
-      },
-      {
-        "id": "wkmvallsrn5a26",
-        "title": "The Trail To Seven Pines",
-        "shared": [
-          "L'Amour, Louis"
-        ]
       }
     ],
     "wratrjueoqlihs": [
+      {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Wells, Martha",
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
       {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
@@ -5639,15 +5862,6 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
-        "shared": [
-          "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
         "id": "w0nqmvm69v4k5q",
         "title": "System Collapse",
         "shared": [
@@ -5661,8 +5875,7 @@
         "title": "Exit Strategy",
         "shared": [
           "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "Space"
         ]
       },
       {
@@ -5687,7 +5900,7 @@
         "shared": [
           "Aliens",
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       }
     ],
@@ -5755,8 +5968,8 @@
     ],
     "wrpvpl22cdg4p8": [
       {
-        "id": "wivq08uf1id582",
-        "title": "Artificial Condition",
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
         "shared": [
           "Wells, Martha",
           "Audiobook",
@@ -5766,13 +5979,14 @@
         ]
       },
       {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
+        "id": "wivq08uf1id582",
+        "title": "Artificial Condition",
         "shared": [
           "Wells, Martha",
           "Audiobook",
           "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
         ]
       },
       {
@@ -5786,6 +6000,15 @@
         ]
       },
       {
+        "id": "w83h0te7a082jm",
+        "title": "Exit Strategy",
+        "shared": [
+          "Wells, Martha",
+          "Audiobook",
+          "Space"
+        ]
+      },
+      {
         "id": "wb7obkph37eqv4",
         "title": "All Systems Red",
         "shared": [
@@ -5795,26 +6018,8 @@
         ]
       },
       {
-        "id": "w83h0te7a082jm",
-        "title": "Exit Strategy",
-        "shared": [
-          "Wells, Martha",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85040350"
-        ]
-      },
-      {
         "id": "w9gk2ffsrb2uf6",
         "title": "The Martian",
-        "shared": [
-          "Hard Science Fiction",
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh98004883"
-        ]
-      },
-      {
-        "id": "wufg2nd4qorh8i",
-        "title": "Project Hail Mary",
         "shared": [
           "Hard Science Fiction",
           "Space",
@@ -5828,20 +6033,29 @@
           "Wells, Martha",
           "Space"
         ]
+      },
+      {
+        "id": "wratrjueoqlihs",
+        "title": "Network Effect",
+        "shared": [
+          "Wells, Martha",
+          "Space"
+        ]
       }
     ],
     "ws9l6cmdqo1t1q": [
       {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
+        "id": "w7noclsgtee3b4",
+        "title": "Ride the River",
         "shared": [
           "History",
-          "L'Amour, Louis"
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
-        "id": "w7noclsgtee3b4",
-        "title": "Ride the River",
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "History",
           "L'Amour, Louis"
@@ -5860,7 +6074,16 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "wur13e29mtd2h4",
+        "title": "Lando",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {
@@ -5880,13 +6103,6 @@
       {
         "id": "wfpug34g5k3eg6",
         "title": "Trouble Shooter: A Hopalong Cassidy Novel",
-        "shared": [
-          "L'Amour, Louis"
-        ]
-      },
-      {
-        "id": "wjal4iqk2971iu",
-        "title": "The Riders of High Rock",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -6086,6 +6302,15 @@
         ]
       },
       {
+        "id": "wesgb3ep2uq7ji",
+        "title": "Fugitive Telemetry",
+        "shared": [
+          "Space",
+          "https://id.loc.gov/authorities/subjects/sh85037260",
+          "https://id.loc.gov/authorities/subjects/sh85040350"
+        ]
+      },
+      {
         "id": "wivq08uf1id582",
         "title": "Artificial Condition",
         "shared": [
@@ -6095,19 +6320,10 @@
         ]
       },
       {
-        "id": "wb7obkph37eqv4",
-        "title": "All Systems Red",
+        "id": "wb62eovv2kh5gc",
+        "title": "The Three-Body Problem",
         "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
-        ]
-      },
-      {
-        "id": "wesgb3ep2uq7ji",
-        "title": "Fugitive Telemetry",
-        "shared": [
-          "Space",
-          "https://id.loc.gov/authorities/subjects/sh85037260"
+          "Hard Science Fiction"
         ]
       }
     ],
@@ -6117,19 +6333,21 @@
         "title": "Sackett's Land",
         "shared": [
           "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267",
           "https://id.loc.gov/authorities/subjects/sh85061165"
-        ]
-      },
-      {
-        "id": "w6uo0u2smvgcek",
-        "title": "To the Far Blue Mountains",
-        "shared": [
-          "L'Amour, Louis"
         ]
       },
       {
         "id": "w7noclsgtee3b4",
         "title": "Ride the River",
+        "shared": [
+          "L'Amour, Louis",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
+        ]
+      },
+      {
+        "id": "w6uo0u2smvgcek",
+        "title": "To the Far Blue Mountains",
         "shared": [
           "L'Amour, Louis"
         ]
@@ -6203,7 +6421,8 @@
         "title": "The Dragon Republic",
         "shared": [
           "Epic",
-          "https://id.loc.gov/authorities/subjects/sh85061165"
+          "https://id.loc.gov/authorities/subjects/sh85061165",
+          "https://id.loc.gov/authorities/subjects/sh85149267"
         ]
       },
       {

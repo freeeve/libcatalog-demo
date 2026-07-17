@@ -58,7 +58,7 @@
       "tags": [
         "Classics",
         "Juvenile Fiction",
-        "Literature \u0026 Fiction",
+        "Literary Fiction",
         "Media Tie-In"
       ],
       "languages": [
@@ -112,7 +112,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/17456445/d34448a9-bf3f-441d-93f2-1cd32dd3867c.jpg",
+        "dateRead": "2025-03-18"
+      }
     },
     {
       "id": "w0k0vof5a9t5p0",
@@ -197,17 +201,7 @@
           ]
         },
         {
-          "id": "ieuds2kpb77uva",
-          "format": "ebook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1160718:ebook"
-            }
-          ]
-        },
-        {
-          "id": "iu7fa5jpjmfe9o",
+          "id": "ik1kervas2easg",
           "format": "audiobook",
           "providerIds": [
             {
@@ -215,8 +209,23 @@
               "value": "1160718:audiobook"
             }
           ]
+        },
+        {
+          "id": "ilgnhb03h0nvq2",
+          "format": "ebook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1160718:ebook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/283236/138832113ec0c95d7155eacd7dc1ad12b96136b5.jpeg",
+        "dateRead": "2025-02-03",
+        "rating": "5"
+      }
     },
     {
       "id": "w0nqmvm69v4k5q",
@@ -274,9 +283,9 @@
       ],
       "tags": [
         "Audiobook",
-        "Free will and determinism",
         "Science Fiction \u0026 Fantasy",
-        "Space"
+        "Space",
+        "Space colonies"
       ],
       "languages": [
         "eng"
@@ -287,33 +296,6 @@
         "print"
       ],
       "instances": [
-        {
-          "id": "i0hruaa1u0o760",
-          "format": "print",
-          "isbns": [
-            "2367936439",
-            "9782367936437"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "462038:physical"
-            }
-          ]
-        },
-        {
-          "id": "i2jmpcsrbru128",
-          "format": "audiobook",
-          "isbns": [
-            "9798890551597"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "462038:audiobook"
-            }
-          ]
-        },
         {
           "id": "i6o4odjk1hp7ee",
           "format": "ebook",
@@ -327,8 +309,39 @@
               "value": "462038:ebook"
             }
           ]
+        },
+        {
+          "id": "ihs9ooelj03s18",
+          "format": "audiobook",
+          "isbns": [
+            "1705041027",
+            "9781705041024"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "462038:audiobook"
+            }
+          ]
+        },
+        {
+          "id": "ilajrukot5oapg",
+          "format": "print",
+          "isbns": [
+            "9791036640353"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "462038:physical"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30845693/9ef45cef-6b2b-44a8-9d1c-1b625bb863fd.jpg",
+        "dateRead": "2024-09-19"
+      }
     },
     {
       "id": "w0st9o2j2u7g8o",
@@ -402,22 +415,22 @@
       ],
       "instances": [
         {
-          "id": "i5rh3mr7b0ov7s",
-          "format": "print",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1175710:physical"
-            }
-          ]
-        },
-        {
-          "id": "i98a25nnt01v4m",
+          "id": "id562gard48o60",
           "format": "audiobook",
           "providerIds": [
             {
               "source": "hardcover",
               "value": "1175710:audiobook"
+            }
+          ]
+        },
+        {
+          "id": "iim1icnjnp7tak",
+          "format": "print",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1175710:physical"
             }
           ]
         },
@@ -434,7 +447,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31229730/6504478115374395.jpg",
+        "dateRead": "2025-02-11",
+        "rating": "5"
+      }
     },
     {
       "id": "w0tm5ekugsuul8",
@@ -536,7 +554,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30401722/203725739738019-PxOL.jpg",
+        "dateRead": "2025-03-18",
+        "rating": "4"
+      }
     },
     {
       "id": "w11ae1bc770igg",
@@ -603,6 +626,16 @@
       ],
       "instances": [
         {
+          "id": "i2pm651gubd1sq",
+          "format": "ebook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "118459:ebook"
+            }
+          ]
+        },
+        {
           "id": "i64oqilofgn378",
           "format": "print",
           "isbns": [
@@ -617,17 +650,7 @@
           ]
         },
         {
-          "id": "idcp86mu9jgf1g",
-          "format": "ebook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "118459:ebook"
-            }
-          ]
-        },
-        {
-          "id": "iiuqa8og51m7ec",
+          "id": "ilne2oa56ftfui",
           "format": "audiobook",
           "providerIds": [
             {
@@ -636,7 +659,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30523234/492242428ce5245a402470ccf699f28b88f7c08f.jpeg",
+        "dateRead": "2024-11-18",
+        "rating": "4"
+      }
     },
     {
       "id": "w14s88evpcre3k",
@@ -714,7 +742,7 @@
           ]
         },
         {
-          "id": "ipf7f7ihb318vk",
+          "id": "im2631hutun544",
           "format": "audiobook",
           "providerIds": [
             {
@@ -737,7 +765,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30554086/5810455479831040.jpg",
+        "dateRead": "2024-12-27",
+        "rating": "5"
+      }
     },
     {
       "id": "w1d90qohue2uqu",
@@ -788,11 +821,11 @@
       ],
       "instances": [
         {
-          "id": "i3m4sm0lkr0798",
+          "id": "i60j60dhdh70qk",
           "format": "audiobook",
           "isbns": [
-            "0743554450",
-            "9780743554459"
+            "1442364203",
+            "9781442364202"
           ],
           "providerIds": [
             {
@@ -802,25 +835,11 @@
           ]
         },
         {
-          "id": "im5fk041limh30",
-          "format": "ebook",
-          "isbns": [
-            "1101010908",
-            "9781101010907"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "375663:ebook"
-            }
-          ]
-        },
-        {
-          "id": "imnlv7d02140lk",
+          "id": "i8qr1euhpsi158",
           "format": "print",
           "isbns": [
-            "1594488886",
-            "9781594488887"
+            "9664484857",
+            "9789664484852"
           ],
           "providerIds": [
             {
@@ -828,8 +847,27 @@
               "value": "375663:physical"
             }
           ]
+        },
+        {
+          "id": "icljglcheu0320",
+          "format": "ebook",
+          "isbns": [
+            "1408803739",
+            "9781408803738"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "375663:ebook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/24940052/59ad59ca7c66a094a7fe06e7c955f2aa384816a3.jpeg",
+        "dateRead": "2024-05-01",
+        "rating": "5"
+      }
     },
     {
       "id": "w1hdg4f5131ba6",
@@ -861,6 +899,11 @@
           ],
           "scheme": "lcsh"
         }
+      ],
+      "tags": [
+        "Family saga",
+        "India",
+        "Literary Fiction"
       ],
       "languages": [
         "eng"
@@ -897,7 +940,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/61513243/6e3c1584a9a564fa958d733274dc78c1054958a2.jpeg",
+        "dateRead": "2024-08-16",
+        "rating": "5"
+      }
     },
     {
       "id": "w28f4ploegtkho",
@@ -974,7 +1022,7 @@
           ]
         },
         {
-          "id": "ik8mnm0ou5vnpq",
+          "id": "ih67cai7cgf0ca",
           "format": "ebook",
           "providerIds": [
             {
@@ -984,7 +1032,7 @@
           ]
         },
         {
-          "id": "isb2p6cv6u2g1e",
+          "id": "inttlc7lde5qdq",
           "format": "audiobook",
           "providerIds": [
             {
@@ -993,7 +1041,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30616103/9777107250064960-B0BLRD8YPD.01.MAIN._SCRM_.jpg",
+        "dateRead": "2025-04-08",
+        "rating": "4"
+      }
     },
     {
       "id": "w2m9dc7g0tej80",
@@ -1016,13 +1069,13 @@
           "scheme": "lcsh"
         },
         {
-          "id": "https://id.loc.gov/authorities/subjects/sh85040350",
+          "id": "https://id.loc.gov/authorities/subjects/sh85001072",
           "labels": {
-            "en": "Dystopias",
-            "es": "Distopías"
+            "en": "Adventure stories",
+            "es": "Novela de aventuras"
           },
           "broader": [
-            "https://id.loc.gov/authorities/subjects/sh85118629"
+            "https://id.loc.gov/authorities/subjects/sh2026001126"
           ],
           "scheme": "lcsh"
         },
@@ -1116,7 +1169,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/59556867/ec6f766e71f270e2aac18494d2a4d9c1e05ceb56.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "5"
+      }
     },
     {
       "id": "w38t7er1qh6r1u",
@@ -1218,7 +1276,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/24542917/d68669a2fa471f20f2bec91f8c35c8b855470387.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "5"
+      }
     },
     {
       "id": "w3leemlcpr97gu",
@@ -1253,7 +1316,7 @@
       ],
       "instances": [
         {
-          "id": "inmed67uihhtpm",
+          "id": "ip050au93kpn84",
           "format": "ebook",
           "providerIds": [
             {
@@ -1275,7 +1338,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31725194/1413568976016770.jpg",
+        "dateRead": "2025-05-19",
+        "rating": "4"
+      }
     },
     {
       "id": "w4u21a159fm0i8",
@@ -1385,7 +1453,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/61033271/17d7f0ddd011d5ba040fb971860ab3890f91b956.jpeg",
+        "dateRead": "2024-08-11",
+        "rating": "5"
+      }
     },
     {
       "id": "w50hpgopvot3da",
@@ -1450,12 +1523,12 @@
       ],
       "instances": [
         {
-          "id": "i47pk7saemih32",
-          "format": "audiobook",
+          "id": "i39ucaso3f0jiq",
+          "format": "ebook",
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "587445:audiobook"
+              "value": "587445:ebook"
             }
           ]
         },
@@ -1473,16 +1546,21 @@
           ]
         },
         {
-          "id": "iv91s0pg0n83tm",
-          "format": "ebook",
+          "id": "ikq5vn04njsnei",
+          "format": "audiobook",
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "587445:ebook"
+              "value": "587445:audiobook"
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31229948/5853189347299330.jpg",
+        "dateRead": "2024-12-29",
+        "rating": "5"
+      }
     },
     {
       "id": "w51cv7sa5hfr0o",
@@ -1531,7 +1609,7 @@
       ],
       "instances": [
         {
-          "id": "i27euapi2g3qra",
+          "id": "i03gahm2v992b4",
           "format": "audiobook",
           "providerIds": [
             {
@@ -1568,7 +1646,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30615684/532124688376034.jpg",
+        "dateRead": "2026-01-31",
+        "rating": "5"
+      }
     },
     {
       "id": "w6i6sh4r5gjlde",
@@ -1635,16 +1718,6 @@
       ],
       "instances": [
         {
-          "id": "i7imucp5q4pbne",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "994867:audiobook"
-            }
-          ]
-        },
-        {
           "id": "iarj6iqfktkat2",
           "format": "ebook",
           "isbns": [
@@ -1655,6 +1728,16 @@
             {
               "source": "hardcover",
               "value": "994867:ebook"
+            }
+          ]
+        },
+        {
+          "id": "irjuhekm31rmde",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "994867:audiobook"
             }
           ]
         },
@@ -1672,7 +1755,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31019620/7396225421748550.jpg",
+        "dateRead": "2025-02-13",
+        "rating": "4.5"
+      }
     },
     {
       "id": "w6uo0u2smvgcek",
@@ -1759,7 +1847,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30807633/f5215a82-e5ac-4898-b4e4-8511c9ad6a28.jpg",
+        "rating": "4.5"
+      }
     },
     {
       "id": "w78bjpk3nr6fvm",
@@ -1808,7 +1900,7 @@
       ],
       "instances": [
         {
-          "id": "ik9e510ah55ah4",
+          "id": "i5pe2d11u9qsl6",
           "format": "audiobook",
           "providerIds": [
             {
@@ -1818,7 +1910,7 @@
           ]
         },
         {
-          "id": "imtpjn38usjnlg",
+          "id": "imp34q8au92gne",
           "format": "ebook",
           "providerIds": [
             {
@@ -1827,7 +1919,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30625722/7268502471465796-58960282.jpg",
+        "dateRead": "2026-01-01",
+        "rating": "4.5"
+      }
     },
     {
       "id": "w7f6c3ibad7gki",
@@ -1878,7 +1975,7 @@
       ],
       "instances": [
         {
-          "id": "i1eua4br9qo0l2",
+          "id": "ihd8f3buegshj6",
           "format": "audiobook",
           "providerIds": [
             {
@@ -1901,7 +1998,7 @@
           ]
         },
         {
-          "id": "isefa2he5lsglq",
+          "id": "iqlgpv8bq7hnjm",
           "format": "ebook",
           "providerIds": [
             {
@@ -1910,7 +2007,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31983493/4059f72e-65ad-499b-86ff-caf733698edb.jpg",
+        "dateRead": "2025-08-05",
+        "rating": "4.5"
+      }
     },
     {
       "id": "w7noclsgtee3b4",
@@ -1994,7 +2096,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/6140626/b741df4a9e5f50d8a5713b03122d0afe543cdb69.jpeg",
+        "rating": "5"
+      }
     },
     {
       "id": "w7rovpe12dc796",
@@ -2054,7 +2160,7 @@
       ],
       "instances": [
         {
-          "id": "i8sj16mhpn5qhq",
+          "id": "i6os8hetem64m6",
           "format": "print",
           "providerIds": [
             {
@@ -2064,17 +2170,7 @@
           ]
         },
         {
-          "id": "iiqvscie6i6dhk",
-          "format": "ebook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1450207:ebook"
-            }
-          ]
-        },
-        {
-          "id": "im5nunqsd5ro2g",
+          "id": "i9a6bv2fh0jbk0",
           "format": "audiobook",
           "providerIds": [
             {
@@ -2082,8 +2178,23 @@
               "value": "1450207:audiobook"
             }
           ]
+        },
+        {
+          "id": "iekg54re2am31a",
+          "format": "ebook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1450207:ebook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31491621/8797640100504895.jpg",
+        "dateRead": "2025-03-30",
+        "rating": "5"
+      }
     },
     {
       "id": "w7rr3iqelkfpje",
@@ -2131,7 +2242,7 @@
       ],
       "instances": [
         {
-          "id": "i4dobvjhthjfde",
+          "id": "ieh958drq3lano",
           "format": "ebook",
           "providerIds": [
             {
@@ -2141,7 +2252,7 @@
           ]
         },
         {
-          "id": "io8sb11evhn26g",
+          "id": "imtpapfocnd5vq",
           "format": "audiobook",
           "providerIds": [
             {
@@ -2164,7 +2275,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31098981/201031394214271-B0CNNYXRFW.01.MAIN._SCRM_.jpg",
+        "dateRead": "2025-04-20",
+        "rating": "4.5"
+      }
     },
     {
       "id": "w837151q0muq9i",
@@ -2202,7 +2318,7 @@
       ],
       "instances": [
         {
-          "id": "i2ep8l2nlhdqhg",
+          "id": "iicg3qo95e9vi0",
           "format": "ebook",
           "providerIds": [
             {
@@ -2212,7 +2328,7 @@
           ]
         },
         {
-          "id": "i35kinbktt02og",
+          "id": "ij1tm18os2n558",
           "format": "print",
           "providerIds": [
             {
@@ -2221,7 +2337,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31493257/8538021667482725.jpg",
+        "dateRead": "2025-05-09",
+        "rating": "4"
+      }
     },
     {
       "id": "w83h0te7a082jm",
@@ -2255,17 +2376,6 @@
           "scheme": "lcsh"
         },
         {
-          "id": "https://id.loc.gov/authorities/subjects/sh85040350",
-          "labels": {
-            "en": "Dystopias",
-            "es": "Distopías"
-          },
-          "broader": [
-            "https://id.loc.gov/authorities/subjects/sh85118629"
-          ],
-          "scheme": "lcsh"
-        },
-        {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
           "labels": {
             "en": "Fantasy fiction",
@@ -2289,7 +2399,8 @@
         }
       ],
       "tags": [
-        "Free will and determinism",
+        "Audiobook",
+        "Novella",
         "Science Fiction \u0026 Fantasy",
         "Space"
       ],
@@ -2303,24 +2414,11 @@
       ],
       "instances": [
         {
-          "id": "i6ljujrmjlpqra",
-          "format": "audiobook",
-          "isbns": [
-            "9798890550705"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "432448:audiobook"
-            }
-          ]
-        },
-        {
-          "id": "i77bqgkds6lotk",
+          "id": "i160lerlfqo8cm",
           "format": "print",
           "isbns": [
-            "8576578190",
-            "9788576578192"
+            "9524060507",
+            "9789524060509"
           ],
           "providerIds": [
             {
@@ -2330,11 +2428,11 @@
           ]
         },
         {
-          "id": "iqej6m6jc0aflk",
+          "id": "idmi6hq26skh9o",
           "format": "ebook",
           "isbns": [
-            "8576578247",
-            "9788576578246"
+            "1250185467",
+            "9781250185464"
           ],
           "providerIds": [
             {
@@ -2342,8 +2440,27 @@
               "value": "432448:ebook"
             }
           ]
+        },
+        {
+          "id": "ieo4vbms11osvu",
+          "format": "audiobook",
+          "isbns": [
+            "1501999990",
+            "9781501999994"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "432448:audiobook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/28317885/6d679483b8d3f62ce170e56ef2b82b3997eadea9.jpeg",
+        "dateRead": "2024-09-09",
+        "rating": "5"
+      }
     },
     {
       "id": "w872qb23uo765s",
@@ -2465,7 +2582,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30405392/8358006616147171.jpg",
+        "dateRead": "2025-03-18",
+        "rating": "3.5"
+      }
     },
     {
       "id": "w8f06lkbq09cl2",
@@ -2520,7 +2642,7 @@
       "tags": [
         "Contemporary",
         "Gay",
-        "Humorous"
+        "Sad"
       ],
       "languages": [
         "eng"
@@ -2573,7 +2695,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/12846449/a82ee96fb437ad83b4ebb215643b7e8d644468f9.jpeg",
+        "dateRead": "2023-01-01",
+        "rating": "5"
+      }
     },
     {
       "id": "w8qm7sc23bjpnk",
@@ -2647,22 +2774,22 @@
       ],
       "instances": [
         {
-          "id": "i0jnpaq1d05ptg",
-          "format": "ebook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "638200:ebook"
-            }
-          ]
-        },
-        {
-          "id": "id1ev5llc96s2m",
+          "id": "i9pjo0agkbl7n4",
           "format": "audiobook",
           "providerIds": [
             {
               "source": "hardcover",
               "value": "638200:audiobook"
+            }
+          ]
+        },
+        {
+          "id": "ig8occ1g03pei6",
+          "format": "ebook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "638200:ebook"
             }
           ]
         },
@@ -2679,7 +2806,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30616085/210865973633736.jpg",
+        "dateRead": "2025-01-05",
+        "rating": "5"
+      }
     },
     {
       "id": "w8rthbf2n2fbre",
@@ -2767,19 +2899,6 @@
       ],
       "instances": [
         {
-          "id": "i7ok1ec93j3mqm",
-          "format": "audiobook",
-          "isbns": [
-            "9798985663228"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "475214:audiobook"
-            }
-          ]
-        },
-        {
           "id": "i94bdd5998rqng",
           "format": "ebook",
           "isbns": [
@@ -2806,8 +2925,27 @@
               "value": "475214:physical"
             }
           ]
+        },
+        {
+          "id": "irstbjt15m5p6a",
+          "format": "audiobook",
+          "isbns": [
+            "1250889650",
+            "9781250889652"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "475214:audiobook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30396420/4372639752917043.jpg",
+        "dateRead": "2024-08-19",
+        "rating": "5"
+      }
     },
     {
       "id": "w8vgrdmis2a6da",
@@ -2857,17 +2995,7 @@
       ],
       "instances": [
         {
-          "id": "irk1lei04nr8m4",
-          "format": "print",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1561743:physical"
-            }
-          ]
-        },
-        {
-          "id": "is5nenv8d94bvm",
+          "id": "i4vso33cfrr38u",
           "format": "ebook",
           "providerIds": [
             {
@@ -2875,8 +3003,23 @@
               "value": "1561743:ebook"
             }
           ]
+        },
+        {
+          "id": "itmraf15ra289u",
+          "format": "print",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1561743:physical"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31625645/4453221502090061.jpg",
+        "dateRead": "2025-05-11",
+        "rating": "4"
+      }
     },
     {
       "id": "w9gk2ffsrb2uf6",
@@ -2948,16 +3091,16 @@
       ],
       "instances": [
         {
-          "id": "i2fae9cc8n6jbi",
-          "format": "ebook",
+          "id": "i8d7iqvaqfgpue",
+          "format": "print",
           "isbns": [
-            "6155514143",
-            "9786155514142"
+            "1785031139",
+            "9781785031137"
           ],
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "292354:ebook"
+              "value": "292354:physical"
             }
           ]
         },
@@ -2976,19 +3119,25 @@
           ]
         },
         {
-          "id": "ivgqjefleu81ei",
-          "format": "print",
+          "id": "ik13c9m1d1jfni",
+          "format": "ebook",
           "isbns": [
-            "9782820517814"
+            "0804139032",
+            "9780804139038"
           ],
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "292354:physical"
+              "value": "292354:ebook"
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/21716111/5323176149970177.jpg",
+        "dateRead": "2024-08-16",
+        "rating": "5"
+      }
     },
     {
       "id": "w9suoijamc7tf6",
@@ -3049,6 +3198,16 @@
           ]
         },
         {
+          "id": "im22jc5h0mcrn4",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1967787:audiobook"
+            }
+          ]
+        },
+        {
           "id": "imo7t96g0m8dci",
           "format": "print",
           "isbns": [
@@ -3061,18 +3220,13 @@
               "value": "1967787:physical"
             }
           ]
-        },
-        {
-          "id": "iravnsrcuig1ic",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1967787:audiobook"
-            }
-          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/32129454/20196d38-209f-4760-8e8b-1880b916031a.jpg",
+        "dateRead": "2026-03-07",
+        "rating": "5"
+      }
     },
     {
       "id": "w9t8fic7bqfcti",
@@ -3112,7 +3266,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31600725/a43588f011239701241614cfb8f35ce211ee39f5.jpeg",
+        "dateRead": "2025-02-27",
+        "rating": "5"
+      }
     },
     {
       "id": "w9tehhehmdvbtq",
@@ -3191,7 +3350,7 @@
           ]
         },
         {
-          "id": "iq7pq2ik7slf32",
+          "id": "ir84897kn1uid2",
           "format": "audiobook",
           "providerIds": [
             {
@@ -3200,7 +3359,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/32794786/6985d5d6-29c1-44ba-b303-36fd50b12b6c.jpg",
+        "dateRead": "2025-03-18",
+        "rating": "5"
+      }
     },
     {
       "id": "wa4r34oepq2gqm",
@@ -3296,7 +3460,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/22658252/a22e2e449f81d1f0e96d2d16e063f774113c8c92.jpeg",
+        "dateRead": "2026-05-11",
+        "rating": "4"
+      }
     },
     {
       "id": "waj2nlv21pudos",
@@ -3333,7 +3502,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/1671097/4d4b51f448afc36b0b8515a981918c4a714c0ec5.jpeg",
+        "dateRead": "2025-02-15",
+        "rating": "5"
+      }
     },
     {
       "id": "wau98e67i6b6hi",
@@ -3381,8 +3555,8 @@
       "tags": [
         "Classics",
         "Classique",
-        "Jeune Adulte",
-        "Philosophical Fiction",
+        "Literature",
+        "Psychology",
         "Science"
       ],
       "languages": [
@@ -3436,7 +3610,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/116801/3d46aa36-501a-4609-a744-1500713078f9.jpg",
+        "dateRead": "2025-03-18",
+        "rating": "5"
+      }
     },
     {
       "id": "wb62eovv2kh5gc",
@@ -3489,6 +3668,7 @@
         "Aliens",
         "First contact",
         "General",
+        "Hard Science Fiction",
         "Science Fiction \u0026 Fantasy"
       ],
       "languages": [
@@ -3501,6 +3681,19 @@
       ],
       "instances": [
         {
+          "id": "i2sqt03d3irq96",
+          "format": "print",
+          "isbns": [
+            "9780765377064"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "208339:physical"
+            }
+          ]
+        },
+        {
           "id": "i38ld2jv9qt26s",
           "format": "audiobook",
           "isbns": [
@@ -3511,20 +3704,6 @@
             {
               "source": "hardcover",
               "value": "208339:audiobook"
-            }
-          ]
-        },
-        {
-          "id": "i3s583flvku414",
-          "format": "print",
-          "isbns": [
-            "8556510205",
-            "9788556510204"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "208339:physical"
             }
           ]
         },
@@ -3542,7 +3721,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30400656/a042ea0a-127c-4e98-8202-f20519445ec3.jpg",
+        "dateRead": "2024-09-21",
+        "rating": "4"
+      }
     },
     {
       "id": "wb7obkph37eqv4",
@@ -3664,7 +3848,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31608045/3c51e2999ec8dc7e94fdd569d083d45f2d46dd3b.jpeg",
+        "dateRead": "2024-08-25",
+        "rating": "5"
+      }
     },
     {
       "id": "wbhoepl75dqpb2",
@@ -3713,16 +3902,6 @@
       ],
       "instances": [
         {
-          "id": "i49aldn75lobjo",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1078919:audiobook"
-            }
-          ]
-        },
-        {
           "id": "ifss6r1fbp2mbc",
           "format": "ebook",
           "isbns": [
@@ -3735,8 +3914,23 @@
               "value": "1078919:ebook"
             }
           ]
+        },
+        {
+          "id": "isaue6gucm06bu",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1078919:audiobook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31102976/2097440116862186-60525437.jpg",
+        "dateRead": "2026-01-01",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wbv1f581ofpoa6",
@@ -3830,7 +4024,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/48535872/e43cb53db7bc326ddbacb38c1b2c794b0756670e.jpeg",
+        "dateRead": "2024-04-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wcebkpb4us3qnc",
@@ -3891,17 +4090,7 @@
       ],
       "instances": [
         {
-          "id": "i19dutjoa18tvg",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "898265:audiobook"
-            }
-          ]
-        },
-        {
-          "id": "ihl3kgcmq860im",
+          "id": "i4imqkmeqqce32",
           "format": "ebook",
           "providerIds": [
             {
@@ -3909,8 +4098,23 @@
               "value": "898265:ebook"
             }
           ]
+        },
+        {
+          "id": "ivnirekouh6es6",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "898265:audiobook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30919996/6038118354181532.jpg",
+        "dateRead": "2026-03-01",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wclag676s9ld2g",
@@ -3964,7 +4168,7 @@
       ],
       "instances": [
         {
-          "id": "igrbvaphao4adi",
+          "id": "iat5lbc2c2ol7q",
           "format": "ebook",
           "providerIds": [
             {
@@ -3974,7 +4178,7 @@
           ]
         },
         {
-          "id": "ijqpvksej7206e",
+          "id": "iv6ov2jpe4s218",
           "format": "audiobook",
           "providerIds": [
             {
@@ -3983,7 +4187,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30407805/3125941921004678-41033158.jpg",
+        "dateRead": "2025-11-11",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wcr5m01qphd6dm",
@@ -4044,11 +4253,11 @@
       ],
       "instances": [
         {
-          "id": "i9b3cm86lnd0dm",
+          "id": "idp7coro212d0a",
           "format": "ebook",
           "isbns": [
-            "0316556335",
-            "9780316556330"
+            "8491814132",
+            "9788491814139"
           ],
           "providerIds": [
             {
@@ -4085,7 +4294,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/187333/9694237244087422-circe.jpg",
+        "dateRead": "2024-09-05",
+        "rating": "4"
+      }
     },
     {
       "id": "wd28gb8662doog",
@@ -4146,7 +4360,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31547099/cfb0716382eace7aadb0e091c54e1b06627caae5.jpeg",
+        "dateRead": "2025-10-17",
+        "rating": "4"
+      }
     },
     {
       "id": "wdj5a6lbj2is4g",
@@ -4266,11 +4485,11 @@
           ]
         },
         {
-          "id": "iutm3mh4qndr6a",
+          "id": "ivqonv9hi1cp4o",
           "format": "print",
           "isbns": [
-            "0091956943",
-            "9780091956943"
+            "9789898917102",
+            "9898917105"
           ],
           "providerIds": [
             {
@@ -4279,7 +4498,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30426459/f167b2da-7e34-4e59-a0da-2233d70a61b7.jpg",
+        "dateRead": "2024-08-23",
+        "rating": "4"
+      }
     },
     {
       "id": "wdkjfsb5uenqc4",
@@ -4380,7 +4604,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/29849617/06ae5eb360de4cbfe986689a915820d18b594c5d.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "3.5"
+      }
     },
     {
       "id": "wdrhjikq106s1g",
@@ -4456,7 +4685,7 @@
           ]
         },
         {
-          "id": "im2la6a6pac0hs",
+          "id": "ilt57uvf8l4s1s",
           "format": "audiobook",
           "providerIds": [
             {
@@ -4466,7 +4695,7 @@
           ]
         },
         {
-          "id": "iqe8njohpk9f2k",
+          "id": "im8b73u29ui3ic",
           "format": "ebook",
           "providerIds": [
             {
@@ -4475,7 +4704,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30941320/6212341049756211.jpg",
+        "dateRead": "2025-04-13",
+        "rating": "4"
+      }
     },
     {
       "id": "wdv7ko8v4e2do8",
@@ -4577,7 +4811,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/30206313/f95c74793bcdd7925758f16a6f6f5f423a2ec81d.jpeg",
+        "dateRead": "2024-11-22",
+        "rating": "3.5"
+      }
     },
     {
       "id": "wena74h9e8bsuc",
@@ -4689,7 +4928,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30400653/ad16d6b9d667b7e2323184b60bdb1bcafbbe1650.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "3"
+      }
     },
     {
       "id": "werrdhae5cs93k",
@@ -4811,7 +5055,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/book_mappings/7333156/d71bc6a97e9ec408e63f130067a87b7825ef8801.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "4"
+      }
     },
     {
       "id": "wesgb3ep2uq7ji",
@@ -4845,6 +5094,17 @@
           "scheme": "lcsh"
         },
         {
+          "id": "https://id.loc.gov/authorities/subjects/sh85040350",
+          "labels": {
+            "en": "Dystopias",
+            "es": "Distopías"
+          },
+          "broader": [
+            "https://id.loc.gov/authorities/subjects/sh85118629"
+          ],
+          "scheme": "lcsh"
+        },
+        {
           "id": "https://id.loc.gov/authorities/subjects/sh85047114",
           "labels": {
             "en": "Fantasy fiction",
@@ -4869,7 +5129,6 @@
       ],
       "tags": [
         "Audiobook",
-        "Novella",
         "Science Fiction \u0026 Fantasy",
         "Space"
       ],
@@ -4897,11 +5156,11 @@
           ]
         },
         {
-          "id": "ilrlsnh83r7v1k",
+          "id": "ih215bdev1p18s",
           "format": "audiobook",
           "isbns": [
-            "1980080577",
-            "9781980080572"
+            "1980080631",
+            "9781980080633"
           ],
           "providerIds": [
             {
@@ -4911,10 +5170,11 @@
           ]
         },
         {
-          "id": "itcr8hs4rl0ikg",
+          "id": "ii7jgvlfebgqsu",
           "format": "print",
           "isbns": [
-            "9791036000843"
+            "8027722438",
+            "9788027722433"
           ],
           "providerIds": [
             {
@@ -4923,7 +5183,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/book_mappings/7333079/1dd5f1cc67a36104185d7cc0c9967729fc44bf18.jpeg",
+        "dateRead": "2024-09-15"
+      }
     },
     {
       "id": "wf4mfrj1iqdthm",
@@ -5003,7 +5267,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/59944438/4f1d22e70f4e325595c02a9b4654af09fc101c4c.jpeg",
+        "dateRead": "2025-10-28",
+        "rating": "4"
+      }
     },
     {
       "id": "wfec2670b4kmka",
@@ -5089,25 +5358,24 @@
       ],
       "instances": [
         {
-          "id": "i26kuri9qniali",
-          "format": "ebook",
+          "id": "i6pag1j6qv423u",
+          "format": "audiobook",
           "isbns": [
-            "8075888499",
-            "9788075888495"
+            "3748087322",
+            "9783748087328"
           ],
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "446681:ebook"
+              "value": "446681:audiobook"
             }
           ]
         },
         {
-          "id": "i5drk6372h6upk",
+          "id": "ibdnmsh3niikaq",
           "format": "print",
           "isbns": [
-            "3596712483",
-            "9783596712489"
+            "2100906924"
           ],
           "providerIds": [
             {
@@ -5117,20 +5385,24 @@
           ]
         },
         {
-          "id": "iud4034n6o823a",
-          "format": "audiobook",
+          "id": "im22h2le0q9sno",
+          "format": "ebook",
           "isbns": [
-            "838382825X",
-            "9788383828251"
+            "9798232923594"
           ],
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "446681:audiobook"
+              "value": "446681:ebook"
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31601422/3a01ea07-01f4-45a2-9940-6fc7e00e0d08.jpeg",
+        "dateRead": "2025-09-02",
+        "rating": "4"
+      }
     },
     {
       "id": "wfelfel7u1ugkg",
@@ -5165,7 +5437,7 @@
       ],
       "instances": [
         {
-          "id": "icr3ls7umi6ngq",
+          "id": "ib9fm2frs4aq86",
           "format": "ebook",
           "providerIds": [
             {
@@ -5187,7 +5459,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31919582/2295061012017199.jpg",
+        "dateRead": "2025-05-23",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wfl0lg9qsoe1gm",
@@ -5307,7 +5584,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30462302/5659456890773424.jpg",
+        "dateRead": "2024-09-21"
+      }
     },
     {
       "id": "wfpug34g5k3eg6",
@@ -5358,7 +5639,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/43281666/0c90160b7d7533a7a3f4f26a7f4b75aa4804f351.jpeg",
+        "dateRead": "2025-10-24",
+        "rating": "4"
+      }
     },
     {
       "id": "wfvftug34o5fao",
@@ -5407,7 +5693,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30615865/294a6b4e-9179-4818-a5e7-ef62ecd31b50.jpg",
+        "dateRead": "2025-09-02",
+        "rating": "3.5"
+      }
     },
     {
       "id": "wg0vt75phonbj6",
@@ -5519,7 +5810,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/25799854/da8d98f95792ff3a53375db3c0d745ede376dbd0.jpeg",
+        "dateRead": "2024-01-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wgk60gl1jnv0sk",
@@ -5589,7 +5885,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31451412/7429527834824563.jpg",
+        "dateRead": "2026-02-13",
+        "rating": "5"
+      }
     },
     {
       "id": "wgtc52vrqplv3m",
@@ -5702,7 +6003,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30474703/a131f38041ff2c99c8667ca5fdf142f27da739ce.jpeg",
+        "dateRead": "2024-01-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wh8tnlk50ahgsa",
@@ -5753,22 +6059,22 @@
       ],
       "instances": [
         {
-          "id": "i9mlha4nq5s19a",
-          "format": "print",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "637816:physical"
-            }
-          ]
-        },
-        {
-          "id": "ib4olgpcpk636u",
+          "id": "i7qeudknpkjbi8",
           "format": "audiobook",
           "providerIds": [
             {
               "source": "hardcover",
               "value": "637816:audiobook"
+            }
+          ]
+        },
+        {
+          "id": "i98cru6edq3b6i",
+          "format": "print",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "637816:physical"
             }
           ]
         },
@@ -5786,7 +6092,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30615685/6628794588010536.jpg",
+        "dateRead": "2026-01-16",
+        "rating": "5"
+      }
     },
     {
       "id": "wiar499bc1gba4",
@@ -5823,7 +6134,7 @@
       ],
       "instances": [
         {
-          "id": "ip4a6eaku4uuha",
+          "id": "irlf04nnl9vlca",
           "format": "print",
           "providerIds": [
             {
@@ -5833,7 +6144,7 @@
           ]
         },
         {
-          "id": "iu3sd126uuosja",
+          "id": "it30o7tk4sra9i",
           "format": "ebook",
           "providerIds": [
             {
@@ -5842,7 +6153,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31725222/3486665324002758.jpg",
+        "dateRead": "2025-05-19",
+        "rating": "4"
+      }
     },
     {
       "id": "wic9v0vsnjk1ni",
@@ -5914,20 +6230,6 @@
       ],
       "instances": [
         {
-          "id": "i0himot02kdosc",
-          "format": "ebook",
-          "isbns": [
-            "0330513087",
-            "9780330513081"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "427798:ebook"
-            }
-          ]
-        },
-        {
           "id": "i8bd6ull8gpi7e",
           "format": "audiobook",
           "isbns": [
@@ -5954,8 +6256,27 @@
               "value": "427798:physical"
             }
           ]
+        },
+        {
+          "id": "ib2diqr38hf724",
+          "format": "ebook",
+          "isbns": [
+            "8365676192",
+            "9788365676191"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "427798:ebook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/21490281/d9b48333ac7a69ebe0aa5573fe0ff032e6f97508.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "5"
+      }
     },
     {
       "id": "wii038ein72ida",
@@ -6006,7 +6327,7 @@
       ],
       "instances": [
         {
-          "id": "i9mn0f0l0nqbn0",
+          "id": "ib3jng1vtoenjo",
           "format": "audiobook",
           "providerIds": [
             {
@@ -6016,7 +6337,7 @@
           ]
         },
         {
-          "id": "ii2cdj170lina0",
+          "id": "if4u2epamtcnkk",
           "format": "ebook",
           "providerIds": [
             {
@@ -6039,7 +6360,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31973926/2c664d3e-9aab-43e2-9d19-1d8ed8bfe6a6.jpg",
+        "dateRead": "2025-05-05",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wij7q3qjpoo2rg",
@@ -6112,7 +6438,7 @@
           ]
         },
         {
-          "id": "im0f7rjvunlp90",
+          "id": "i42theqe60jdks",
           "format": "audiobook",
           "providerIds": [
             {
@@ -6135,7 +6461,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30502713/7420909540970702.jpg",
+        "dateRead": "2025-12-05",
+        "rating": "5"
+      }
     },
     {
       "id": "wik7h7252lavo8",
@@ -6219,7 +6550,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30711716/692111d40fe00e852ac26390b327807a5eb3d7d4.jpeg",
+        "dateRead": "2024-04-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wimlld0dsmpl24",
@@ -6290,7 +6626,7 @@
       ],
       "instances": [
         {
-          "id": "i4t256pe6s4p3i",
+          "id": "ibpt7f7qfjt0hs",
           "format": "audiobook",
           "providerIds": [
             {
@@ -6327,7 +6663,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/32529586/7853371f-0635-45fd-86f5-6cb828947d9e.jpg",
+        "dateRead": "2025-09-10",
+        "rating": "4"
+      }
     },
     {
       "id": "wivq08uf1id582",
@@ -6408,25 +6749,11 @@
       ],
       "instances": [
         {
-          "id": "i6futb3g36db3c",
-          "format": "ebook",
-          "isbns": [
-            "8576577275",
-            "9788576577270"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "427537:ebook"
-            }
-          ]
-        },
-        {
-          "id": "icniqa21u3p24g",
+          "id": "iasc756sgd9gqm",
           "format": "print",
           "isbns": [
-            "6053759708",
-            "9786053759706"
+            "1250186927",
+            "9781250186928"
           ],
           "providerIds": [
             {
@@ -6436,10 +6763,25 @@
           ]
         },
         {
-          "id": "ipj7969jahsl72",
+          "id": "igegfl3tlg4e2i",
+          "format": "ebook",
+          "isbns": [
+            "1250186935",
+            "9781250186935"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "427537:ebook"
+            }
+          ]
+        },
+        {
+          "id": "ijaaifs182is78",
           "format": "audiobook",
           "isbns": [
-            "9798212912877"
+            "1501977830",
+            "9781501977831"
           ],
           "providerIds": [
             {
@@ -6448,7 +6790,105 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/43328916/fa176120b21cfbaafcd9a26fe6f4252433a53f1f.jpeg",
+        "dateRead": "2024-09-06",
+        "rating": "5"
+      }
+    },
+    {
+      "id": "wj2gshjd8grtb8",
+      "title": "Slaughterhouse-Five",
+      "subtitle": "The Children's Crusade A Duty-Dance With Death",
+      "summary": "Slaughterhouse-Five, an American classic, is one of the world’s great antiwar books. Centering on the infamous World War II firebombing of Dresden, the novel is the result of what Kurt Vonnegut described as a twenty-three-year struggle to write a book about what he had witnessed as an American prisoner of war. It combines historical fiction, science fiction, autobiography, and satire in an account of the life of Billy Pilgrim, a barber’s son turned draftee turned optometrist turned alien abductee. As Vonnegut had, Billy experiences the destruction of Dresden as a POW. Unlike Vonnegut, he experiences time travel, or coming “unstuck in time.”\n\nAn instant bestseller, Slaughterhouse-Five made Kurt Vonnegut a cult hero in American literature, a reputation that only strengthened over time, despite his being banned and censored by some libraries and schools for content and language. But it was precisely those elements of Vonnegut’s writing—the political edginess, the genre-bending inventiveness, the frank violence, the transgressive wit—that have inspired generations of readers not just to look differently at the world around them but to find the confidence to say something about it. Authors as wide-ranging as Norman Mailer, John Irving, Michael Crichton, Tim O’Brien, Margaret Atwood, Elizabeth Strout, David Sedaris, Jennifer Egan, and J. K. Rowling have all found inspiration in Vonnegut’s words. Jonathan Safran Foer has described Vonnegut as “the kind of writer who made people—young people especially—want to write.” George Saunders has declared Vonnegut to be “the great, urgent, passionate American writer of our century, who offers us . . . a model of the kind of compassionate thinking that might yet save us from ourselves.”\n\nFifty years after its initial publication at the height of the Vietnam War, Vonnegut's portrayal of political disillusionment, PTSD, and postwar anxiety feels as relevant, darkly humorous, and profoundly affecting as ever, an enduring beacon through our own era’s uncertainties.",
+      "contributors": [
+        {
+          "name": "Vonnegut, Kurt",
+          "role": "author"
+        }
+      ],
+      "subjects": [
+        {
+          "id": "https://id.loc.gov/authorities/subjects/sh2026001126",
+          "labels": {
+            "en": "Fiction",
+            "es": "Ficción"
+          },
+          "scheme": "lcsh"
+        },
+        {
+          "id": "https://id.loc.gov/authorities/subjects/sh85047114",
+          "labels": {
+            "en": "Fantasy fiction",
+            "es": "Literatura fantástica"
+          },
+          "broader": [
+            "https://id.loc.gov/authorities/subjects/sh2026001126"
+          ],
+          "scheme": "lcsh"
+        },
+        {
+          "id": "https://id.loc.gov/authorities/subjects/sh85118629",
+          "labels": {
+            "en": "Science fiction",
+            "es": "Ciencia ficción"
+          },
+          "broader": [
+            "https://id.loc.gov/authorities/subjects/sh2026001126"
+          ],
+          "scheme": "lcsh"
+        }
+      ],
+      "tags": [
+        "Classics",
+        "General",
+        "Graphic Novels",
+        "Satire",
+        "War"
+      ],
+      "languages": [
+        "eng"
+      ],
+      "formats": [
+        "ebook",
+        "print"
+      ],
+      "instances": [
+        {
+          "id": "i9itpd9729jlm2",
+          "format": "ebook",
+          "isbns": [
+            "0795302622",
+            "9780795302664"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "122240:ebook"
+            }
+          ]
+        },
+        {
+          "id": "ihvm4l4t4hk3oa",
+          "format": "print",
+          "isbns": [
+            "9789999655798",
+            "9999655793"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "122240:physical"
+            }
+          ]
+        }
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/17079379/6cd33f6e07aae9f2a3f5299de4fe48c07571dd66.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wjal4iqk2971iu",
@@ -6506,7 +6946,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/1499442/67d86bfa949b0e1073c54f3274ca3063a8fd9b6c.jpeg",
+        "dateRead": "2025-10-30",
+        "rating": "4"
+      }
     },
     {
       "id": "wk0n9jbf75ksp2",
@@ -6617,7 +7062,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/50321830/c88e820437839aeed7b528ae46d4e045498c9c3d.jpeg",
+        "dateRead": "2024-01-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wk2j74a728huhi",
@@ -6678,7 +7128,7 @@
       ],
       "instances": [
         {
-          "id": "i15ah0d8v3mmd8",
+          "id": "itpdfq37uqjch6",
           "format": "ebook",
           "providerIds": [
             {
@@ -6688,7 +7138,7 @@
           ]
         },
         {
-          "id": "ip1kn9l71bo2lq",
+          "id": "iufeiurgib6l1e",
           "format": "audiobook",
           "providerIds": [
             {
@@ -6697,7 +7147,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30407810/1361519743556770.jpg",
+        "dateRead": "2025-11-29",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wkmvallsrn5a26",
@@ -6773,7 +7228,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/61497763/80e9a865e0ae7315b4810cfc3fe5984d77f95017.jpeg",
+        "dateRead": "2025-10-20",
+        "rating": "4"
+      }
     },
     {
       "id": "wkupo9irlqsble",
@@ -6811,7 +7271,7 @@
       ],
       "instances": [
         {
-          "id": "i72bol5j2kcln0",
+          "id": "i6m47bcvrf7aia",
           "format": "print",
           "providerIds": [
             {
@@ -6821,7 +7281,7 @@
           ]
         },
         {
-          "id": "iqlocqk0iak1p2",
+          "id": "iln0cadptatefu",
           "format": "ebook",
           "providerIds": [
             {
@@ -6830,7 +7290,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31625642/3509542803554595.jpg",
+        "dateRead": "2025-05-15",
+        "rating": "4"
+      }
     },
     {
       "id": "wlecs9kl65t68s",
@@ -6910,11 +7375,11 @@
       ],
       "instances": [
         {
-          "id": "i525sl9d9gvut0",
+          "id": "i3qr4titf3qnig",
           "format": "print",
           "isbns": [
-            "1408880105",
-            "9781408880104"
+            "0374320918",
+            "9780374320911"
           ],
           "providerIds": [
             {
@@ -6937,7 +7402,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/25808586/c5eec507ba859d2742dbd8df0ad33dd46ae943d2.jpeg",
+        "dateRead": "2024-08-30",
+        "rating": "4"
+      }
     },
     {
       "id": "wli4qu30u0b746",
@@ -6996,7 +7466,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/24309150/content.jpeg",
+        "dateRead": "2025-11-13",
+        "rating": "4"
+      }
     },
     {
       "id": "wn3fpftme9e8cm",
@@ -7098,13 +7573,18 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/30535150/2efdfd508a803c89913fd6e987f69048a17c89c6.jpeg",
+        "dateRead": "2023-01-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wn54qtdcai0m9m",
-      "title": "Slaughterhouse-Five, or The Children's Crusade",
+      "title": "Slaughterhouse-Five",
       "subtitle": "The Children's Crusade A Duty-Dance With Death",
-      "summary": "Slaughterhouse-Five, or The Children's Crusade: A Duty-Dance with Death is Kurt Vonnegut Jr.'s 1969 semi-autobiographical, anti-war novel that blends science fiction, satire, and dark humor to explore the trauma of war, particularly the firebombing of Dresden, through the non-linear life of protagonist Billy Pilgrim, who becomes \"unstuck in time\" after being abducted by aliens.",
+      "summary": "Slaughterhouse-Five, an American classic, is one of the world’s great antiwar books. Centering on the infamous World War II firebombing of Dresden, the novel is the result of what Kurt Vonnegut described as a twenty-three-year struggle to write a book about what he had witnessed as an American prisoner of war. It combines historical fiction, science fiction, autobiography, and satire in an account of the life of Billy Pilgrim, a barber’s son turned draftee turned optometrist turned alien abductee. As Vonnegut had, Billy experiences the destruction of Dresden as a POW. Unlike Vonnegut, he experiences time travel, or coming “unstuck in time.”\n\nAn instant bestseller, Slaughterhouse-Five made Kurt Vonnegut a cult hero in American literature, a reputation that only strengthened over time, despite his being banned and censored by some libraries and schools for content and language. But it was precisely those elements of Vonnegut’s writing—the political edginess, the genre-bending inventiveness, the frank violence, the transgressive wit—that have inspired generations of readers not just to look differently at the world around them but to find the confidence to say something about it. Authors as wide-ranging as Norman Mailer, John Irving, Michael Crichton, Tim O’Brien, Margaret Atwood, Elizabeth Strout, David Sedaris, Jennifer Egan, and J. K. Rowling have all found inspiration in Vonnegut’s words. Jonathan Safran Foer has described Vonnegut as “the kind of writer who made people—young people especially—want to write.” George Saunders has declared Vonnegut to be “the great, urgent, passionate American writer of our century, who offers us . . . a model of the kind of compassionate thinking that might yet save us from ourselves.”\n\nFifty years after its initial publication at the height of the Vietnam War, Vonnegut's portrayal of political disillusionment, PTSD, and postwar anxiety feels as relevant, darkly humorous, and profoundly affecting as ever, an enduring beacon through our own era’s uncertainties.",
       "contributors": [
         {
           "name": "Vonnegut, Kurt",
@@ -7141,61 +7621,22 @@
             "https://id.loc.gov/authorities/subjects/sh2026001126"
           ],
           "scheme": "lcsh"
-        },
-        {
-          "id": "https://id.loc.gov/authorities/subjects/sh85149267",
-          "labels": {
-            "en": "Young adult fiction",
-            "es": "Ficción para adultos jóvenes"
-          },
-          "broader": [
-            "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ],
-          "scheme": "lcsh"
         }
       ],
       "tags": [
         "Classics",
         "General",
         "Graphic Novels",
+        "Satire",
         "War"
       ],
       "languages": [
         "eng"
       ],
       "formats": [
-        "audiobook",
-        "ebook",
-        "print"
+        "audiobook"
       ],
       "instances": [
-        {
-          "id": "i56d6tj6o677a8",
-          "format": "ebook",
-          "isbns": [
-            "9791221705966"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "122240:ebook"
-            }
-          ]
-        },
-        {
-          "id": "iksnt21va4qd4g",
-          "format": "print",
-          "isbns": [
-            "0613647882",
-            "9780613647885"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "122240:physical"
-            }
-          ]
-        },
         {
           "id": "it65ikucf9roeq",
           "format": "audiobook",
@@ -7210,7 +7651,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/17079379/6cd33f6e07aae9f2a3f5299de4fe48c07571dd66.jpeg",
+        "dateRead": "2025-03-18",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wo9nj16u72ofv4",
@@ -7283,7 +7729,7 @@
       ],
       "instances": [
         {
-          "id": "i2lrtj5m78offc",
+          "id": "ig37on17jjb5k6",
           "format": "ebook",
           "providerIds": [
             {
@@ -7320,7 +7766,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/59649243/8238538dd15b48457a11bcc5d14862478273e5f6.jpeg",
+        "dateRead": "2025-03-14",
+        "rating": "4"
+      }
     },
     {
       "id": "woh4jig67snvn6",
@@ -7429,7 +7880,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/59737667/d8b94ddbd3395c0784f29f179d5010ae341e3417.jpeg",
+        "dateRead": "2024-05-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wol30aucc2mjkm",
@@ -7511,6 +7967,16 @@
       ],
       "instances": [
         {
+          "id": "i39u6dc4lk9s8o",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1093424:audiobook"
+            }
+          ]
+        },
+        {
           "id": "idprojfq7s2td6",
           "format": "print",
           "isbns": [
@@ -7524,7 +7990,7 @@
           ]
         },
         {
-          "id": "ifs5g1777fl818",
+          "id": "iv2cvs6phidr8i",
           "format": "ebook",
           "providerIds": [
             {
@@ -7532,18 +7998,13 @@
               "value": "1093424:ebook"
             }
           ]
-        },
-        {
-          "id": "inmhbeid3l7djc",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1093424:audiobook"
-            }
-          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31117442/66adf206dfa994560008db5c47dcc978f4becbaf.jpeg",
+        "dateRead": "2025-01-30",
+        "rating": "5"
+      }
     },
     {
       "id": "wp2fohlfl09oj8",
@@ -7598,16 +8059,6 @@
       ],
       "instances": [
         {
-          "id": "i2vdv7gd6e9dqc",
-          "format": "ebook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "995246:ebook"
-            }
-          ]
-        },
-        {
           "id": "i6st80c04g3qt4",
           "format": "print",
           "isbns": [
@@ -7621,7 +8072,7 @@
           ]
         },
         {
-          "id": "ib3tqdi9shqh9a",
+          "id": "ienm94piu0lne6",
           "format": "audiobook",
           "providerIds": [
             {
@@ -7629,8 +8080,23 @@
               "value": "995246:audiobook"
             }
           ]
+        },
+        {
+          "id": "iljl6n4hagp6qg",
+          "format": "ebook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "995246:ebook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31229951/405741932745183.jpg",
+        "dateRead": "2024-12-31",
+        "rating": "5"
+      }
     },
     {
       "id": "wp36iau4erpbqm",
@@ -7702,7 +8168,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/59426714/3e472132180347eac0eed5cc8245c552b4bb9d76.jpeg",
+        "dateRead": "2025-11-13",
+        "rating": "5"
+      }
     },
     {
       "id": "wp7t7s98bpk26q",
@@ -7783,6 +8254,16 @@
       ],
       "instances": [
         {
+          "id": "i344l3ha1vntvq",
+          "format": "ebook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1093426:ebook"
+            }
+          ]
+        },
+        {
           "id": "ia0q0qdldg4qog",
           "format": "print",
           "isbns": [
@@ -7796,7 +8277,7 @@
           ]
         },
         {
-          "id": "ign08vte4pqvfc",
+          "id": "iasnoma6mh6vf6",
           "format": "audiobook",
           "providerIds": [
             {
@@ -7804,18 +8285,13 @@
               "value": "1093426:audiobook"
             }
           ]
-        },
-        {
-          "id": "ikn30qclvdshms",
-          "format": "ebook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1093426:ebook"
-            }
-          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31117444/2985c3e6aa91375ed498e091d77716a7cdd8e537.jpeg",
+        "dateRead": "2025-01-14",
+        "rating": "5"
+      }
     },
     {
       "id": "wpdq46qa7jdjqg",
@@ -7900,7 +8376,7 @@
           ]
         },
         {
-          "id": "if2rs648ov81l6",
+          "id": "ijvoj9k07p01mc",
           "format": "audiobook",
           "providerIds": [
             {
@@ -7909,7 +8385,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/27175138/88fbdf6b-bbfd-4b2a-8ca2-4a8c6d4474e4.jpg",
+        "dateRead": "2024-09-22"
+      }
     },
     {
       "id": "wpm0gru7ln5nqo",
@@ -8027,7 +8507,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30599331/7462847827989860.jpg",
+        "dateRead": "2024-08-29",
+        "rating": "5"
+      }
     },
     {
       "id": "wpmer7fnaiu1re",
@@ -8064,7 +8549,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/31480454/2aca35164e717e5d4a648a8529fc227673cf807e.jpeg",
+        "dateRead": "2025-02-24",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wq3qaema2ogkqs",
@@ -8103,17 +8593,17 @@
       ],
       "instances": [
         {
-          "id": "i6kjibsjv8t81m",
-          "format": "ebook",
+          "id": "i6jt6hqn3cbj9k",
+          "format": "audiobook",
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "1662572:ebook"
+              "value": "1662572:audiobook"
             }
           ]
         },
         {
-          "id": "ijtk68iqgpvdua",
+          "id": "ir2fmr0rt2460e",
           "format": "print",
           "providerIds": [
             {
@@ -8123,16 +8613,21 @@
           ]
         },
         {
-          "id": "is410u2k9ljrso",
-          "format": "audiobook",
+          "id": "ironv5eq5c00n0",
+          "format": "ebook",
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "1662572:audiobook"
+              "value": "1662572:ebook"
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31749662/2097547214310973.jpg",
+        "dateRead": "2025-04-05",
+        "rating": "5"
+      }
     },
     {
       "id": "wq5sr742hfa7m2",
@@ -8245,7 +8740,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/5731863/6a6401dd-7e58-43ee-bf45-0b7d76c1551c.jpg",
+        "dateRead": "2025-09-10",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wq6g8v3ks1qet2",
@@ -8332,7 +8832,7 @@
           ]
         },
         {
-          "id": "idpavmaq9n5m6i",
+          "id": "ietlbue32ps8pa",
           "format": "audiobook",
           "providerIds": [
             {
@@ -8342,7 +8842,7 @@
           ]
         },
         {
-          "id": "itfsal0gc1u4t6",
+          "id": "ijo6ihehrp7koq",
           "format": "ebook",
           "providerIds": [
             {
@@ -8351,7 +8851,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30616101/1778731293294393.jpg",
+        "dateRead": "2025-01-06",
+        "rating": "5"
+      }
     },
     {
       "id": "wq7p7dil0deeda",
@@ -8389,7 +8894,7 @@
       ],
       "instances": [
         {
-          "id": "ibft7iir1dp15e",
+          "id": "igvujt8oqc0th6",
           "format": "ebook",
           "providerIds": [
             {
@@ -8399,7 +8904,7 @@
           ]
         },
         {
-          "id": "ij90hp3ka2a4k8",
+          "id": "itre4p2j1im6nu",
           "format": "audiobook",
           "providerIds": [
             {
@@ -8408,7 +8913,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/30407770/6978721110315722-57913863.jpg",
+        "dateRead": "2026-01-01",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wqc5cfulv2uq9e",
@@ -8480,7 +8990,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/39980817/7ff31810f0058dd29ce0feb1870e58d4a88c097b.jpeg",
+        "dateRead": "2025-11-22",
+        "rating": "4"
+      }
     },
     {
       "id": "wratrjueoqlihs",
@@ -8551,20 +9066,6 @@
       ],
       "instances": [
         {
-          "id": "i6mvkuqn62ola4",
-          "format": "print",
-          "isbns": [
-            "1250229863",
-            "9781250229861"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "440171:physical"
-            }
-          ]
-        },
-        {
           "id": "i8ogpnndu10r7i",
           "format": "audiobook",
           "isbns": [
@@ -8579,11 +9080,11 @@
           ]
         },
         {
-          "id": "idq79navn99koc",
+          "id": "ii8t54k0c2pekq",
           "format": "ebook",
           "isbns": [
-            "1250229847",
-            "9781250229847"
+            "3641269814",
+            "9783641269814"
           ],
           "providerIds": [
             {
@@ -8591,8 +9092,27 @@
               "value": "440171:ebook"
             }
           ]
+        },
+        {
+          "id": "ip0dg19d2qjthk",
+          "format": "print",
+          "isbns": [
+            "6178287925",
+            "9786178287924"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "440171:physical"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/book_mappings/7332803/487291b01ddc8783710e7f90bd42666090e43d9f.jpeg",
+        "dateRead": "2024-09-11",
+        "rating": "5"
+      }
     },
     {
       "id": "wrgtnnsm9a83to",
@@ -8619,16 +9139,6 @@
       ],
       "instances": [
         {
-          "id": "icsfp1bjk5omg0",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1458149:audiobook"
-            }
-          ]
-        },
-        {
           "id": "iflbia30c6kcvm",
           "format": "ebook",
           "isbns": [
@@ -8641,8 +9151,23 @@
               "value": "1458149:ebook"
             }
           ]
+        },
+        {
+          "id": "ivp3q12l026n8a",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1458149:audiobook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/users/8674/7185582776706685.jpg",
+        "dateRead": "2025-04-24",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wrpvpl22cdg4p8",
@@ -8714,11 +9239,11 @@
       ],
       "instances": [
         {
-          "id": "i8hhtei8bh2c8q",
+          "id": "i30d3obitsq16k",
           "format": "ebook",
           "isbns": [
-            "8576577666",
-            "9788576577669"
+            "1250185432",
+            "9781250185433"
           ],
           "providerIds": [
             {
@@ -8728,24 +9253,11 @@
           ]
         },
         {
-          "id": "ibhotlaff2o21a",
-          "format": "print",
-          "isbns": [
-            "8576577658",
-            "9788576577652"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "427560:physical"
-            }
-          ]
-        },
-        {
-          "id": "ilpb8il5qh46qm",
+          "id": "im947kle2o63fs",
           "format": "audiobook",
           "isbns": [
-            "9798212983761"
+            "166446686X",
+            "9781664466869"
           ],
           "providerIds": [
             {
@@ -8753,8 +9265,27 @@
               "value": "427560:audiobook"
             }
           ]
+        },
+        {
+          "id": "in8hqqfkgl1s68",
+          "format": "print",
+          "isbns": [
+            "1250191785",
+            "9781250191786"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "427560:physical"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/book_mappings/7332654/d29ec327867b45eaa6838d359475917d6e9cabbc.jpeg",
+        "dateRead": "2024-09-08",
+        "rating": "5"
+      }
     },
     {
       "id": "ws9l6cmdqo1t1q",
@@ -8816,7 +9347,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/27608286/16c054053a7f72c73d58ebc8b0348069682cdb78.jpeg",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wsl66tqth970p0",
@@ -8857,22 +9392,22 @@
       ],
       "instances": [
         {
-          "id": "i90a1kutimf7eg",
-          "format": "audiobook",
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "1390898:audiobook"
-            }
-          ]
-        },
-        {
-          "id": "iicl2f5v7u0a0a",
+          "id": "i3iq14ekc42q38",
           "format": "ebook",
           "providerIds": [
             {
               "source": "hardcover",
               "value": "1390898:ebook"
+            }
+          ]
+        },
+        {
+          "id": "i6mljc5cgvikem",
+          "format": "audiobook",
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "1390898:audiobook"
             }
           ]
         },
@@ -8889,7 +9424,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/31418098/858693067237819.jpg",
+        "dateRead": "2025-03-20",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wtdjlpf4s6n70e",
@@ -8912,7 +9452,7 @@
       ],
       "instances": [
         {
-          "id": "iu52h314rgaklm",
+          "id": "i7i5cqd9aqbcd2",
           "format": "print",
           "providerIds": [
             {
@@ -8921,7 +9461,11 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "dateRead": "2025-03-14",
+        "rating": "5"
+      }
     },
     {
       "id": "wtnfo0d9gr1qom",
@@ -8955,7 +9499,7 @@
           ]
         },
         {
-          "id": "inmhfg96v5ulcc",
+          "id": "itinv6gblefgso",
           "format": "ebook",
           "providerIds": [
             {
@@ -8964,13 +9508,17 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/60592301/393b52d3d7c710b0951f543503460737d226ffe4.jpeg",
+        "rating": "4.5"
+      }
     },
     {
       "id": "wufg2nd4qorh8i",
       "title": "Project Hail Mary",
       "subtitle": "A Novel",
-      "summary": "Except that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of his assignment or how to complete it.\n\nAll he knows is that he’s been asleep for a very, very long time. And he’s just been awakened to find himself millions of miles from home, with nothing but two corpses for company.\n\nHis crewmates dead, his memories fuzzily returning, Ryland realizes that an impossible task now confronts him. Hurtling through space on this tiny ship, it’s up to him to puzzle out an impossible scientific mystery—and conquer an extinction-level threat to our species.\n\nAnd with the clock ticking down and the nearest human being light-years away, he’s got to do it all alone.\n\nOr does he?",
+      "summary": "Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and the earth itself will perish.\n\nExcept that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of his assignment or how to complete it.\n\nAll he knows is that he’s been asleep for a very, very long time. And he’s just been awakened to find himself millions of miles from home, with nothing but two corpses for company.\n\nHis crewmates dead, his memories fuzzily returning, Ryland realizes that an impossible task now confronts him. Hurtling through space on this tiny ship, it’s up to him to puzzle out an impossible scientific mystery—and conquer an extinction-level threat to our species.\n\nAnd with the clock ticking down and the nearest human being light-years away, he’s got to do it all alone.\n\nOr does he?",
       "contributors": [
         {
           "name": "Weir, Andy",
@@ -8998,17 +9546,6 @@
           "scheme": "lcsh"
         },
         {
-          "id": "https://id.loc.gov/authorities/subjects/sh85047114",
-          "labels": {
-            "en": "Fantasy fiction",
-            "es": "Literatura fantástica"
-          },
-          "broader": [
-            "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ],
-          "scheme": "lcsh"
-        },
-        {
           "id": "https://id.loc.gov/authorities/subjects/sh85118629",
           "labels": {
             "en": "Science fiction",
@@ -9018,22 +9555,10 @@
             "https://id.loc.gov/authorities/subjects/sh2026001126"
           ],
           "scheme": "lcsh"
-        },
-        {
-          "id": "https://id.loc.gov/authorities/subjects/sh98004883",
-          "labels": {
-            "en": "Suspense fiction",
-            "es": "Novela de suspenso"
-          },
-          "broader": [
-            "https://id.loc.gov/authorities/subjects/sh2026001126"
-          ],
-          "scheme": "lcsh"
         }
       ],
       "tags": [
         "Hard Science Fiction",
-        "Science Fiction \u0026 Fantasy",
         "Space"
       ],
       "languages": [
@@ -9046,16 +9571,16 @@
       ],
       "instances": [
         {
-          "id": "i3mqentmpsr7r2",
-          "format": "ebook",
+          "id": "i6ht08k81k4bpo",
+          "format": "audiobook",
           "isbns": [
-            "6557822519",
-            "9786557822517"
+            "8328740699",
+            "9788328740693"
           ],
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "427578:ebook"
+              "value": "427578:audiobook"
             }
           ]
         },
@@ -9074,20 +9599,25 @@
           ]
         },
         {
-          "id": "ia7e06ejqorij0",
-          "format": "audiobook",
+          "id": "ijoruqiqd8lbhm",
+          "format": "ebook",
           "isbns": [
-            "9401617597",
-            "9789401617598"
+            "9401614083",
+            "9789401614085"
           ],
           "providerIds": [
             {
               "source": "hardcover",
-              "value": "427578:audiobook"
+              "value": "427578:ebook"
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/editions/3274049/8741341047797682-91mYu67RfUL._SL1500_.jpg",
+        "dateRead": "2024-07-01",
+        "rating": "5"
+      }
     },
     {
       "id": "wur13e29mtd2h4",
@@ -9188,7 +9718,12 @@
             }
           ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/external_data/59944437/aed925dcd5b713dc2da257cf8c3ad18a33e63d2d.jpeg",
+        "dateRead": "2025-10-30",
+        "rating": "4"
+      }
     },
     {
       "id": "wvkn0bub20n82g",
@@ -9273,20 +9808,6 @@
           ]
         },
         {
-          "id": "if62p7qp8e33mi",
-          "format": "audiobook",
-          "isbns": [
-            "8702125587",
-            "9788702125580"
-          ],
-          "providerIds": [
-            {
-              "source": "hardcover",
-              "value": "644:audiobook"
-            }
-          ]
-        },
-        {
           "id": "ikqg6k798hrd7o",
           "format": "ebook",
           "isbns": [
@@ -9299,8 +9820,27 @@
               "value": "644:ebook"
             }
           ]
+        },
+        {
+          "id": "ivlou05i6tmb3i",
+          "format": "audiobook",
+          "isbns": [
+            "1415900647",
+            "9781415900642"
+          ],
+          "providerIds": [
+            {
+              "source": "hardcover",
+              "value": "644:audiobook"
+            }
+          ]
         }
-      ]
+      ],
+      "extra": {
+        "cover": "https://assets.hardcover.app/edition/12841472/a63e7ea1-9064-4eb8-afb4-5372db40aed2.jpg",
+        "dateRead": "2025-03-18",
+        "rating": "5"
+      }
     }
   ],
   "terms": [
